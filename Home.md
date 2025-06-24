@@ -4,7 +4,7 @@
 
 **Welcome to the Strix Halo HomeLab wiki!**
 
-The purpose of this website is to gather all important information related to systems with AMD Ryzen AI MAX and MAX+ in home lab applications, so most of the [[guides|Guides]] are very Linux-centric, but there is also a list of [[Strix Halo devices|Devices]] (PCs only) I try to maintain.
+The purpose of this website is to gather all important information related to systems with AMD Ryzen AI MAX and MAX+ in home lab applications, so most of the [[guides|Guides]] are very Linux-centric, but there is also some information on [[Strix Halo PCs|Hardware/PCs]] and [[boards|Hardware/Boards]].
 
 My personal use case is the following:
  - AI MAX+ 395 with 128G of RAM

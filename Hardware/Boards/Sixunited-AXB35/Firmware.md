@@ -24,12 +24,12 @@ BIOS and EC firmware are available [on the GMKtec website](https://www.gmktec.co
 
 | Version  | Changelog | Download |
 | -------- | --------- | -------- |
-| **1.05** | <ul><li>no official changelog available (yet?)</li><li>seems to have some more options, but nothing significant</li></ul> | [AXB35-02_GMK_SW1.05_20250606.zip](./AXB35-02_GMK_SW1.05_20250606.zip) |
+| **1.05** | no official changelog available (yet?), seems to have some more options, but nothing significant | [AXB35-02_GMK_SW1.05_20250606.zip](./AXB35-02_GMK_SW1.05_20250606.zip) |
 | **1.04** | <ul><li>added virtualization support</li><li>added ability to set VRAM amount</li><li>added static fan control</li></ul> | [AXB35-02_GMK_SW1.05_20250606.zip](./AXB35-02_GMK_SW1.05_20250606.zip) |
 
 **EC Firmware**
 
 | Version  | Changelog | Download |
 | -------- | --------- | -------- |
-| **1.06** | <ul><li>no official changelog available</li></ul> | [EC-AXB35-02-1.06.zip](./EC-AXB35-02-1.06.zip) |
-| **1.04** | <ul><li>no official changelog available</li></ul> | [EC-AXB35-02-1.04.zip](./EC-AXB35-02-1.04.zip) |
+| **1.06** | no official changelog available | [EC-AXB35-02-1.06.zip](./EC-AXB35-02-1.06.zip) |
+| **1.04** | no official changelog available| [EC-AXB35-02-1.04.zip](./EC-AXB35-02-1.04.zip) |

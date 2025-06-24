@@ -27,6 +27,7 @@ More info here: https://www.reddit.com/r/GMKtec/comments/1l81j5b/upgrading_gmkte
 
 ### Hardware
  - Board: [[Sixunited AXB35-02|Hardware/Boards/Sixunited-AXB35]]
+ - Backside fan: 120x25 mm
  - Space for NVMe SSDs radiators: at least 73x24.2x10.5 mm (LWH)
 
 Disassembly video: https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/GMKtec/comments/1km6tn8/evox2_teardown/))

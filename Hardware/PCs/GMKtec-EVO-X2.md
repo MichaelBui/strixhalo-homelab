@@ -1,5 +1,8 @@
 # GMKtec EVO-X2
-The first mini PC with Strix Halo, available in 64G and 128G versions.
+
+![GMKtec EVO-X2](./gmktec-evo-x2.jpg)
+
+The first mini PC with Strix Halo, available in 64G and 128G versions. It's based on [[the Sixunited's AXB35-02 board|Hardware/Boards/Sixunited-AXB35]] with stock cooling.
 
 https://www.gmktec.com/products/amd-ryzen™-ai-max-395-evo-x2-ai-mini-pc
 
@@ -18,19 +21,9 @@ You can also download AMD drivers directly from AMD, there is no vendor lock.
 ### Firmware
 See [[Sixunited AXB35 Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 
-### Cooling
-EVO-X2 has a decent cooling system for its size and the used thermal interfaces are great as well, so changing thermal paste for example to even something like Noctua NT-H2 won't change much.
-
-Still, in the performance mode (140W boost, 120W constant) the stock solution is not good enough and the bottleneck is definitely in the heat transfer between the APU and the radiator. The solution for that is reasonably simple - replacing the thermal paste with Honeywell PTM7950 or similar products. You'll need a 30x30 mm piece of 0.2-0.25 mm thickness. You can expect improvement of about 8 to 15 degrees, depending on the task.
-
-More info here: https://www.reddit.com/r/GMKtec/comments/1l81j5b/upgrading_gmktec_evox2_cooling/
-
 ### Hardware
  - Board: [[Sixunited AXB35-02|Hardware/Boards/Sixunited-AXB35]]
  - Backside fan: 120x25 mm
  - Space for NVMe SSDs radiators: at least 73x24.2x10.5 mm (LWH)
 
 Disassembly video: https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/GMKtec/comments/1km6tn8/evox2_teardown/))
-
-[![GMKtec EVO-X2](./gmktec-evo-x2.jpg?thumbnail)](./gmktec-evo-x2.jpg)
-[![GMKtec EVO-X2 board](./gmktec-evo-x2-board-photo.jpeg?thumbnail)](./gmktec-evo-x2-board-photo.jpeg)

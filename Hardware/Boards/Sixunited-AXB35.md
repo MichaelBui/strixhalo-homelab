@@ -2,11 +2,10 @@
 One of the first Strix Halo boards, used in many Chinese PCs along with a cooling system. First revisions go back to at least October of 2024 (marked `SU_AXB35_FB11`).
 
 ### PCs
- - GMKtec EVO-X2 (`SU_AXB35-02_FP11`)
- - Sixunited AXB35-02
- - Bosgame M5
+ - [[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]] (`SU_AXB35-02_FP11`)
+ - [[Bosgame M5|Hardware/PCs/Bosgame-M5]]
  - FEVM FX-EX9/FA-EX9
- - Peladn YO1
+ - [[Peladn YO1|Hardware/PCs/Peladn-YO1]]
 
 ### Facts
  - EC: ITE IT5570E-128

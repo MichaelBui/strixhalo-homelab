@@ -9,7 +9,6 @@ One of the first Strix Halo boards, used in many Chinese PCs along with a coolin
 
 ### Facts
  - EC: ITE IT5570E-128
- - Backside fan: 120x25 mm
  - Heatsink mount: 75x75 mm
  - RAM thermal pads thickness: 0.5 mm
 

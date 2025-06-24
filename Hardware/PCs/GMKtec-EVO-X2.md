@@ -16,7 +16,7 @@ Latest Windows drivers are available [on the GMKtec website](https://www.gmktec.
 You can also download AMD drivers directly from AMD, there is no vendor lock.
 
 ### Firmware
-See [[Firmware|Devices/GMKtec-EVO-X2/Firmware]] page.
+See [[Sixunited AXB35 Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 
 ### Cooling
 EVO-X2 has a decent cooling system for its size and the used thermal interfaces are great as well, so changing thermal paste for example to even something like Noctua NT-H2 won't change much.
@@ -26,11 +26,7 @@ Still, in the performance mode (140W boost, 120W constant) the stock solution is
 More info here: https://www.reddit.com/r/GMKtec/comments/1l81j5b/upgrading_gmktec_evox2_cooling/
 
 ### Hardware
- - Board: Sixunited AXB35-02
- - EC: ITE IT5570E-128
- - Backside fan: 120x25 mm
- - Heatsink mount: 75x75 mm
- - RAM thermal pads thickness: 0.5 mm
+ - Board: [[Sixunited AXB35-02|Hardware/Boards/Sixunited-AXB35]]
  - Space for NVMe SSDs radiators: at least 73x24.2x10.5 mm (LWH)
 
 Disassembly video: https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/GMKtec/comments/1km6tn8/evox2_teardown/))

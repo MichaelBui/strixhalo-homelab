@@ -18,3 +18,5 @@ One of the first Strix Halo boards, used in many Chinese PCs along with a coolin
 See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 
 ### Photos
+[![SU_AXB35](./axb35-02.jpeg?thumbnail)](./axb35-02.jpeg)
+[![SU_AXB35-02](./axb35_board_with_cooling.jpg?thumbnail)](./axb35_board_with_cooling.jpg)

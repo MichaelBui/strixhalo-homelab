@@ -27,3 +27,8 @@ See [[Sixunited AXB35 Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
  - Space for NVMe SSDs radiators: at least 73x24.2x10.5 mm (LWH)
 
 Disassembly video: https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/GMKtec/comments/1km6tn8/evox2_teardown/))
+
+### Relevant Pages
+ - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
+ - [[Guides/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]]

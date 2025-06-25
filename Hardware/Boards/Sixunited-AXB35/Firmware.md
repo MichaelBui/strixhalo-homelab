@@ -33,3 +33,7 @@ BIOS and EC firmware are available [on the GMKtec website](https://www.gmktec.co
 | -------- | --------- | -------- |
 | **1.06** | no official changelog available | [EC-AXB35-02-1.06.zip](./EC-AXB35-02-1.06.zip) |
 | **1.04** | no official changelog available| [EC-AXB35-02-1.04.zip](./EC-AXB35-02-1.04.zip) |
+
+### Relevant Pages
+ - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Hardware/PCs/GMKtec-EVO-X2]]

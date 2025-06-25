@@ -48,7 +48,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 
 #### Reassembly
 15. Carefully align and place the heatsink back onto the APU.
-16. Secure the heatsink by tightening the 4 spring-loaded screws in a diagonal pattern, doing only 1-2 rotations per screw until all are equally tight.
+16. Secure the heatsink by tightening the 4 spring-loaded screws in a diagonal pattern, doing only 1-2 rotations per screw. Don't worry about overtightening them, they have a mechanical stop, you'll feel it.
 17. Reattach the 2 small screws on the sides of the heatsink.
 18. Return the blowers to their original positions and secure with their 6 screws.
 19. Replace the sealing tape between the heatsink and blowers (if it's too damaged, electrical tape is fine).

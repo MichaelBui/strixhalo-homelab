@@ -16,6 +16,8 @@ The cooling system is decent enough for this form factor, but could suffer from 
 Here's what you could expect from a correctly working system with PTM7950 (ambient temp +25°C, bios version 1.05):  
 ![](./axb35-ptm7950-cooling.png)
 
+A guide for applying it on EVO-X2 is available [[here|Guides/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]].
+
 ### Facts
  - EC: ITE IT5570E-128
  - Heatsink mount: 75x75 mm
@@ -30,3 +32,6 @@ See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 | -------- | -------- |
 | [![SU_AXB35-02](./axb35-02.jpeg?thumbnail)](./axb35-02.jpeg) | AXB35-02 from GMKtec EVO-X2 |
 | [![SU_AXB35](./axb35_board_with_cooling.jpg?thumbnail)](./axb35_board_with_cooling.jpg) | Earlier revision of the board with the cooling system |
+
+### Relevant Pages
+ - [[Hardware/Boards/Sixunited-AXB35/Firmware]]

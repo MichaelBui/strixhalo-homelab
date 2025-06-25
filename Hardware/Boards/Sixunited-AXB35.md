@@ -1,7 +1,7 @@
 # Sixunited AXB35
 One of the first Strix Halo boards, used in many Chinese PCs along with a cooling system. First revisions go back to at least October of 2024 (marked `SU_AXB35_FB11`).
 
-The board supports 3 different power limits - 55 watts, 85 watts, and 120 watts with a short 140W burst.
+The board supports 3 different power limits - 55W (100W burst), 85W (120W burst), and 120W (140W burst).
 
 Known PCs:
  - [[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]] (`SU_AXB35-02_FP11`)

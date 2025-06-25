@@ -13,7 +13,7 @@ The board supports 3 different power limits - 55W (100W burst), 85W (120W burst)
 ### Cooling
 The cooling system is decent enough for this form factor, but could suffer from inadequate thermal interface conductivity. So if you plan to use a full 120W power limit, switching to PTM7950 or similar products is highly recommended. You'll need a 30x30 mm piece of 0.2-0.25 mm thickness.
 
-Here's what you could expect from a correctly working system with PTM7950 (ambient temp +25°C):  
+Here's what you could expect from a correctly working system with PTM7950 (ambient temp +25°C, bios version 1.05):  
 ![](./axb35-ptm7950-cooling.png)
 
 ### Facts

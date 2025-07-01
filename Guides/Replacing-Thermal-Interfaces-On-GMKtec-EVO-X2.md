@@ -23,22 +23,28 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 
 #### Disassembly
 1. Turn the device upside down and remove both rubber feet.
-2. Unscrew the 2 screws from the smaller section of the case and carefully remove it.
-3. Locate and remove the tape sealing the heatsink to the blowers.
+2. Unscrew the 2 screws from the smaller section of the case and carefully remove it:  
+   ![](./evox2-disassembly-step2.jpg)  
+3. Locate and remove the tape sealing the heatsink to the blowers (the one that is on the side could be left as is):  
+   ![](./evox2-disassembly-step3.jpg)  
 
 #### Blower Removal
-4. Unscrew 3 screws from each blower.
+4. Unscrew 3 screws from each blower:  
+   ![](./evox2-disassembly-step4.jpg)  
 5. Gently move the blowers to the sides (no need to disconnect them).
 
 #### Heatsink Removal
-6. Remove the 2 small screws securing the sides of the heatsink.
-7. **IMPORTANT**: Gradually loosen the 4 spring-loaded screws holding the heatsink in a cross pattern (diagonal sequence), turning each screw only 1-2 rotations at a time.
+6. Remove the 2 small screws securing the sides of the heatsink.  
+   ![](./evox2-disassembly-step6.jpg)  
+7. **IMPORTANT**: Gradually loosen the 4 spring-loaded screws holding the heatsink in a cross pattern (diagonal sequence), turning each screw only 1-2 rotations at a time:  
+   ![](./evox2-disassembly-step7.jpg)  
 8. Once all screws are loose, **gently** rock the heatsink side to side to break the thermal paste seal.
-9. Carefully lift the heatsink straight up and away from the APU.
+9. Carefully lift the heatsink up and away from the APU. Note the small tape on the side id you didn't remove it.
 
 #### Cleaning and Preparation
 10. Clean the old thermal paste from the APU using isopropyl alcohol and a lint-free cloth.
-11. **CAUTION**: Be extremely careful around the small capacitors near the APU - avoid excessive cleaning in these areas, it's okay if there is still some thermal paste there.
+11. **CAUTION**: Be extremely careful around the small capacitors near the APU - avoid excessive cleaning in these areas, it's okay if there is still some thermal paste om these parts:  
+    ![](./evox2-disassembly-step11.jpg)  
 12. Allow the APU to dry completely (a couple of minutes).
 
 #### Applying New Thermal Solution

@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 
 #### Disassembly
 1. Turn the device upside down and remove both rubber feet.
-2. Unscrew the 4 screws from the larger section of the case and carefully remove it.
+2. Unscrew the 2 screws from the smaller section of the case and carefully remove it.
 3. Locate and remove the tape sealing the heatsink to the blowers.
 
 #### Blower Removal
@@ -52,7 +52,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 17. Reattach the 2 small screws on the sides of the heatsink.
 18. Return the blowers to their original positions and secure with their 6 screws.
 19. Replace the sealing tape between the heatsink and blowers (if it's too damaged, electrical tape is fine).
-20. Reattach the case cover and secure with the 4 screws. Start with the side opposite to where the screws are, it should be a tight fit, putting it in place it at an angle helps.
+20. Reattach the case cover and secure with the 2 screws. Start with the side opposite to where the screws are, it should be a tight fit, putting it in place at an angle helps.
 21. Replace the rubber feet.
 
 ### Testing

@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 - Phillips-head screwdriver (small and small-ish)
 - Isopropyl alcohol (90%+ recommended, 70% is okay)
 - Lint-free cloth or coffee filter
-- Optional: electrical tape, 0.5 mm thermal pads (Gelid GP Ultimate or better)
+- Optional: electrical tape, 0.5 mm thermal pads (Gelid GP Ultimate or better, around 80x40 mm)
 
 #### Safety Precautions
 - Ensure device is powered off and power cable is disconnected
@@ -49,6 +49,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 
 #### Applying New Thermal Solution
 13. Apply your new thermal interface:
+    - Follow application guides for your specific product
     - Detailed application guide for PTM9750 - https://help.moddiy.com/en/article/how-to-apply-honeywell-ptm7950-bm6825/
 14. Verify all thermal pads for RAM and VRMs are present and properly positioned. Optionally replace RAM thermal pads as well.
 

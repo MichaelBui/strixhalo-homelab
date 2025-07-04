@@ -48,6 +48,7 @@ Proxmox VM:
  - Windows works fine, but I haven't managed to do it with a Linux VM, amdgpu driver crashes
  - the 'reset bug' is here, I found no way to avoid it, so **you can passthrough the iGPU only once per boot of the host**
  - if your VM crashes during GPU driver install, switch the CPU type to something generic (`x86-64-v4` for example seems to work fine), install the driver, then return it back to `host`
+ - if you see unknown PCI device (`1af4:1057`) in your Device Manager, install `viomem` driver manually from virtio drivers ISO
  - set the fixed VRAM amount in the BIOS and never change it on the OS level, otherwise expect major slowdowns and crashes
  - [this issue](https://github.com/isc30/ryzen-gpu-passthrough-proxmox/issues/112) might be worth looking into
 

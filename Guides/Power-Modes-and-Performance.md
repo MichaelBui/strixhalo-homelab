@@ -8,7 +8,7 @@ This article is a work in progress!
 ### Intro
 This guide is supposed to show how the performance of the APU changes on various power levels and to help you pick the optimal power mode for your Strix Halo system.
 
-All tests were run at fixed fans speed of 80% to make sure that cooling level is constant, CPU temp never exceeded 75 °C. For GPU becnhmarks please note that the GPU was in a passthrough mode to the Windows VM and only 12 CPU cores were passed as well, so there is at least 5% of a performance drop. In general, look at the percentage changes.
+All tests were run at fixed fans speed of 80% to make sure that cooling level is constant, CPU temp never exceeded 75 °C. For GPU becnhmarks please note that the GPU was in a passthrough mode to the Windows VM and only 12 CPU cores were passed as well, so there is at least 5% of a performance drop. In general, look at the percentage changes (relative to the base 55W result).
 
 **Everything single-threaded is omitted here, since a single core could never use the full power limit even if it's 55W.**
 

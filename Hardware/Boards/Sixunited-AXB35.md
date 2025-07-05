@@ -22,6 +22,7 @@ A guide for applying it on EVO-X2 is available [[here|Guides/Replacing-Thermal-I
  - EC: ITE IT5570E-128
  - Heatsink mount: 75x75 mm
  - RAM thermal pads thickness: 0.5 mm
+ - Power input: 19.5V, 5.5x2.5mm barrel jack, center positive
 
 ### Firmware
 See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.

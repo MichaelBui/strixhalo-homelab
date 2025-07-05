@@ -94,7 +94,19 @@ Details:
 \* **All percentage values are relative to the base 55W result**
 
 ### GPU - LLM
-`WIP`
+Details:
+ - koboldcpp, Vulkan, full GPU offloading
+ - Q5_K_M
+
+| Model (Metric)                              | 55W | 85W | 120W |
+| ------------------------------------------- | --- | --- | ---- |
+| Gemma 3 27B (Prompt Processing, Tokens/s)   | 77 | 89 <sup style="color: #1fea00; font-size: 0.8em;">+15.6%</sup> | 95 <sup style="color: #1fea00; font-size: 0.8em;">+23.4%</sup> |
+| Gemma 3 27B (Generation Speed, Tokens/s)    | 6 | 6 <sup style="font-size: 0.8em;">+0.0%</sup> | 6 <sup style="font-size: 0.8em;">+0.0%</sup> |
+| Qwen3 30B A3B (Prompt Processing, Tokens/s) | 92 | 95 <sup style="color: #1fea00; font-size: 0.8em;">+3.3%</sup> | 95 <sup style="color: #1fea00; font-size: 0.8em;">+3.3%</sup> |
+| Qwen3 30B A3B (Generation Speed, Tokens/s)  | 25 | 29 <sup style="color: #1fea00; font-size: 0.8em;">+16.0%</sup> | 29 <sup style="color: #1fea00; font-size: 0.8em;">+16.0%</sup> |
+\* **All percentage values are relative to the base 55W result**
 
 ### Conslusions
 A classic situation of diminishing returns, where **85W mode seems to be the sweet spot**. Going higher doesn't make much sense unless you want to squeeze the absolute maximum out of your system, and going lower is only suitable if you don't use your system resources fully (especially when you don't utilize all of the cores) or don't care about performance loss.
+
+For LLMs it seems that memory bandwidth (which obviously APU's power limit doesn't affect) plays a bigger role than plain computing power, so yet again, going above 85W makes little sense.

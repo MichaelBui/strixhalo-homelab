@@ -131,7 +131,7 @@ Let's look on the average increase for every category compared to 55W mode:
 
 A classic situation of diminishing returns, where **85W mode seems to be the sweet spot** and a good compromise between performance gain and power consumption.
 
-The 55W mode is only suitable if you don't fully utilize your system resources (especially when you don't leverage all cores) or aren't concerned about performance loss.
+The 55W mode is only suitable if you don't fully utilize your system resources (especially when you don't leverage all cores) or aren't concerned about performance loss. Geekbench results reflect that perfectly.
 
 The 120W mode generally doesn't make much sense unless you aim to extract the absolute maximum from your system, with one exception - certain games respond more positively to this increase. My theory is that CPU-heavy games might slightly starve the GPU, so increasing the overall power budget alleviates this issue. Additionally, if you're just shy of reaching 60 fps at 1080p (a reasonable target for this system), this extra power might provide the necessary boost.
 

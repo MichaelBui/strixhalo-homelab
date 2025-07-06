@@ -1,21 +1,14 @@
 # Power Modes & Performance
-
-:::warning
-# Warning
-This article is a work in progress!
-:::
-
-### Intro
 This guide is supposed to show how the performance of the APU changes on various power levels and to help you pick the optimal power mode for your Strix Halo system.
 
 All tests were run at fixed fans speed of 80% to make sure that cooling level is constant, CPU temp never exceeded 75 °C. For GPU becnhmarks please note that the GPU was in a passthrough mode to the Windows VM and only 12 CPU cores were passed as well, so there is at least 5% of a performance drop. In general, look at the percentage changes (relative to the base 55W result).
 
-**Everything single-threaded is omitted here, since a single core could never use the full power limit even if it's 55W.**
+**Everything single-threaded is omitted here, since a single core could never use the full power limit even on the lowest 55W value.**
 
 ### CPU - PassMark
 Details:
  - [PassMark PerformanceTest for Linux](https://www.passmark.com/products/pt_linux/download.php), version 11.0.1002
- - Average of 5 medium tests for CPU, to lower the influence of the initial power boost (`./pt_linux_x64 -i 5 -d 2`)
+ - Average of 5 medium tests for CPU, to lower the influence of the initial power boost (`pt_linux_x64 -i 5 -d 2`)
 
 | Metric | [55W](https://www.passmark.com/baselines/V11/display.php?id=509787657486) | [85W](https://www.passmark.com/baselines/V11/display.php?id=509787842837) | [120W](https://www.passmark.com/baselines/V11/display.php?id=509787902430) |
 | ----------------------------------- | ------- | ------- | ------- |
@@ -61,10 +54,23 @@ Details:
 | Ray Tracer            | 38 300 | 40 547 <sup style="color: #1fea00; font-size: 0.8em;">+5.9%</sup> | 38 962 <sup style="color: #1fea00; font-size: 0.8em;">+1.7%</sup> |
 | Structure from Motion | 22 188 | 22 210 <sup style="color: #1fea00; font-size: 0.8em;">+0.1%</sup> | 21 352 <sup style="color: red; font-size: 0.8em;">-3.8%</sup> |
 \* **All percentage values are relative to the base 55W result**
+Details:
+ - sysbench - 1.0.20, `sysbench cpu run --threads=32 --time=30`
+ - cpubench1a - 5.0, `cpubench1a -bench -nb 3 -duration 30`
+ - 7-Zip - 16.02, `7z b`
+
+### CPU - Various Benchmarks
+| Benchmark (Metric)         | 55W | 85W | 120W |
+| -------------------------- | --- | --- | ---- |
+| sysbench (Events/s)        | 85 160 | 96 139 <sup style="color: #1fea00; font-size: 0.8em;">+12.9%</sup> | 99 218 <sup style="color: #1fea00; font-size: 0.8em;">+16.5%</sup> |
+| cpubench1a (MT Score)      | 3 483 | 4 288 <sup style="color: #1fea00; font-size: 0.8em;">+23.1%</sup> | 4 790 <sup style="color: #1fea00; font-size: 0.8em;">+37.5%</sup> |
+| 7-Zip (Compressing MIPS)   | 120 759 | 135 008 <sup style="color: #1fea00; font-size: 0.8em;">+11.8%</sup> | 140 471 <sup style="color: #1fea00; font-size: 0.8em;">+16.3%</sup> |
+| 7-Zip (Decompressing MIPS) | 103 110 | 124 170 <sup style="color: #1fea00; font-size: 0.8em;">+20.4%</sup> | 135 859 <sup style="color: #1fea00; font-size: 0.8em;">+31.8%</sup> |
+
 
 ### GPU - Various Benchmarks
 Details:
- - UNIGINE Superposition - DirectX, 1080p Extreme preset.
+ - UNIGINE Superposition - DirectX, 1080p Extreme preset
  - 3DMARK Steel Nomad Light - Vulkan, 1080p
  - 3DMARK Time Spy - 1080p
 
@@ -82,15 +88,20 @@ Details:
 
 ### GPU - Gaming
 Details:
- - Cyberpunk 2077 - high preset, 1080p, built-in benchmark
- - The Talos Principle - ultra preset, 1080p, built-in benchmark, 60 seconds limit
- - Metro Exodus Enhanced Edition - ultra preset (ray tracing set to normal), 1080p, built-in benchmark
+ - all games use pre-defined presets and built-in benchmarks
+ - all values are average FPS
+ - for Metro Exodus ray tracing was additionally set to `normal`
+ - for GTA5 the value is an average FPS of 5 different benchmarks
 
-| Game                | 55W | 85W | 120W |
-| ------------------------ | --- | --- | ---- |
-| Cyberpunk 2077                | 53 | 62 <sup style="color: #1fea00; font-size: 0.8em;">+17.0%</sup> | 66 <sup style="color: #1fea00; font-size: 0.8em;">+24.5%</sup> |
-| The Talos Principle           | 102 | 113 <sup style="color: #1fea00; font-size: 0.8em;">+10.8%</sup> | 117 <sup style="color: #1fea00; font-size: 0.8em;">+14.7%</sup> |
-| Metro Exodus Enhanced Edition | 51 | 59 <sup style="color: #1fea00; font-size: 0.8em;">+15.7%</sup> | 63 <sup style="color: #1fea00; font-size: 0.8em;">+23.5%</sup> |
+| Game                                           | 55W | 85W | 120W |
+| ---------------------------------------------- | --- | --- | ---- |
+| Cyberpunk 2077 (1080p low)                     | 61 | 70 <sup style="color: #1fea00; font-size: 0.8em;">+14.8%</sup> | 73 <sup style="color: #1fea00; font-size: 0.8em;">+19.7%</sup> |
+| Cyberpunk 2077 (1080p high)                    | 53 | 62 <sup style="color: #1fea00; font-size: 0.8em;">+17.0%</sup> | 66 <sup style="color: #1fea00; font-size: 0.8em;">+24.5%</sup> |
+| The Talos Principle (1080p ultra)              | 102 | 113 <sup style="color: #1fea00; font-size: 0.8em;">+10.8%</sup> | 117 <sup style="color: #1fea00; font-size: 0.8em;">+14.7%</sup> |
+| Metro Exodus Enhanced Edition (1080p ultra)    | 51 | 59 <sup style="color: #1fea00; font-size: 0.8em;">+15.7%</sup> | 63 <sup style="color: #1fea00; font-size: 0.8em;">+23.5%</sup> |
+| Red Dead Redemption 2 (1080p high)             | 55 | 58 <sup style="color: #1fea00; font-size: 0.8em;">+5.5%</sup> | 66 <sup style="color: #1fea00; font-size: 0.8em;">+20.0%</sup> |
+| Grand Theft Auto V Enchanced (1080p very high) | 105 | 118 <sup style="color: #1fea00; font-size: 0.8em;">+12.4%</sup> | 137 <sup style="color: #1fea00; font-size: 0.8em;">+30.5%</sup> |
+| Black Myth: Wukong (1080p high)                | 71 | 78 <sup style="color: #1fea00; font-size: 0.8em;">+9.9%</sup> | 84 <sup style="color: #1fea00; font-size: 0.8em;">+18.3%</sup> |
 \* **All percentage values are relative to the base 55W result**
 
 ### GPU - LLM
@@ -107,6 +118,26 @@ Details:
 \* **All percentage values are relative to the base 55W result**
 
 ### Conslusions
-A classic situation of diminishing returns, where **85W mode seems to be the sweet spot**. Going higher doesn't make much sense unless you want to squeeze the absolute maximum out of your system, and going lower is only suitable if you don't use your system resources fully (especially when you don't utilize all of the cores) or don't care about performance loss.
+Let's look on the average increase for every category compared to 55W mode:
 
-For LLMs it seems that memory bandwidth (which obviously APU's power limit doesn't affect) plays a bigger role than plain computing power, so yet again, going above 85W makes little sense.
+| Category                 | 85W | 120W |
+| ------------------------ | --- | ---- |
+| CPU - PassMark           | <span style="color: #1fea00;">+19.0%</span> | <span style="color: #1fea00;">+30.8%</span> |
+| CPU - Geekbench          | <span style="color: #1fea00;">+1.0% | <span style="color: #1fea00;">+0.9%</span> |
+| CPU - Various Benchmarks | <span style="color: #1fea00;">+17.0% | <span style="color: #1fea00;">+25.5%</span> |
+| GPU - Various Benchmarks | <span style="color: #1fea00;">+13.3% | <span style="color: #1fea00;">+25.0%</span> |
+| GPU - Gaming             | <span style="color: #1fea00;">+12.3% | <span style="color: #1fea00;">+21.6%</span> |
+| GPU - LLM                | <span style="color: #1fea00;">+8.7% | <span style="color: #1fea00;">+10.7%</span> |
+
+A classic situation of diminishing returns, where **85W mode seems to be the sweet spot** and a good compromise between performance gain and power consumption.
+
+The 55W mode is only suitable if you don't fully utilize your system resources (especially when you don't leverage all cores) or aren't concerned about performance loss.
+
+The 120W mode generally doesn't make much sense unless you aim to extract the absolute maximum from your system, with one exception - certain games respond more positively to this increase. My theory is that CPU-heavy games might slightly starve the GPU, so increasing the overall power budget alleviates this issue. Additionally, if you're just shy of reaching 60 fps at 1080p (a reasonable target for this system), this extra power might provide the necessary boost.
+
+For LLMs, memory bandwidth (which APU's power limit doesn't affect) appears to play a more significant role than raw computing power, so again, exceeding 85W offers diminishing benefits.
+
+In summary:
+ - 55W for light loads (background services, office work, multimedia)
+ - 120W for intensive gaming sessions
+ - 85W for mixed workloads and everything else

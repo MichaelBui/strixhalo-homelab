@@ -117,7 +117,7 @@ Details:
 | Qwen3 30B A3B (Generation Speed, Tokens/s)  | 25 | 29 <sup style="color: #1fea00; font-size: 0.8em;">+16.0%</sup> | 29 <sup style="color: #1fea00; font-size: 0.8em;">+16.0%</sup> |
 \* **All percentage values are relative to the base 55W result**
 
-### Conslusions
+### Conclusions
 Let's look on the average increase for every category compared to 55W mode:
 
 | Category                 | 85W | 120W |

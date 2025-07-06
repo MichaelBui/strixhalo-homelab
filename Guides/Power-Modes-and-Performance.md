@@ -118,16 +118,17 @@ Details:
 \* **All percentage values are relative to the base 55W result**
 
 ### Conclusions
-Let's look on the average increase for every category compared to 55W mode:
+Let's look on the average increase between different modes:
 
-| Category                 | 85W | 120W |
-| ------------------------ | --- | ---- |
-| CPU - PassMark           | <span style="color: #1fea00;">+19.0%</span> | <span style="color: #1fea00;">+30.8%</span> |
-| CPU - Geekbench          | <span style="color: #1fea00;">+1.0% | <span style="color: #1fea00;">+0.9%</span> |
-| CPU - Various Benchmarks | <span style="color: #1fea00;">+17.0% | <span style="color: #1fea00;">+25.5%</span> |
-| GPU - Various Benchmarks | <span style="color: #1fea00;">+13.3% | <span style="color: #1fea00;">+25.0%</span> |
-| GPU - Gaming             | <span style="color: #1fea00;">+12.3% | <span style="color: #1fea00;">+21.6%</span> |
-| GPU - LLM                | <span style="color: #1fea00;">+8.7% | <span style="color: #1fea00;">+10.7%</span> |
+| Category                 | 55W -> 85W | 85W -> 120W | 55W -> 120W |
+| ------------------------ | ---------- | ----------- | ----------- |
+| CPU - PassMark           | <span style="color: #1fea00;">+19.0%</span> | <span style="color: #1fea00;">+11.8%</span> | <span style="color: #1fea00;">+30.8%</span> |
+| CPU - Geekbench          | <span style="color: #1fea00;">+1.0%</span> | <span style="color: red;">-0.1%</span> | <span style="color: #1fea00;">+0.9%</span> |
+| CPU - Various Benchmarks | <span style="color: #1fea00;">+17.0%</span> | <span style="color: #1fea00;">+8.5%</span> | <span style="color: #1fea00;">+25.5%</span>
+| GPU - Various Benchmarks | <span style="color: #1fea00;">+13.3%</span> | <span style="color: #1fea00;">+11.7%</span> | <span style="color: #1fea00;">+25.0%</span> |
+| GPU - Gaming             | <span style="color: #1fea00;">+12.3%</span> | <span style="color: #1fea00;">+9.3%</span> | <span style="color: #1fea00;">+21.6%</span> |
+| GPU - LLM                | <span style="color: #1fea00;">+8.7%</span> | <span style="color: #1fea00;">+2.0%</span> | <span style="color: #1fea00;">+10.7%</span> |
+\* **for example, in case of Passmark we have a 19% performance increase when going from 55W to 85W budget and additional 11.8% increase relative to the original 55W performance when going from 85W to 120W, or a 30.8% in total**
 
 A classic situation of diminishing returns, where **85W mode seems to be the sweet spot** and a good compromise between performance gain and power consumption.
 

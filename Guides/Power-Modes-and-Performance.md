@@ -142,3 +142,6 @@ In summary:
  - 55W for light loads (background services, office work, multimedia)
  - 120W for intensive gaming sessions
  - 85W for mixed workloads and everything else
+
+### Relevant Pages
+ - [[Hardware/Boards/Sixunited-AXB35]]

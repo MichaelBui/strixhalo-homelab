@@ -1,14 +1,19 @@
 # Sixunited AXB35
 One of the first Strix Halo boards, used in many Chinese PCs along with a cooling system. First revisions go back to at least October of 2024 (marked `SU_AXB35_FB11`).
 
-The board supports 3 different power limits - 55W (100W burst), 85W (120W burst), and 120W (140W burst):
-![AXB35 Power Modes](./axb35-power-modes.png)
-
 **Known PCs:**
  - [[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]] (`SU_AXB35-02_FP11`)
  - [[Bosgame M5|Hardware/PCs/Bosgame-M5]]
  - [[FEVM FA-EX9|Hardware/PCs/FEVM-FA-EX9]]
  - [[Peladn YO1|Hardware/PCs/Peladn-YO1]]
+
+### Power
+The board supports 3 different power limits - 55W (100W burst), 85W (120W burst), and 120W (140W burst):
+![AXB35 Power Modes](./axb35-power-modes.png)
+
+See [[the guide on power and performance|Guides/Power-Modes-and-Performance]] for more info on power modes.
+
+Idle power draw from the wall should be around 12W with two SSDs installed.
 
 ### Cooling
 The cooling system is decent enough for this form factor, but could suffer from inadequate thermal interface conductivity. So if you plan to use a full 120W power limit, switching to PTM7950 or similar products is highly recommended. You'll need a 30x30 mm piece of 0.2-0.25 mm thickness.
@@ -36,3 +41,5 @@ See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
+ - [[Guides/Power-Modes-and-Performance]]
+ - [[Guides/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]]

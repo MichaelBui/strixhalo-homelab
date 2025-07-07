@@ -118,7 +118,7 @@ Details:
 \* **All percentage values are relative to the base 55W result**
 
 ### Conclusions
-Let's look on the average increase between different modes:
+Let's look on the average increase between different modes for each category:
 
 | Category                 | 55W -> 85W | 85W -> 120W | 55W -> 120W |
 | ------------------------ | ---------- | ----------- | ----------- |

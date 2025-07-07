@@ -130,9 +130,13 @@ Let's look on the average increase between different modes for each category:
 | GPU - LLM                | <span style="color: #1fea00;">+8.7%</span> | <span style="color: #1fea00;">+2.0%</span> | <span style="color: #1fea00;">+10.7%</span> |
 \* **for example, in case of Passmark we have a 19% performance increase when going from 55W to 85W budget and additional 11.8% increase relative to the original 55W performance when going from 85W to 120W, or a 30.8% in total**
 
+Or represented on the chart:
+
+![](./PowerModesvsPerformance.png)
+
 A classic situation of diminishing returns, where **85W mode seems to be the sweet spot** and a good compromise between performance gain and power consumption.
 
-The 55W mode is only suitable if you don't fully utilize your system resources (especially when you don't leverage all cores) or aren't concerned about performance loss. Geekbench results reflect that perfectly.
+The 55W mode is only suitable if you don't fully utilize your system resources (especially when you don't leverage all cores) or aren't concerned about performance loss. Geekbench results reflect that perfectly. With that said, **55W limit is absolutely enough for the APU in general**.
 
 The 120W mode generally doesn't make much sense unless you aim to extract the absolute maximum from your system, with one exception - certain games respond more positively to this increase. My theory is that CPU-heavy games might slightly starve the GPU, so increasing the overall power budget alleviates this issue. Additionally, if you're just shy of reaching 60 fps at 1080p (a reasonable target for this system), this extra power might provide the necessary boost.
 

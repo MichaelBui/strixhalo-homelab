@@ -40,7 +40,7 @@ To apply specific settings at system startup, place them in your `rc.local` file
 #### Custom Curves
 The custom curves define temperature thresholds for fan power levels:
 - **Ramp-up curve** (`/sys/class/ec_su_axb35/fanX/rampup_curve`): temperature points where fan increases to the next level
-- **Ramp-down curve** (`/sys/class/ec_su_axb35/fanX/rampup_curve`): temperature points where fan decreases to the previous level
+- **Ramp-down curve** (`/sys/class/ec_su_axb35/fanX/rampdown_curve`): temperature points where fan decreases to the previous level
 
 For example, with these settings:
 - `rampup_curve = 60,70,83,95,97`

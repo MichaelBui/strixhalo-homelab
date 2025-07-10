@@ -147,5 +147,8 @@ In summary:
  - 120W for intensive gaming sessions
  - 85W for mixed workloads and everything else
 
+There is also a way to control power limits more gradually, [[read more here|Guides/Power-Mode-and-Fan-Control#fine-tuning-power-limits]].
+
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Guides/Power-Mode-and-Fan-Control]]

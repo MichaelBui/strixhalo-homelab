@@ -15,6 +15,8 @@ My personal use case is the following:
 
 If you have something to say, discuss or want to participate, feel free to [contact me](https://d7.wtf/contact) directly or [join the Discord server](https://discord.gg/pnPRyucNrG).
 
+[Creating an issue on GitHub mirror](https://github.com/deseven/strixhalo-homelab/issues/new) is also an option.
+
 \- deseven
   
 [![Join Strix Halo HomeLab Discord server](./join-us-discord.png)](https://discord.gg/pnPRyucNrG)

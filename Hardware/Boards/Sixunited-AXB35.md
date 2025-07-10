@@ -24,6 +24,7 @@ Here's what you could expect from a correctly working system with PTM7950 (ambie
 A guide for applying it on EVO-X2 is available [[here|Guides/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]].
 
 ### Facts
+ - RAM modules: [MT62F4G32D8DV-023](https://www.micron.com/products/memory/dram-components/lpddr5x/part-catalog/part-detail/mt62f4g32d8dv-023-wt-c)
  - EC: ITE IT5570E-128
  - Heatsink mount: 75x75 mm
  - RAM thermal pads thickness: 0.5 mm

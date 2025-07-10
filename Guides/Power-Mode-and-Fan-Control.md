@@ -15,6 +15,11 @@ It allows you to:
  - change current power mode
  - read current APU temperature
 
+:::info
+# Note
+The module was tested on EC firmware version 1.06 and should theoretically only work on versions 1.04 and above
+:::
+
 #### Generic Installation
 1. Install module building dependencies (depends on your distro, on debian should be `build-essential` and `linux-headers` packages).
 2. Clone the repo with `git clone https://github.com/cmetz/ec-su_axb35-linux.git`.
@@ -66,5 +71,27 @@ This creates a buffer at each level that prevents the fan from rapidly switching
 
 Curves are being applied only when `curve` mode is set on a specific fan, each fan has their own curves.
 
+### Fine-tuning Power Limits
+If you want more gradual control over power modes, there's a [RyzenAdj](https://github.com/FlyGoat/RyzenAdj) utility.
+
+Main 3 parameters we are interested in are:
+ - `STAPM LIMIT` (sustained power draw)
+ - `PPT LIMIT FAST` (boost power draw)
+ - `PPT LIMIT SLOW` (average power draw)
+
+Default values on all 3 selectable power modes (use `ryzenadj --info` to read them):
+
+| Power Mode  | STAPM LIMIT | PPT LIMIT FAST | PPT LIMIT SLOW |
+| ----------- | ----------- | -------------- | -------------- |
+| Quiet       | 54.0        | 100.0          | 54.0           |
+| Balanced    | 85.0        | 120.0          | 120.0          |
+| Performance | 120.0       | 140.0          | 120.0          |
+
+Example on setting the power limit to static 100W with no boost:  
+`ryzenadj --stapm-limit=100000 --fast-limit=100000 --slow-limit=100000`
+
+**Note that changing the power mode via the EC controller (using `ec-su_axb35-linux` or otherwise) resets these values to their defaults.**
+
 ### Relevant Pages
-[[Guides/Hardware-Monitoring]]
+ - [[Guides/Hardware-Monitoring]]
+ - [[Guides/Power-Modes-and-Performance]]

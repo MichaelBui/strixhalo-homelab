@@ -14,4 +14,4 @@ corefreq-cli -j | jq -c "{cputemp: ([.Cpu[].FlipFlop[].Thermal.Temp] | add/lengt
 ```
 
 ### Relevant Pages
-[[Guides/Power-Mode-and-Fan-Control]]
+ - [[Guides/Power-Mode-and-Fan-Control]]

@@ -23,7 +23,7 @@ The module was tested on EC firmware version 1.06 and should theoretically only 
 #### Generic Installation
 The following assumes that you're doing it under root or with sudo.
 
-1. Install module building dependencies (depends on your distro, on debian should be `build-essential` and `linux-headers-$(uname -r)` packages).
+1. Install module building dependencies (depends on your distro, on debian/ubuntu should be `build-essential` and `linux-headers-$(uname -r)` packages).
 2. Clone the repo with `git clone https://github.com/cmetz/ec-su_axb35-linux.git`.
 3. Build and install the module with `cd ec-su_axb35-linux && make install`.
 4. Try loading the module with `modprobe ec_su_axb35` and check your `dmesg` afterwards. You should see the `Sixunited AXB35-02 EC driver loaded` message.

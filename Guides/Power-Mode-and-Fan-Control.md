@@ -21,15 +21,13 @@ The module was tested on EC firmware version 1.06 and should theoretically only 
 :::
 
 #### Generic Installation
-The following assumes that you're doing it under root or with sudo.
-
-1. Install module building dependencies (depends on your distro, on debian/ubuntu should be `build-essential` and `linux-headers-$(uname -r)` packages).
+1. Install module building dependencies (depends on your distro, on debian/ubuntu install `build-essential` and `linux-headers-$(uname -r)` packages).
 2. Clone the repo with `git clone https://github.com/cmetz/ec-su_axb35-linux.git`.
-3. Build and install the module with `cd ec-su_axb35-linux && make install`.
+3. Build and install the module with `cd ec-su_axb35-linux && sudo make install`.
 4. Try loading the module with `modprobe ec_su_axb35` and check your `dmesg` afterwards. You should see the `Sixunited AXB35-02 EC driver loaded` message.
 5. Run `scripts/info.sh` and check that all information is there.
 6. Run `scripts/test_fan_mode_fixed.sh`, it should test your fans on all 6 fixed levels.
-7. If everything is good, you can make the module automatically load on system boot with `echo ec_su_axb35 >> /etc/modules`.
+7. If everything is good, you can make the module automatically load on system boot with `sudo echo ec_su_axb35 >> /etc/modules`. If it says "permission denied", drop into root console with `su` or `sudo su -` and try again.
 
 #### Usage
 Reading and writing all of the parameters happens through sysfs with `/sys/class/ec_su_axb35` path. You can find detailed information in [the repo's readme file](https://github.com/cmetz/ec-su_axb35-linux/blob/main/README.md).

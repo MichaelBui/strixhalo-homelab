@@ -23,7 +23,9 @@ Some real-life examples (KoboldCPP, Vulkan, full GPU offloading, [example config
 | Qwen3 30B A3B         | Q5_K_M       | 94.5 t/s          | **27.8 t/s**     | 
 | GLM 4 9B              | Q5_K_M       | **273.7 t/s**     | 15.0 t/s         |
 
-Much more info here: https://llm-tracker.info/_TOORG/Strix-Halo
+#### Additional Resources
+ - Deep dive into LLM usage on Strix Halo: https://llm-tracker.info/_TOORG/Strix-Halo
+ - Newbie Linux inference guide: https://github.com/renaudrenaud/local_inference
 
 ### Image/Video Generation
 Didn't play with it too much yet, but looks like here the memory bandwidth and GPU performance limitations strike the most. With SDXL you can generate an image every 4-5 seconds, but going to something like Flux will lead to wait times of several minutes.

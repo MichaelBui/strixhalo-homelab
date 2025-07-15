@@ -15,9 +15,9 @@ It allows you to:
  - change current power mode
  - read current APU temperature
 
-:::info
-# Note
-The module was tested on EC firmware version 1.06 and should theoretically only work on versions 1.04 and above
+:::warning
+# Warning
+The module is a work in progress, use it at your own risk. It was tested on EC firmware version 1.06 and should theoretically only work on versions 1.04 and above. Please report any possible problems to the module's GitHub repo or in our Discord server.
 :::
 
 #### Generic Installation

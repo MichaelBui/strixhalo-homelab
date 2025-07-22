@@ -7,9 +7,11 @@ The first mini PC with Strix Halo, available in 64G and 128G versions. It's base
 https://www.gmktec.com/products/amd-ryzen™-ai-max-395-evo-x2-ai-mini-pc
 
 ### Reviews
- - [jack stone](https://www.youtube.com/watch?v=UXjg6Iew9lg) (CN with EN subs)
- - [ETA PRIME](https://www.youtube.com/watch?v=hPSMGpHQX6k)
+ - [Retro Game Corps](https://m.youtube.com/watch?v=uYLwDkGZOJk)
  - [Alex Ziskind](https://www.youtube.com/watch?v=B7GDr-VFuEo)
+ - [ServeTheHome](https://m.youtube.com/watch?v=BTIUL-yaY4s)
+ - [Team Pandory](https://m.youtube.com/watch?v=8FB_r4kiPbY)
+ - [jack stone](https://www.youtube.com/watch?v=UXjg6Iew9lg) (CN with EN subs)
 
 ### Drivers & User Manual
 Latest Windows drivers are available [on the GMKtec website](https://www.gmktec.com/pages/drivers-and-software). Mirrors for direct download:

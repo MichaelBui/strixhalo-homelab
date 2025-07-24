@@ -4,8 +4,9 @@ One of the first Strix Halo boards, used in many Chinese PCs along with a coolin
 **Known PCs:**
  - [[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]] (`SU_AXB35-02_FP11`)
  - [[Bosgame M5|Hardware/PCs/Bosgame-M5]]
- - [[FEVM FA-EX9|Hardware/PCs/FEVM-FA-EX9]]
+ - [[FEVM FA-EX9|Hardware/PCs/FEVM-FA-EX9]] (`SU_AXB35-02_FP11`)
  - [[Peladn YO1|Hardware/PCs/Peladn-YO1]]
+ - [[NIMO AI MiniPC|Hardware/PCs/NIMO-AI-MiniPC]]
 
 ### Power
 The board supports 3 different power limits - 55W (100W burst), 85W (120W burst), and 120W (140W burst):

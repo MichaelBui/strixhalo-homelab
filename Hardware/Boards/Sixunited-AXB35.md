@@ -39,6 +39,7 @@ See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 | Photo | Description |
 | -------- | -------- |
 | [![SU_AXB35-02](./axb35-02.jpeg?thumbnail)](./axb35-02.jpeg) | AXB35-02 from GMKtec EVO-X2 |
+| [![SU_AXB35-02](./fa-ex9-board-mark.jpg?thumbnail)](./fa-ex9-board-mark.jpg) | AXB35-02 in FEVM FA-EX9 |
 | [![SU_AXB35](./axb35_board_with_cooling.jpg?thumbnail)](./axb35_board_with_cooling.jpg) | Earlier revision of the board with the cooling system |
 
 ### Relevant Pages

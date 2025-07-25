@@ -13,15 +13,25 @@ Context processing is very slow due to memory speed limitations, adding more tha
 
 MoE models work very well, hopefully we'll see some 50-70B ones in the future, they could be the real sweet spot for this hardware.
 
-Some real-life examples (KoboldCPP, Vulkan, full GPU offloading, [example config file](./gemma-3-27b.kcpps)):
+Some test results (KoboldCPP 1.96.2, Vulkan, full GPU offloading, [example config file](./gemma-3-27b.kcpps)) **on Windows**:
 
 | Model                 | Quantization | Prompt Processing | Generation Speed |
 | --------------------- | ------------ | ----------------- | ---------------- |
-| Llama 4 Scout 17B 16E | Q4_K_XL      | 106.0 t/s         | 12.7 t/s         |
-| Llama 3.3 70B         | Q4_K_M       | 51.1 t/s          | 4.1 t/s          |
-| Gemma 3 27B           | Q5_K_M       | 94.4 t/s          | 6.2 t/s          | 
-| Qwen3 30B A3B         | Q5_K_M       | 94.5 t/s          | **27.8 t/s**     | 
-| GLM 4 9B              | Q5_K_M       | **273.7 t/s**     | 15.0 t/s         |
+| Llama 3.3 70B         | Q4_K_M       | 50.9 t/s          | 4.2 t/s          |
+| Gemma 3 27B           | Q5_K_M       | 94.4 t/s          | 6.5 t/s          | 
+| Qwen3 30B A3B         | Q5_K_M       | **284.1** t/s     | **30.0** t/s     | 
+| GLM 4 9B              | Q5_K_M       | 275.0 t/s         | 15.9 t/s         |
+
+And **on Linux**:
+
+| Model                 | Quantization | Prompt Processing | Generation Speed |
+| --------------------- | ------------ | ----------------- | ---------------- |
+| Llama 3.3 70B         | Q4_K_M       | 50.3 t/s          | 4.4 t/s          |
+| Gemma 3 27B           | Q5_K_M       | 127.0 t/s         | 7.2 t/s          | 
+| Qwen3 30B A3B         | Q5_K_M       | 263.0 t/s         | **36.0** t/s     | 
+| GLM 4 9B              | Q5_K_M       | **316.6** t/s     | 18.9 t/s         |
+
+All tests were run 3 times and the best result was picked. Generation speed is pretty stable, prompt processing speed fluctuates a bit (5-10%).
 
 #### Additional Resources
  - Deep dive into LLM usage on Strix Halo: https://llm-tracker.info/_TOORG/Strix-Halo

@@ -36,6 +36,7 @@ All tests were run 3 times and the best result was picked. Generation speed is p
 #### Additional Resources
  - Deep dive into LLM usage on Strix Halo: https://llm-tracker.info/_TOORG/Strix-Halo
  - Newbie Linux inference guide: https://github.com/renaudrenaud/local_inference
+ - Ready to use Docker containers: https://github.com/kyuz0/amd-strix-halo-toolboxes
 
 ### Image/Video Generation
 Didn't play with it too much yet, but looks like here the memory bandwidth and GPU performance limitations strike the most. With SDXL you can generate an image every 4-5 seconds, but going to something like Flux will lead to wait times of several minutes.

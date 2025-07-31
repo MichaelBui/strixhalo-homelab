@@ -24,42 +24,13 @@ Details:
 
 \* **All percentage values are relative to the base 55W result**
 
-### CPU - Geekbench
-:::info
-# Notice
-Geekbench does NOT test the system under full load, a lot of the tests don't even utilize all of the available cores, consider these results to be a reflection of an average daily lite usage with no substantial load
-:::
 
-Details:
- - [Geekbench for Linux](https://www.geekbench.com/download/), version 6.4.0
- - 1 test on every power mode with a 3 minute delay
-
-| Metric | [55W](https://browser.geekbench.com/v6/cpu/12718643) | [85W](https://browser.geekbench.com/v6/cpu/12718729) | [120W](https://browser.geekbench.com/v6/cpu/12719008) |
-| --------------------- | ------- | ------- | ------- |
-| **Multi-Core Score**  | **17 328** | **17 544 <sup style="color: #1fea00; font-size: 0.8em;">+1.2%</sup>** | **17 516 <sup style="color: #1fea00; font-size: 0.8em;">+1.1%</sup>** |
-| File Compression      | 11 184 | 12 063 <sup style="color: #1fea00; font-size: 0.8em;">+7.9%</sup> | 12 197 <sup style="color: #1fea00; font-size: 0.8em;">+9.1%</sup> |
-| Navigation            | 13 578 | 13 050 <sup style="color: red; font-size: 0.8em;">-3.9%</sup> | 13 322 <sup style="color: red; font-size: 0.8em;">-1.9%</sup> |
-| HTML5 Browser         | 16 030 | 17 040 <sup style="color: #1fea00; font-size: 0.8em;">+6.3%</sup> | 15 610 <sup style="color: red; font-size: 0.8em;">-2.6%</sup> |
-| PDF Renderer          | 25 044 | 24 893 <sup style="color: red; font-size: 0.8em;">-0.6%</sup> | 26 726 <sup style="color: #1fea00; font-size: 0.8em;">+6.7%</sup> |
-| Photo Library         | 25 989 | 27 260 <sup style="color: #1fea00; font-size: 0.8em;">+4.9%</sup> | 27 099 <sup style="color: #1fea00; font-size: 0.8em;">+4.3%</sup> |
-| Clang                 | 42 312 | 44 101 <sup style="color: #1fea00; font-size: 0.8em;">+4.2%</sup> | 44 315 <sup style="color: #1fea00; font-size: 0.8em;">+4.7%</sup> |
-| Text Processing       | 3 723 | 3 714 <sup style="color: red; font-size: 0.8em;">-0.2%</sup> | 3 667 <sup style="color: red; font-size: 0.8em;">-1.5%</sup> |
-| Asset Compression     | 30 848 | 31 534 <sup style="color: #1fea00; font-size: 0.8em;">+2.2%</sup> | 32 421 <sup style="color: #1fea00; font-size: 0.8em;">+5.1%</sup> |
-| Object Detection      | 13 032 | 13 075 <sup style="color: #1fea00; font-size: 0.8em;">+0.3%</sup> | 12 545 <sup style="color: red; font-size: 0.8em;">-3.7%</sup> |
-| Background Blur       | 12 406 | 12 308 <sup style="color: red; font-size: 0.8em;">-0.8%</sup> | 12 207 <sup style="color: red; font-size: 0.8em;">-1.6%</sup> |
-| Horizon Detection     | 20 156 | 19 947 <sup style="color: red; font-size: 0.8em;">-1.0%</sup> | 19 792 <sup style="color: red; font-size: 0.8em;">-1.8%</sup> |
-| Object Remover        | 18 049 | 18 382 <sup style="color: #1fea00; font-size: 0.8em;">+1.8%</sup> | 18 796 <sup style="color: #1fea00; font-size: 0.8em;">+4.1%</sup> |
-| HDR                   | 13 929 | 13 775 <sup style="color: red; font-size: 0.8em;">-1.1%</sup> | 13 791 <sup style="color: red; font-size: 0.8em;">-1.0%</sup> |
-| Photo Filter          | 14 335 | 13 066 <sup style="color: red; font-size: 0.8em;">-8.9%</sup> | 13 849 <sup style="color: red; font-size: 0.8em;">-3.4%</sup> |
-| Ray Tracer            | 38 300 | 40 547 <sup style="color: #1fea00; font-size: 0.8em;">+5.9%</sup> | 38 962 <sup style="color: #1fea00; font-size: 0.8em;">+1.7%</sup> |
-| Structure from Motion | 22 188 | 22 210 <sup style="color: #1fea00; font-size: 0.8em;">+0.1%</sup> | 21 352 <sup style="color: red; font-size: 0.8em;">-3.8%</sup> |
-\* **All percentage values are relative to the base 55W result**
+### CPU - Various Benchmarks
 Details:
  - sysbench - 1.0.20, `sysbench cpu run --threads=32 --time=30`
  - cpubench1a - 5.0, `cpubench1a -bench -nb 3 -duration 30`
  - 7-Zip - 16.02, `7z b`
 
-### CPU - Various Benchmarks
 | Benchmark (Metric)         | 55W | 85W | 120W |
 | -------------------------- | --- | --- | ---- |
 | sysbench (Events/s)        | 85 160 | 96 139 <sup style="color: #1fea00; font-size: 0.8em;">+12.9%</sup> | 99 218 <sup style="color: #1fea00; font-size: 0.8em;">+16.5%</sup> |
@@ -123,7 +94,6 @@ Let's look on the average increase between different modes for each category:
 | Category                 | 55W -> 85W | 85W -> 120W | 55W -> 120W |
 | ------------------------ | ---------- | ----------- | ----------- |
 | CPU - PassMark           | <span style="color: #1fea00;">+19.0%</span> | <span style="color: #1fea00;">+11.8%</span> | <span style="color: #1fea00;">+30.8%</span> |
-| CPU - Geekbench          | <span style="color: #1fea00;">+1.0%</span> | <span style="color: red;">-0.1%</span> | <span style="color: #1fea00;">+0.9%</span> |
 | CPU - Various Benchmarks | <span style="color: #1fea00;">+17.0%</span> | <span style="color: #1fea00;">+8.5%</span> | <span style="color: #1fea00;">+25.5%</span>
 | GPU - Various Benchmarks | <span style="color: #1fea00;">+13.3%</span> | <span style="color: #1fea00;">+11.7%</span> | <span style="color: #1fea00;">+25.0%</span> |
 | GPU - Gaming             | <span style="color: #1fea00;">+12.3%</span> | <span style="color: #1fea00;">+9.3%</span> | <span style="color: #1fea00;">+21.6%</span> |
@@ -136,7 +106,7 @@ Or represented on the chart:
 
 A classic situation of diminishing returns, where **85W mode seems to be the sweet spot** and a good compromise between performance gain and power consumption.
 
-The 55W mode is only suitable if you don't fully utilize your system resources (especially when you don't leverage all cores) or aren't concerned about performance loss. Geekbench results reflect that perfectly. With that said, **55W limit is absolutely enough for the APU in general**.
+The 55W mode is suitable if you don't fully utilize your system resources (especially when you don't leverage all cores) or aren't concerned about performance loss. With that said, **55W limit is absolutely enough for the APU in general**.
 
 The 120W mode generally doesn't make much sense unless you aim to extract the absolute maximum from your system, with one exception - certain games respond more positively to this increase. My theory is that CPU-heavy games might slightly starve the GPU, so increasing the overall power budget alleviates this issue. Additionally, if you're just shy of reaching 60 fps at 1080p (a reasonable target for this system), this extra power might provide the necessary boost.
 

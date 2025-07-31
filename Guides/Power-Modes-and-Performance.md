@@ -21,8 +21,7 @@ Details:
 | Data Compression (KB/s)             | 539 857 | 683 287 <sup style="color: #1fea00; font-size: 0.8em;">+26.6%</sup> | 777 048 <sup style="color: #1fea00; font-size: 0.8em;">+43.9%</sup> |
 | Physics (Frames/s)                  | 4 802 | 5 477 <sup style="color: #1fea00; font-size: 0.8em;">+14.1%</sup> | 5 806 <sup style="color: #1fea00; font-size: 0.8em;">+20.9%</sup> |
 | Extended Instructions (MMatrices/s) | 38 464 | 49 404 <sup style="color: #1fea00; font-size: 0.8em;">+28.4%</sup> | 58 761 <sup style="color: #1fea00; font-size: 0.8em;">+52.8%</sup> |
-
-\* **All percentage values are relative to the base 55W result**
+\* **all percentage values are relative to the base 55W result**
 
 
 ### CPU - Various Benchmarks
@@ -37,6 +36,7 @@ Details:
 | cpubench1a (MT Score)      | 3 483 | 4 288 <sup style="color: #1fea00; font-size: 0.8em;">+23.1%</sup> | 4 790 <sup style="color: #1fea00; font-size: 0.8em;">+37.5%</sup> |
 | 7-Zip (Compressing MIPS)   | 120 759 | 135 008 <sup style="color: #1fea00; font-size: 0.8em;">+11.8%</sup> | 140 471 <sup style="color: #1fea00; font-size: 0.8em;">+16.3%</sup> |
 | 7-Zip (Decompressing MIPS) | 103 110 | 124 170 <sup style="color: #1fea00; font-size: 0.8em;">+20.4%</sup> | 135 859 <sup style="color: #1fea00; font-size: 0.8em;">+31.8%</sup> |
+\* **all percentage values are relative to the base 55W result**
 
 
 ### GPU - Various Benchmarks
@@ -55,7 +55,7 @@ Details:
 | UNIGINE Superposition    | 5 247 | 6 103 <sup style="color: #1fea00; font-size: 0.8em;">+16.3%</sup> | 6 522 <sup style="color: #1fea00; font-size: 0.8em;">+24.3%</sup> |
 | 3DMARK Steel Nomad Light | 8 494 | 9 883 <sup style="color: #1fea00; font-size: 0.8em;">+16.4%</sup> | 10 608 <sup style="color: #1fea00; font-size: 0.8em;">+24.9%</sup> |
 | 3DMARK Time Spy          | 8 891 | 10 230 <sup style="color: #1fea00; font-size: 0.8em;">+15.1%</sup> | 10 710 <sup style="color: #1fea00; font-size: 0.8em;">+20.5%</sup> |
-\* **All percentage values are relative to the base 55W result**
+\* **all percentage values are relative to the base 55W result**
 
 ### GPU - Gaming
 Details:
@@ -73,7 +73,7 @@ Details:
 | Red Dead Redemption 2 (1080p high)             | 55 | 58 <sup style="color: #1fea00; font-size: 0.8em;">+5.5%</sup> | 66 <sup style="color: #1fea00; font-size: 0.8em;">+20.0%</sup> |
 | Grand Theft Auto V Enchanced (1080p very high) | 105 | 118 <sup style="color: #1fea00; font-size: 0.8em;">+12.4%</sup> | 137 <sup style="color: #1fea00; font-size: 0.8em;">+30.5%</sup> |
 | Black Myth: Wukong (1080p high)                | 71 | 78 <sup style="color: #1fea00; font-size: 0.8em;">+9.9%</sup> | 84 <sup style="color: #1fea00; font-size: 0.8em;">+18.3%</sup> |
-\* **All percentage values are relative to the base 55W result**
+\* **all percentage values are relative to the base 55W result**
 
 ### GPU - LLM
 Details:
@@ -86,7 +86,7 @@ Details:
 | Gemma 3 27B (Generation Speed, Tokens/s)    | 6 | 6 <sup style="font-size: 0.8em;">+0.0%</sup> | 6 <sup style="font-size: 0.8em;">+0.0%</sup> |
 | Qwen3 30B A3B (Prompt Processing, Tokens/s) | 92 | 95 <sup style="color: #1fea00; font-size: 0.8em;">+3.3%</sup> | 95 <sup style="color: #1fea00; font-size: 0.8em;">+3.3%</sup> |
 | Qwen3 30B A3B (Generation Speed, Tokens/s)  | 25 | 29 <sup style="color: #1fea00; font-size: 0.8em;">+16.0%</sup> | 29 <sup style="color: #1fea00; font-size: 0.8em;">+16.0%</sup> |
-\* **All percentage values are relative to the base 55W result**
+\* **all percentage values are relative to the base 55W result**
 
 ### Conclusions
 Let's look on the average increase between different modes for each category:

@@ -6,11 +6,13 @@
 ## Intro
 Strix Halo can be a capable local LLM inferencing platform. With up to 128GiB of shared system memory (LPDDR5x-8000 on a 256-bit bus), it has a theoretical limit of 256GiB/s, double most PC desktop and APU platforms.
 
-That being said, it's important to put this in context. 256GiB/s is still much lower than most mid-range dGPUs (eg, as a point of reference, a 3060 Ti has 448 GiB/s). Also, the Strix Halo GPU is an RDNA3.5 architecture (gfx1151), which for AI is pretty sub-optimal architecturally. It's ROCm support is still also far under-tuned vs other RDNA3 platforms like the 7900 series (gfx1100). For compute and memory bandwidth, you can think of the Strix Halo GPU like a [Radeon RX 7600 XT](https://www.techpowerup.com/gpu-specs/radeon-rx-7600-xt.c4190), but with up to 128GiB of VRAM.
+That being said, it's important to put this in context. 256GiB/s is still much lower than most mid-range dGPUs. As a point of reference, a 3060 Ti has 448 GiB/s of MBW. Also, the Strix Halo GPU uses an RDNA3.5 architecture (gfx1151), which for AI is pretty sub-optimal architecturally. For compute and memory bandwidth, you can think of the Strix Halo GPU like a [Radeon RX 7600 XT](https://www.techpowerup.com/gpu-specs/radeon-rx-7600-xt.c4190), but with up to 128GiB of VRAM.
 
 Due to limited memory-bandwidth and compute, unless you're very patient, for real-time inferencing, Strix Halo is best for quantized versions of large Mixture-of-Expert (MoE) LLMs that have fewer activations or for having multiple models loaded or models loaded while doing other (non-GPU) tasks.
 
-The software support is also another issue. Strix Halo's Vulkan works well on Windows and Linux (Mesa RADV and AMDVLK), but its ROCm support is still immature and incomplete. If you are doing more than running common desktop inferencing software (llama.cpp, etc), then you will want to do some careful research. 
+The software support is also another issue. Strix Halo's Vulkan works well on Windows and Linux (Mesa RADV and AMDVLK), but its ROCm support is still immature and incomplete, and far under-tuned compared to other RDNA3 platforms like the 7900 series (gfx1100). 
+
+If you are doing more than running common desktop inferencing software (llama.cpp, etc), then you will want to do some careful research. 
 
 ### GPU Compute
 For the 40CU Radeon 8060S at a max clock of 2.9GHz, the 395 Strix Halo should have a peak of 59.4 FP16/BF16 TFLOPS:

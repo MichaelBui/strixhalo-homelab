@@ -47,9 +47,11 @@ options ttm pages_limit=31457280
 options ttm page_pool_size=15728640
 ```
 
-`amdgpu.gttsize` is an [officially deprecated](https://www.mail-archive.com/amd-gfx@lists.freedesktop.org/msg117333.html) parameter that may be referenced by some software, so it's best to still set it to match, but GTT allocation in linux is not actually handled by the Translation Table Maps (TTM) memory management subsystem that handles GPU memory allocation. `pages_limit` sets the maximum number or 4KiB pages that can be used for GPU memory. `page_pool_size` pre-caches/allocates the memory for usage by the GPU. (This will not be available for your system). In theory you could set this to 0, if you are looking for the maximum performance (minimizing fragmentation), then you can set it to match the `pages_limit` size (or anywhere in between).
+`amdgpu.gttsize` is an [officially deprecated](https://www.mail-archive.com/amd-gfx@lists.freedesktop.org/msg117333.html) parameter that may be referenced by some software, so it's best to still set it to match, but GTT allocation in linux is now handled by the Translation Table Maps (TTM) memory management subsystem .
+- `pages_limit` sets the maximum number or 4KiB pages that can be used for GPU memory.
+- `page_pool_size` pre-caches/allocates the memory for usage by the GPU. (This will not be available for your system). In theory you could set this to 0, but if you are looking for the maximum performance (minimizing fragmentation), then you can set it to match the `pages_limit` size.
 
-You can increase the limit as high as you want, but you'll want to make sure you reserve enough memory for your OS/system.
+You can increase the limits as high as you want, but you'll want to make sure you reserve enough memory for your OS/system.
 
 If you are setting `page_pool_size` lower than the `pages_limit` you may want to increase the `amdgpu.vm_fragment_size=9` (4=64K default, 9=2M) to allocate in bigger chunks.
 

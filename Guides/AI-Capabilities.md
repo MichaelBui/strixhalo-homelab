@@ -31,6 +31,42 @@ In practice, as of 2025-08, Strix Halo's performance is substantially lower. It 
 - https://github.com/ROCm/ROCm/issues/4748
 - https://github.com/ROCm/ROCm/issues/4499
 
+## Setup
+
+### Memory Limits
+For the Strix Halo GPU, memory is either GART, which is a fixed reserved aperture set exclusively in the BIOS, and GTT, which is a dynamically allocable memory amount of memory. In Windows, this should be automatic (but is limited to 96GB?). In Linux, it can be set via boot configuration.
+
+As long are your software supports using GTT, for AI purposes, you are probably best off setting GART to the minimum (eg, 512MB) and then allocating via GTT. In Linux, you can create a conf in your `/etc/modprobe.d/` (like `/etc/modprobe.d/amdgpu_llm_optimized.conf`):
+
+```
+# Maximize GTT for LLM usage on 128GB UMA system
+options amdgpu gttsize=120000
+options ttm pages_limit=31457280
+options ttm page_pool_size=15728640
+```
+
+`amdgpu.gttsize` is an [officially deprecated](https://www.mail-archive.com/amd-gfx@lists.freedesktop.org/msg117333.html) parameter that may be referenced by some software, so it's best to still set it to match, but GTT allocation in linux is not actually handled by the Translation Table Maps (TTM) memory management subsystem that handles GPU memory allocation. `pages_limit` sets the maximum number or 4KiB pages that can be used for GPU memory. `page_pool_size` pre-caches/allocates the memory for usage by the GPU. (This will not be available for your system). In theory you could set this to 0, if you are looking for the maximum performance (minimizing fragmentation), then you can set it to match the `pages_limit` size (or anywhere in between).
+
+You can increase the limit as high as you want, but you'll want to make sure you reserve enough memory for your OS/system.
+
+If you are setting `page_pool_size` lower than the `pages_limit` you may want to increase the `amdgpu.vm_fragment_size=9` (4=64K default, 9=2M) to allocate in bigger chunks.
+
+### Performance Tips
+- If you are not using VFIO or any type of GPU passthrough, you should set `amd_iommu=off` in your kernel options for ~6% faster memory reads (actuall impact on llama.cpp tg performance tends to be smaller, about <2%. Note that when tested, `iommu=pt` does not give any speed benefit.
+- You can improve further improve performance with [tuned](https://tuned-project.org/) and switching to the `accelerator-performance` profile:
+  - Raises raw Vulkan memory bandwidth performance by about 3%
+  - Seems to have minimal effect on `tg` but improves llama.cpp `pp512` performance by 5-8% (!!!)
+```
+paru -S tuned
+sudo systemctl enable --now tuned
+tuned-adm list
+# - accelerator-performance     - Throughput performance based tuning with disabled higher latency STOP states
+sudo tuned-adm profile accelerator-performance
+tuned-adm active
+# Current active profile: accelerator-performance
+```
+
+
 ## LLMs
 The recommended way to run LLMs is with [llama.cpp](https://github.com/ggml-org/llama.cpp) or one of the apps that leverage it like [LM Studio](https://lmstudio.ai/) with the Vulkan backend.
 
@@ -44,7 +80,11 @@ Performance has been improving and several of our community members have been ru
 
 TODO: add a list of some models that work well with pp512/tg128, memory usage, model architecture, weight sizes?
 
+For llama.cpp, for Vulkan, you should install AMDVLK and Mesa RADV. When both are installed AMDVLK will be the default Vulkan driver, which is generally fine as it's `pp` can be 2X faster than Mesa RADV. You can set `AMD_VULKAN_ICD=RADV` to try out RADV though if you run into problems or are curious.
 
+If you are using the llama.cpp ROCm backend, you should always attempt to use the hipBLASlt kernel `ROCBLAS_USE_HIPBLASLT=1` as it is almost always much (like 2X) faster than the default rocBLAS kernels. Currently ROCm often hangs or crashes on different model architectures and is generally slower than Vulkan (although sometimes the `pp` can be much faster), so unless you're looking to experiment, you'll probably be better off using Vulkan. 
+
+### Windows Benchmarks
 Some test results (KoboldCPP 1.96.2, Vulkan, full GPU offloading, [example config file](./gemma-3-27b.kcpps)) **on Windows**:
 
 | Model                 | Quantization | Prompt Processing | Generation Speed |

@@ -1,7 +1,7 @@
 # AI Capabilities
 
 > [!WARNING]
-> This guide is a work in progress, the information might be incomplete or plain wrong.
+> This guide is a work in progress. Also, there has been ongoing progress with software quality and performance so please be aware that some of this information may become out of date.
 
 ## Intro
 Strix Halo can be a capable local LLM inferencing platform. With up to 128GiB of shared system memory (LPDDR5x-8000 on a 256-bit bus), it has a theoretical limit of 256GiB/s, double most PC desktop and APU platforms.
@@ -69,6 +69,8 @@ sudo tuned-adm profile accelerator-performance
 tuned-adm active
 # Current active profile: accelerator-performance
 ```
+- If you are loading large models (more than half your RAM) on llama.cpp , yous hould be sure to disable mmap as it's marginally bad for Vulkan model loading performance, but catastrophically bad for ROCm (large models can take hours to load).  You should use the appropriate command option (differs based on specific llama.cpp binary) to disable mmap in general for Strix Halo.
+- Again for llama.cpp, be sure to use `–ngl 99` (or 999 if >99 layers) to load all layers into the GPU-addressable space. While its technically "shared" memory, in practice, CPU memory bandwidth is only half of the GPU mbw due to Strix Halo's memory architecture (I’ve heard due to GMI link design, but the practical part is you’re going to have much lower CPU vs GPU mbw).
 
 
 ## LLMs

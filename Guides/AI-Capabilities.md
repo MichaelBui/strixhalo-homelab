@@ -20,7 +20,7 @@ For the 40CU Radeon 8060S at a max clock of 2.9GHz, the 395 Strix Halo should ha
 512 ops/clock/CU * 40 CU * 2.9e9 clock / 1e12 = 59.392 FP16 TFLOPS
 ```
 
-Note that this theoretical max involves perfect utilization of the [dual issue capabilities of the WGPs](https://chipsandcheese.com/p/microbenchmarking-amds-rdna-3-graphics-architecture) which can be [hard in practice](https://cprimozic.net/notes/posts/machine-learning-benchmarks-on-the-7900-xtx/#tinygrad-rdna3-matrix-multiplication-benchmark). The best way to achieve efficient AI acceleration on RDNA3 is [via WMMA](https://gpuopen.com/learn/wmma_on_rdna3/).
+For more information on how RDNA3 does its tensor math, see this article on  [WMMA on RDNA3](https://gpuopen.com/learn/wmma_on_rdna3/).
 
 | Type       | RDNA3              | RDNA4/sparse           |
 |------------|--------------------|------------------------|
@@ -29,7 +29,7 @@ Note that this theoretical max involves perfect utilization of the [dual issue c
 | INT8       | 512 ops/cycle      | 2048/4096 ops/cycle    |
 | INT4       | 1024 ops/cycle     | 4096/8192 ops/cycle    |
 
-In practice, as of 2025-08, Strix Halo's performance is substantially lower. It may be worth tracking these issues:
+In practice, as of 2025-08, Strix Halo's tested performance is substantially lower what should be theoretically achievable. You can track performance progress via these issues:
 - https://github.com/ROCm/ROCm/issues/4748
 - https://github.com/ROCm/ROCm/issues/4499
 

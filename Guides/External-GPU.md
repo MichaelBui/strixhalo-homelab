@@ -1,6 +1,6 @@
 # External GPU
 
-[[Sixunited's board|Hardware/Boards/Sixunited-AXB35]] that most of the PCs doesn't have an included Oculink port, so with Chinese PCs typically you will be limited to a USB4 connection only.
+[[Sixunited's board|Hardware/Boards/Sixunited-AXB35]] that most of the Chinese PCs use doesn't have an included Oculink port, so typically you will be limited to a USB4 connection only.
 
 There is an option to add an Oculink port by sacrificing one NVMe slot and using M.2 to Oculink adapter. It was reported that these adapters could be problematic, so your mileage may vary. The one marked with `M2OC-3` seems to be the best one so far, you can look it up on AliExpress, [here's one listing for example](https://www.aliexpress.com/item/1005007551135681.html).
 

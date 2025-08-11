@@ -53,7 +53,10 @@ options ttm page_pool_size=15728640
 
 You can increase the limits as high as you want, but you'll want to make sure you reserve enough memory for your OS/system.
 
-If you are setting `page_pool_size` lower than the `pages_limit` you may want to increase the `amdgpu.vm_fragment_size=9` (4=64K default, 9=2M) to allocate in bigger chunks.
+If you are setting `page_pool_size` lower than the `pages_limit` you may want to try increasing `amdgpu.vm_fragment_size=8` (4=64K default, 9=2M) to allocate in bigger chunks.
+
+### ROCm
+The latest release version of ROCm (6.4.3 as of this writing) has preliminary rocBLAS support for Strix Halo gfx1151, but it is much slower and buggier (and doesn't have hipBLASlt kernels). For the most up-to-date support, currently it's recommended to use the latest gfx1151 [TheRock/ROCm "nightly" release](https://github.com/ROCm/TheRock/blob/main/RELEASES.md). These can be found at [https://therock-nightly-tarball.s3.amazonaws.com/](https://therock-nightly-tarball.s3.amazonaws.com/) (find the filename) or you can use the helper scripts described in the [Releases page]((https://github.com/ROCm/TheRock/blob/main/RELEASES.md)).
 
 ### Performance Tips
 - If you are not using VFIO or any type of GPU passthrough, you should set `amd_iommu=off` in your kernel options for ~6% faster memory reads (actuall impact on llama.cpp tg performance tends to be smaller, about <2%. Note that when tested, `iommu=pt` does not give any speed benefit.
@@ -90,34 +93,17 @@ For llama.cpp, for Vulkan, you should install AMDVLK and Mesa RADV. When both ar
 
 If you are using the llama.cpp ROCm backend, you should always attempt to use the hipBLASlt kernel `ROCBLAS_USE_HIPBLASLT=1` as it is almost always much (like 2X) faster than the default rocBLAS kernels. Currently ROCm often hangs or crashes on different model architectures and is generally slower than Vulkan (although sometimes the `pp` can be much faster), so unless you're looking to experiment, you'll probably be better off using Vulkan. 
 
-### Windows Benchmarks
-Some test results (KoboldCPP 1.96.2, Vulkan, full GPU offloading, [example config file](./gemma-3-27b.kcpps)) **on Windows**:
-
-| Model                 | Quantization | Prompt Processing | Generation Speed |
-| --------------------- | ------------ | ----------------- | ---------------- |
-| Llama 3.3 70B         | Q4_K_M       | 50.9 t/s          | 4.2 t/s          |
-| Gemma 3 27B           | Q5_K_M       | 94.4 t/s          | 6.5 t/s          | 
-| Qwen3 30B A3B         | Q5_K_M       | **284.1** t/s     | **30.0** t/s     | 
-| GLM 4 9B              | Q5_K_M       | 275.0 t/s         | 15.9 t/s         |
-
-And **on Linux**:
-
-| Model                 | Quantization | Prompt Processing | Generation Speed |
-| --------------------- | ------------ | ----------------- | ---------------- |
-| Llama 3.3 70B         | Q4_K_M       | 50.3 t/s          | 4.4 t/s          |
-| Gemma 3 27B           | Q5_K_M       | 127.0 t/s         | 7.2 t/s          | 
-| Qwen3 30B A3B         | Q5_K_M       | 263.0 t/s         | **36.0** t/s     | 
-| GLM 4 9B              | Q5_K_M       | **316.6** t/s     | 18.9 t/s         |
-
-All tests were run 3 times and the best result was picked. Generation speed is pretty stable, prompt processing speed fluctuates a bit (5-10%).
-
 ### Additional Resources
  - Deep dive into LLM usage on Strix Halo: https://llm-tracker.info/_TOORG/Strix-Halo
  - Newbie Linux inference guide: https://github.com/renaudrenaud/local_inference
  - Ready to use Docker containers: https://github.com/kyuz0/amd-strix-halo-toolboxes
 
 ## Image/Video Generation
-Didn't play with it too much yet, but looks like here the memory bandwidth and GPU performance limitations strike the most. With SDXL you can generate an image every 4-5 seconds, but going to something like Flux will lead to wait times of several minutes.
+For Windows you can give AMUSE is the easiest way to get started quickly: https://www.amuse-ai.com/
+
+Here are some instructions for getting ComfyUI up and running on Windows: https://www.reddit.com/r/StableDiffusion/comments/1lmt44b/running_rocmaccelerated_comfyui_on_strix_halo_rx/
+
+Note, while TheRock has [PyTorch nightlies](https://github.com/ROCm/TheRock/blob/main/RELEASES.md#installing-pytorch-python-packages) available for Strix Halo gfx1151, they *do not* currently have AOTriton or FA and may not run very well.
 
 ### Relevant Pages
  - [[Guides/110GB-of-VRAM]]

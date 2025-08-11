@@ -1,4 +1,4 @@
-# AI Capabilities
+# AI Capabilities Overview
 
 > [!WARNING]
 > This guide is a work in progress. Also, there has been ongoing progress with software quality and performance so please be aware that some of this information may become rapidly out of date.

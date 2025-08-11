@@ -21,6 +21,7 @@ BIOS and EC firmware are available [on the GMKtec website](https://www.gmktec.co
 
 | Version  | Official Changelog | Notes    | Download |
 | -------- | ------------------ | -------- | -------- |
+| **1.05 20250729** | N/A | Suddenly appeared on the GMK's Google Drive. | [AXB35-02_GMK_SW1.05_20250729.zip](./AXB35-02_GMK_SW1.05_20250729.zip) |
 | **1.05 20250716** | Solve the problem of SD card reverse locking | Suddenly appeared on the GMK's Google Drive. | [AXB35-02_GMK_SW1.05_20250716.zip](./AXB35-02_GMK_SW1.05_20250716.zip) |
 | **1.05 20250606** | N/A | According to Sixunited this one contains many changes from upstream and the rest is confidential. I personally noticed more conservative voltages and slightly improved temperature because of that. | [AXB35-02_GMK_SW1.05_20250606.zip](./AXB35-02_GMK_SW1.05_20250606.zip) |
 | **1.04** | 1. Add virtualization<br>2. The first startup item is displayed as USB<br>3. The Core Performance Boost function is hidden<br>4. Add GFX Configuration in the BIOS to adjust the video memory<br>5. The BIOS adds a fan adjustment menu<br>6. Configure the BIOS at 64G/128G for automatic compatibility recognition | - | [AXB35-02_GMK_SW1.04_20250514.zip](./AXB35-02_GMK_SW1.04_20250514.zip) |

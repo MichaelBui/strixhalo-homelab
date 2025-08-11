@@ -1,0 +1,38 @@
+# llama.cpp with ROCm
+
+> [!WARNING]
+> This is a technical guide and assumes a certain level of technical knowledge. If there are confusing parts or you run into issues, I recommend using a strong LLM with research/grounding and reasoning abilities (eg Claude Sonnet 4) to assist.
+
+If you are looking for pre-built llama.cpp ROCm binaries, first check out:
+- Lemonade's [llamacpp-rocm](https://github.com/lemonade-sdk/llamacpp-rocm) builds
+- kyuz0's pre-build [AMD Strix Halo Llama.cpp Toolboxes](https://github.com/kyuz0/amd-strix-halo-toolboxes) container builds.
+
+## Building llama.cpp with ROCm
+
+You can basically just follow the [llama.cpp build guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md#hipblas)
+```
+git clone https://github.com/ggml-org/llama.cpp
+cd llama.cpp
+
+# build w/o rocWMMA
+cmake -S . -B build -DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1151 -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release -- -j$(nproc)
+
+# or, really, you want to build w/ rocWMMA
+cmake -B build -S . -DGGML_HIP=ON -DAMDGPU_TARGETS="gfx1151" -DGGML_HIP_ROCWMMA_FATTN=ON && time cmake --build build --config Release -j$(nproc)
+
+# after about 2 minutes you should have a freshly baked llama.cpp in build/bin:
+build/bin/llama-bench --mmap 0 -fa 1 -m /models/gguf/llama-2-7b.Q4_K_M.gguf
+```
+
+Of course, to build, you need some dependencies sorted.
+
+## ROCm
+You'll need ROCm installed first before you can build. For best performance you'll want to use the latest ROCm/TheRock nightlies. See: [[Guides/AI-Capabilities#rocm]]
+
+To build, you may need to make sure your environment variables are properly set. If so, take a look at [https://github.com/lhl/strix-halo-testing/blob/main/rocm-therock-env.sh](https://github.com/lhl/strix-halo-testing/blob/main/rocm-therock-env.sh) for an example of what this might look like. Change `ROCM_PATH` to whatever your ROCm path is.
+
+## rocWMMA
+Your ROCm probably has the rocWMMA libraries installed already. If not, you'll want them in your rocm folder. This is relatively straightforward (we only need the library installed, but you can refer to [https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh](https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh) for building this.
+
+If you are using a TheRock nightly build of ROCm, you may get some errors compiling. In that case, take a look at [https://github.com/lhl/strix-halo-testing/blob/main/llm-bench/apply-rocwmma-fix.sh}(https://github.com/lhl/strix-halo-testing/blob/main/llm-bench/apply-rocwmma-fix.sh) to apply the fixes necessary for a compile.
+- See also: https://github.com/ggml-org/llama.cpp/pull/15239

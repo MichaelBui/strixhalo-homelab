@@ -4,12 +4,13 @@
 > This is a technical guide and assumes a certain level of technical knowledge. If there are confusing parts or you run into issues, I recommend using a strong LLM with research/grounding and reasoning abilities (eg Claude Sonnet 4) to assist.
 
 If you are looking for pre-built llama.cpp ROCm binaries, first check out:
-- Lemonade's [llamacpp-rocm](https://github.com/lemonade-sdk/llamacpp-rocm) builds
-- kyuz0's pre-build [AMD Strix Halo Llama.cpp Toolboxes](https://github.com/kyuz0/amd-strix-halo-toolboxes) container builds.
+- Lemonade's [llamacpp-rocm](https://github.com/lemonade-sdk/llamacpp-rocm) - automated [builds](https://github.com/lemonade-sdk/llamacpp-rocm/releases) against the latest ROCm pre-release for gfx1151,gfx120X,gfx110X ([rocWMMA in progress](https://github.com/lemonade-sdk/llamacpp-rocm/issues/7))
+- kyuz0's pre-build [AMD Strix Halo Llama.cpp Toolboxes](https://github.com/kyuz0/amd-strix-halo-toolboxes) container builds
+- [nix-strix-halo](https://github.com/hellas-ai/nix-strix-halo) - Nix flake
 
 ## Building llama.cpp with ROCm
+If you want or need to build it yourself, you can basically just follow the [llama.cpp build guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md#hipblas):
 
-You can basically just follow the [llama.cpp build guide](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md#hipblas)
 ```
 git clone https://github.com/ggml-org/llama.cpp
 cd llama.cpp
@@ -17,7 +18,7 @@ cd llama.cpp
 # build w/o rocWMMA
 cmake -S . -B build -DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1151 -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release -- -j$(nproc)
 
-# or, really, you want to build w/ rocWMMA
+# really, you want to build w/ rocWMMA
 cmake -B build -S . -DGGML_HIP=ON -DAMDGPU_TARGETS="gfx1151" -DGGML_HIP_ROCWMMA_FATTN=ON && time cmake --build build --config Release -j$(nproc)
 
 # after about 2 minutes you should have a freshly baked llama.cpp in build/bin:
@@ -35,4 +36,4 @@ To build, you may need to make sure your environment variables are properly set.
 Your ROCm probably has the rocWMMA libraries installed already. If not, you'll want them in your rocm folder. This is relatively straightforward (we only need the library installed, but you can refer to [https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh](https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh) for building this.
 
 If you are using a TheRock nightly build of ROCm, you may get some errors compiling. In that case, take a look at [https://github.com/lhl/strix-halo-testing/blob/main/llm-bench/apply-rocwmma-fix.sh](https://github.com/lhl/strix-halo-testing/blob/main/llm-bench/apply-rocwmma-fix.sh) to apply the fixes necessary for a compile.
-- See also: https://github.com/ggml-org/llama.cpp/pull/15239
+- This fix is making it's way upstream: https://github.com/ggml-org/llama.cpp/pull/15241

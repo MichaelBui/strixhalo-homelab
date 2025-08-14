@@ -55,9 +55,23 @@ There are not that many options for those looking for 96GB+ of VRAM, annd among 
 An NVIDIA RTX PRO 6000 (Blackwell) dGPU is included as a point of comparison - if you are willing to pay (significantly) more, you can get much better performance, but of course there are many other options if you are open to a bigger form factor, power envelope, or price point (usually all three).
 
 ## Setup
+This isn't meant to be a comprehensive setup document. If there are pre-requisites or background that you're missing, it is recommended to feed this document into the strongest LLM you have [at your disposal](https://github.com/cheahjs/free-llm-api-resources), preferably one that has web search/grounding, and ask it for additional help.
+
+### Basic System Setup
+Most of the setup details in this doc are focused on Linux and may not apply for Windows. Here's some basic setup for Windows first:
+- Vulkan should be installed with your AMD drivers so there's nothing to configure there. You can just download the [latest win-vulkan llama.cpp release](https://github.com/ggml-org/llama.cpp/releases) to start running LLM models. You can also optionally install a front-end like [Lemonade Server](https://lemonade-server.ai/), [Jan](https://jan.ai/), or [LM Studio](https://lmstudio.ai/) if you want a GUI
+- You only need ROCm (w/ Strix Halo support) if you want to build or do ROCm development. In that case you should check [TheRock Releases](https://github.com/ROCm/TheRock/blob/main/RELEASES.md), but if you just want to try ROCm builds of the latest llama.cpp, you can download [the latest lemonade-sdk/llamacpp-rocm gfx1151 builds here](https://github.com/lemonade-sdk/llamacpp-rocm/releases)
+
+For Linux, you can run any distro you want, but a few notes:
+- The `amdgpu` drivers are built into the Linux kernel, and for best results, you should make sure your kernel is 6.15+. There are constant fixes and improvements to the newer the better
+- You should also have the latest `linux-firmware` package. These are named differently per distro, but there are crucial stability fixes, so the more recent firmware package you have installed (including "git" packages for bleeding edge distros), the better
+- You should install Mesa RADV and AMDVLK Vulkan drivers. You will probably also want to install `vulkan-tools` (for `vulkaninfo`) and `vulkan-headers` (if you want to build Vulkan packages) and each distro has their own names for those packages
+- See the ROCm section below, but you basically want to install a gfx1151 TheRock/ROCm nightly build
+
+Lemonade, TheRock (and tbt, most standard AI/ML workflows) standardize on using conda/mamba and it's highly recommended to [install them](https://github.com/conda-forge/miniforge?tab=readme-ov-file#requirements-and-installers) if you plan on doing more than basic LLM inference.
 
 ### Memory Limits
-For the Strix Halo GPU, memory is either GART, which is a fixed reserved aperture set exclusively in the BIOS, and GTT, which is a dynamically allocable memory amount of memory. In Windows, this should be automatic (but is limited to 96GB). In Linux, it can be set via boot configuration up to the point of system instability.
+For the Strix Halo GPU, the unified memory is either assigned as GART, which is a fixed reserved aperture set exclusively for the GPU in the BIOS, and GTT, which is a dynamically allocable amount of memory. In Windows, this should be automatic (but is limited to 96GB). In Linux, it can be set via boot configuration up to the point of system instability.
 
 As long are your software supports using GTT, for AI purposes, you are probably best off setting GART to the minimum (eg, 512MB) and then allocating automatically via GTT. In Linux, you can create a conf in your `/etc/modprobe.d/` (like `/etc/modprobe.d/amdgpu_llm_optimized.conf`):
 
@@ -107,6 +121,8 @@ One of our community members, kyuz0, also maintains a [AMD Strix Halo Llama.cpp 
 Performance has been improving and several of our community members have been running extensive LLM inferencing benchmarks on many models:
 - https://kyuz0.github.io/amd-strix-halo-toolboxes/ - an interactive viewer of standard pp512/tg128 results
 - https://github.com/lhl/strix-halo-testing/tree/main/llm-bench - graphs and sweeps of pp/tg from 1-4096 for a variety of architectures
+
+NOTE: Ollama does not support Vulkan or AMD GPUs in general very well in general. For this and other reasons, it is not recommended.
 
 ### llama.cpp
 The easiest way to get llama.cpp to work is with the Vulkan backend. This reliable and relatively performant on both Windows and Linux and you can either [build it yourself](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md#vulkan) or simply [download the latest release](https://github.com/ggml-org/llama.cpp/releases) for your OS.

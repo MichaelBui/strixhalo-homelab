@@ -3,9 +3,18 @@
 > [!WARNING]
 > This is a technical guide and assumes a certain level of technical knowledge. If there are confusing parts or you run into issues, I recommend using a strong LLM with research/grounding and reasoning abilities (eg Claude Sonnet 4) to assist.
 
+While Vulkan can sometimes have faster `tg` speeds, it can run into "GGGG" issues in many situations, and if you want the fastest `pp` speeds, you probably will want to try the ROCm backend.
+
+As of August 2005, the generally fastest/most stable llama.cpp ROCm combination:
+- build llama.cpp with rocWMMA: `-DGGML_HIP_ROCWMMA_FATTN=ON`
+- run llama.cpp with env to use hipBLASlt: `ROCBLAS_USE_HIPBLASLT=1`
+
+There are still some GPU hangs, see: 
+- https://github.com/ROCm/ROCm/issues/5151
+
 If you are looking for pre-built llama.cpp ROCm binaries, first check out:
 - Lemonade's [llamacpp-rocm](https://github.com/lemonade-sdk/llamacpp-rocm) - automated [builds](https://github.com/lemonade-sdk/llamacpp-rocm/releases) against the latest ROCm pre-release for gfx1151,gfx120X,gfx110X ([rocWMMA in progress](https://github.com/lemonade-sdk/llamacpp-rocm/issues/7))
-- kyuz0's pre-build [AMD Strix Halo Llama.cpp Toolboxes](https://github.com/kyuz0/amd-strix-halo-toolboxes) container builds
+- kyuz0's [AMD Strix Halo Llama.cpp Toolboxes](https://github.com/kyuz0/amd-strix-halo-toolboxes) container builds
 - [nix-strix-halo](https://github.com/hellas-ai/nix-strix-halo) - Nix flake
 
 ## Building llama.cpp with ROCm
@@ -26,6 +35,8 @@ build/bin/llama-bench --mmap 0 -fa 1 -m /models/gguf/llama-2-7b.Q4_K_M.gguf
 ```
 
 Of course, to build, you need some dependencies sorted.
+
+First, you should run the latest Linux (6.16+) and linux-firmware (git).
 
 ## ROCm
 You'll need ROCm installed first before you can build. For best performance you'll want to use the latest ROCm/TheRock nightlies. See: [[Guides/AI-Capabilities#rocm]]

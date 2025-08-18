@@ -73,13 +73,25 @@ Lemonade, TheRock (and tbt, most standard AI/ML workflows) standardize on using 
 ### Memory Limits
 For the Strix Halo GPU, the unified memory is either assigned as GART, which is a fixed reserved aperture set exclusively for the GPU in the BIOS, and GTT, which is a dynamically allocable amount of memory. In Windows, this should be automatic (but is limited to 96GB). In Linux, it can be set via boot configuration up to the point of system instability.
 
-As long are your software supports using GTT, for AI purposes, you are probably best off setting GART to the minimum (eg, 512MB) and then allocating automatically via GTT. In Linux, you can create a conf in your `/etc/modprobe.d/` (like `/etc/modprobe.d/amdgpu_llm_optimized.conf`):
+As long are your software supports using GTT, for AI purposes, you are probably best off setting GART to the minimum (eg, 512MB) and then allocating automatically via GTT. In Linux, you can add this to your boot options, or you can create a conf in your `/etc/modprobe.d/` (like `/etc/modprobe.d/amdgpu_llm_optimized.conf`):
 
 ```
-# Use up to 120GB GTT with 60GB pre-reserved
-options amdgpu gttsize=120000
-options ttm pages_limit=31457280
-options ttm page_pool_size=15728640
+### IF YOU CUT AND PASTE THIS IT WILL DO NOTHING. 
+### YOU MUST READ AND UNCOMMENT TO ENABLE.
+
+## This is a legacy setting maybe referenced by old software (set to 120GiB) but isn't used by Linux to specify anything
+# options amdgpu gttsize=122800
+
+## This specifies GTT by # of 4KB pages:
+##   31457280 * 4KB / 1024 / 1024 = 120 GiB
+## We leave a buffer of 8GiB on the limit to try to keep your system from crashing if it runs out of memory
+# options ttm pages_limit=31457280
+
+## Optionally we can pre-allocate any amount of memory. This pool is never accessible to the system.
+## You might want to do this to reduce GTT fragmentation, and it might have a perf improvement.
+## If you are using your system exclusively to run AI models, just max this out to match your pages_limit.
+## This example specifies 60GiB pre-allocated.
+# options ttm page_pool_size=15728640
 ```
 
 `amdgpu.gttsize` is an [officially deprecated](https://www.mail-archive.com/amd-gfx@lists.freedesktop.org/msg117333.html) parameter that may be referenced by some software, so it's best to still set it to match, but GTT allocation in Linux is now actually handled by the Translation Table Maps (TTM) memory management subsystem.

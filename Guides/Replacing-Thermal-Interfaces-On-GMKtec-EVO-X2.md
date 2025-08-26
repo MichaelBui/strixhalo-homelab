@@ -39,7 +39,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 7. **IMPORTANT**: Gradually loosen the 4 spring-loaded screws holding the heatsink in a cross pattern (diagonal sequence), turning each screw only 1-2 rotations at a time:  
    ![](./evox2-disassembly-step7.jpg)  
 8. Once all screws are loose, **gently** rock the heatsink side to side to break the thermal paste seal.
-9. Carefully lift the heatsink up and away from the APU. Note the small tape on the side id you didn't remove it.
+9. Carefully lift the heatsink up and away from the APU. Note the small tape on the side if you didn't remove it.
 
 #### Cleaning and Preparation
 10. Clean the old thermal paste from the APU using isopropyl alcohol and a lint-free cloth.

@@ -144,9 +144,8 @@ If you want to use the ROCm backend (the rocWMMA FA implementation in particular
 
 If you are using the llama.cpp ROCm backend, you may want to also try to use the hipBLASlt kernel with the `ROCBLAS_USE_HIPBLASLT=1` environment variable as it is sometimes faster than the default rocBLAS kernels.
 
-
-TODO: add a list of some models that work well with pp512/tg128, memory usage, model architecture, weight sizes?
-
+For more on how to test llama.cpp performance:
+- [[AI/llamacpp-performance]]
 
 ### Additional Resources
  - Deep dive into LLM usage on Strix Halo: https://llm-tracker.info/_TOORG/Strix-Halo

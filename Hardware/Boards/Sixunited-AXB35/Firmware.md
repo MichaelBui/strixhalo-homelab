@@ -5,13 +5,21 @@ If you happen to have BIOS or EC firmware versions not presented on this page an
 :::
 
 ### BIOS & EC upgrade
+
+:::danger
+**DO NOT FLASH ANY FIRMWARE IF YOUR SYSTEM IS STABLE AND FUNCTIONING PROPERLY**, only consider a BIOS update if you have specific technical requirements or are experiencing any issues
+:::
+
 All devices sent after the middle of May seem to have BIOS version of at least 1.04. The only officially supported upgrade way is using Windows, follow the included instructions. Something like [Hiren's BootCD](https://www.hirensbootcd.org) could be used as a more convenient option. You're supposed to update EC firware first and BIOS the last.
+
+All AXB35 firmwares should be compatible across AXB35-based devices, allowing you to flash any OEM BIOS regardless of the original manufacturer. However, **proceed at your own risk** as this practice is not officially supported. Currently, we have one confirmed successful case of flashing GMK BIOS onto a FEVM FA-EX9 device without any issues.
 
 > [!CAUTION]
 > After initiating the BIOS upgrade, your PC will reboot and the process will continue in a special interface.  
 > ‼️ **DO NOT turn off your computer or interrupt power**  
 > ‼️ **DO NOT press any keys during this process**  
 > ‼️ **BE PATIENT, the screen may remain blank for several minutes**  
+
 
 ### GMKtec EVO-X2
 
@@ -32,6 +40,7 @@ BIOS and EC firmware are available [on the GMKtec website](https://www.gmktec.co
 | -------- | ------------------ | ----- | -------- |
 | **1.06** | N/A | Seems to have slightly quieter fan curves | [EC-AXB35-02-1.06.zip](./EC-AXB35-02-1.06.zip) |
 | **1.04** | N/A | First version that supports manual fan control | [EC-AXB35-02-1.04.zip](./EC-AXB35-02-1.04.zip) |
+
 
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]

@@ -1,10 +1,10 @@
 # Sixunited AXB35 Firmware
 
-::: info
+### BIOS & EC upgrade
+
+:::info
 If you happen to have BIOS or EC firmware versions not presented on this page and would like to share, please **[contact me directly](https://d7.wtf/contact)** or **[join our Discord](https://discord.gg/pnPRyucNrG)**
 :::
-
-### BIOS & EC upgrade
 
 :::danger
 **DO NOT FLASH ANY FIRMWARE IF YOUR SYSTEM IS STABLE AND FUNCTIONING PROPERLY**, only consider a BIOS update if you have specific technical requirements or are experiencing any issues

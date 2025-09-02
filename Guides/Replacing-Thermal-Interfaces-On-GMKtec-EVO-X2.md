@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 #### Applying New Thermal Solution
 13. Apply your new thermal interface:
     - Follow application guides for your specific product
-    - Detailed application guide for PTM9750 - https://help.moddiy.com/en/article/how-to-apply-honeywell-ptm7950-bm6825/
+    - Detailed application guide for PTM7950 - https://help.moddiy.com/en/article/how-to-apply-honeywell-ptm7950-bm6825/
 14. Verify all thermal pads for RAM and VRMs are present and properly positioned. Optionally replace RAM thermal pads as well.
 
 #### Reassembly

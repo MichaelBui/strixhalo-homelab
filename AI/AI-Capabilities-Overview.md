@@ -70,6 +70,13 @@ For Linux, you can run any distro you want, but a few notes:
 
 Lemonade, TheRock (and tbt, most standard AI/ML workflows) standardize on using conda/mamba and it's highly recommended to [install them](https://github.com/conda-forge/miniforge?tab=readme-ov-file#requirements-and-installers) if you plan on doing more than basic LLM inference.
 
+### Docker Images
+There are a lot of Docker images available that may also be useful:
+- https://github.com/kyuz0/amd-strix-halo-toolboxes - very thorough documentation for getting llama.cpp inferencing up w/ Vulkan an ROCm backends
+- https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes - getting vLLM up and running
+- https://github.com/kyuz0/amd-strix-halo-image-video-toolboxes - to get Qwen Image and WAN running
+- https://github.com/shantur/strix-rocm-all - clear setup scripts for getting Unsloth installed
+
 ### Memory Limits
 For the Strix Halo GPU, the unified memory is either assigned as GART, which is a fixed reserved aperture set exclusively for the GPU in the BIOS, and GTT, which is a dynamically allocable amount of memory. In Windows, this should be automatic (but is limited to 96GB). In Linux, it can be set via boot configuration up to the point of system instability.
 

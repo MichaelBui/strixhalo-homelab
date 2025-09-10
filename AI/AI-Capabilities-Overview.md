@@ -62,8 +62,8 @@ Most of the setup details in this doc are focused on Linux and may not apply for
 - Vulkan should be installed with your AMD drivers so there's nothing to configure there. You can just download the [latest win-vulkan llama.cpp release](https://github.com/ggml-org/llama.cpp/releases) to start running LLM models. You can also optionally install a front-end like [Lemonade Server](https://lemonade-server.ai/), [Jan](https://jan.ai/), or [LM Studio](https://lmstudio.ai/) if you want a GUI
 - You only need ROCm (w/ Strix Halo support) if you want to build or do ROCm development. In that case you should check [TheRock Releases](https://github.com/ROCm/TheRock/blob/main/RELEASES.md), but if you just want to try ROCm builds of the latest llama.cpp, you can download [the latest lemonade-sdk/llamacpp-rocm gfx1151 builds here](https://github.com/lemonade-sdk/llamacpp-rocm/releases)
 
-For Linux, you can run any distro you want, but a few notes:
-- The `amdgpu` drivers are built into the Linux kernel, and for best results, you should make sure your kernel is 6.15+. There are constant fixes and improvements to the newer the better
+For Linux, you can run any distro you want, but a **VERY IMPORTANT** few notes:
+- The `amdgpu` drivers are built into the Linux kernel, and **for best results, you should make sure your kernel is 6.15+.** There are constant fixes and improvements to the newer the better, and older kernels are unlikely to have `amdgpu` drivers that work best with Strix Halo (gfx1151)
 - You should also have the latest `linux-firmware` package. These are named differently per distro, but there are crucial stability fixes, so the more recent firmware package you have installed (including "git" packages for bleeding edge distros), the better
 - You should install Mesa RADV and AMDVLK Vulkan drivers. You will probably also want to install `vulkan-tools` (for `vulkaninfo`) and `vulkan-headers` (if you want to build Vulkan packages) and each distro has their own names for those packages
 - See the ROCm section below, but you basically want to install a gfx1151 TheRock/ROCm nightly build

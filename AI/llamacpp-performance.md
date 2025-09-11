@@ -23,7 +23,7 @@ Here are the most important flags you should be aware of:
 
 Most tests use the default llama-bench numbers (pp512/tg128) and these are good for broad comparisons, however as you can see [even from 1-4096 sweeps](https://github.com/lhl/strix-halo-testing/tree/main/llm-bench/llama-2-7b.Q4_0), different backends and settings have different performance characteristics as context extends.
 
-For example, running tests on the AMDVLK vs RADV Vulkan backends, while RADV is about 4% on `tg128`, it's 16% slower for `pp512`. One some models the `pp512` performance gap is even bigger. This test takes ~5s to run and of course you might decide that AMDVLK is the better choice:
+For example, running tests on the AMDVLK vs RADV Vulkan backends, while RADV is about 4% on `tg128`, it's 16% slower for `pp512`. One some models the `pp512` performance gap is even bigger if you're [looking purely at pp512/tg128 numbers](https://kyuz0.github.io/amd-strix-halo-toolboxes/). This test takes ~5s to run and varies wildly for different numbers. For example, for Qwen 3 30B-A3B UD-Q4_K_XL RADV is actually a bit better:
 
 ```
 ❯ build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf 
@@ -31,13 +31,13 @@ For example, running tests on the AMDVLK vs RADV Vulkan backends, while RADV is 
 ```
 | Backend       | pp512 (t/s)   | tg128 (t/s)   |
 |---------------|---------------|---------------|
-| Vulkan AMDVLK | 660.34 | 79.87 |
-| Vulkan RADV   | 765.61 | 83.19 |
+| Vulkan AMDVLK | 741.60| 81.79 |
+| Vulkan RADV   | 755.14 | 85.11 |
 
-However, running these tests at the end of its 128K context depth gives you an decidedly different picture. For long context, the RADV driver scales much better:
+However, running these tests at the end of its 128K context depth gives you an decidedly different picture. For long context, the RADV driver in this case scales **much better**:
 
 ```
-❯ build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf -d 130560 
+❯ build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf -d 130560
 ❯ AMD_VULKAN_ICD=RADV build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf -d 130560
 ```
 
@@ -49,3 +49,26 @@ However, running these tests at the end of its 128K context depth gives you an d
 These runs took about ~2-3h to run on Strix Halo. You can do this with the ROCm backend as well (I recommend using the rocWMMA compile, and testing with and without `ROCBLAS_USE_HIPBLASLT=1` to compare the rocBLAS vs hipBLASlt kernels, but I leave that as a multi-hour exercise for the reader. This is simply illustrative for the differences you might see. (If you're doing an overnight run, doing something like `-d 0,5000,10000,50000,100000` might give you a better idea of how things slow down as context grows. 
 
 NOTE: `pp` or context processing is critically important if you are loading previous long conversations/large context (agentic flows) or adding many tokens (grounding via search, tools, file attachments, etc), however in single-user conversational usage, `llama-cli` has a `--prompt-cache-all` flag and `llama-server` allows you to submit `cache_prompt=True` with your request to be able to use previously cached context similar to vLLM's [automatic prefix caching](https://docs.vllm.ai/en/stable/features/automatic_prefix_caching.html) or SGLang's [radix caching](https://lmsys.org/blog/2024-01-17-sglang/).
+
+## Bonus ROCm numbers
+Built w/ rocWMMA (`-DGGML_HIP_ROCWMMA_FATTN=ON`)
+
+```
+❯ build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf
+❯ ROCBLAS_USE_HIPBLASLT=1 build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf
+```
+
+| Backend       | pp512 (t/s)   | tg128 (t/s)   |
+|---------------|---------------|---------------|
+| ROCm  | 650.59 | 64.17 |
+| ROCm hipBLASlt | 651.93 | 63.95 |
+
+```
+❯ build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf -d 130560
+❯ ROCBLAS_USE_HIPBLASLT=1 build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf -d 130560
+```
+
+| Backend       | pp512 @ d130560 (t/s)   | tg128 @ d130560 (t/s)   |
+|---------------|---------------|---------------|
+| ROCm | 40.58 | 4.98 |
+| ROCm hipBLASlt  | 40.35 | 4.97 |

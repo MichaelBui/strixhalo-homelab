@@ -45,6 +45,3 @@ To build, you may need to make sure your environment variables are properly set.
 
 ## rocWMMA
 Your ROCm probably has the rocWMMA libraries installed already. If not, you'll want them in your rocm folder. This is relatively straightforward (we only need the library installed, but you can refer to [https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh](https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh) for building this.
-
-If you are using a TheRock nightly build of ROCm, you may get some errors compiling. In that case, take a look at [https://github.com/lhl/strix-halo-testing/blob/main/llm-bench/apply-rocwmma-fix.sh](https://github.com/lhl/strix-halo-testing/blob/main/llm-bench/apply-rocwmma-fix.sh) to apply the fixes necessary for a compile.
-- This fix is making it's way upstream: https://github.com/ggml-org/llama.cpp/pull/15241

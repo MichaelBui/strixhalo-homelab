@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 
 #### Cleaning and Preparation
 10. Clean the old thermal paste from the APU using isopropyl alcohol and a lint-free cloth.
-11. **CAUTION**: Be extremely careful around the small capacitors near the APU - avoid excessive cleaning in these areas, it's okay if there is still some thermal paste om these parts:  
+11. **CAUTION**: Be extremely careful around the small capacitors near the APU - avoid excessive cleaning in these areas, it's okay if there is still some thermal paste on these parts (marked with red):  
     ![](./evox2-disassembly-step11.jpg)  
 12. Allow the APU to dry completely (a couple of minutes).
 

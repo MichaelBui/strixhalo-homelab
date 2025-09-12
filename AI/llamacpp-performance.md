@@ -23,7 +23,7 @@ Here are the most important flags you should be aware of:
 
 Most tests use the default llama-bench numbers (pp512/tg128) and these are good for broad comparisons, however as you can see [even from 1-4096 sweeps](https://github.com/lhl/strix-halo-testing/tree/main/llm-bench/llama-2-7b.Q4_0), different backends and settings have different performance characteristics as context extends.
 
-For example, running tests on the AMDVLK vs RADV Vulkan backends, while RADV is about 4% on `tg128`, it's 16% slower for `pp512`. One some models the `pp512` performance gap is even bigger if you're [looking purely at pp512/tg128 numbers](https://kyuz0.github.io/amd-strix-halo-toolboxes/). This test takes ~5s to run and varies wildly for different numbers. For example, for Qwen 3 30B-A3B UD-Q4_K_XL RADV is actually a bit better:
+For example, running tests on the AMDVLK vs RADV Vulkan backends, while RADV is about 4% on `tg128`, it's 16% slower for `pp512`. One some models the `pp512` performance gap is even bigger if you're [looking purely at pp512/tg128 numbers](https://kyuz0.github.io/amd-strix-halo-toolboxes/). This test takes ~5s to run and varies wildly for different model. For example, for Qwen 3 30B-A3B UD-Q4_K_XL RADV is actually a bit *faster* than AMDVLK:
 
 ```
 ❯ build/bin/llama-bench -fa 1 -r 1 --mmap 0 -m /models/gguf/Qwen3-30B-A3B-UD-Q4_K_XL.gguf 

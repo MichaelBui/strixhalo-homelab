@@ -1,6 +1,6 @@
 # vLLM
 
-[@lhl](https://github.com/lhl) got implemented the [first public vLLM builds](https://github.com/lhl/strix-halo-testing/tree/main/vllm) and shortly after Discord member @ssweens created Arch-based dockerfiles. [@kyuz0](https://github.com/kyuz0) adapted these into a [amd-strix-halo-vllm-toolboxes](https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes) and that is probably the easiest way currently (2025-09-13) to bring up vLLM on Strix Halo.
+[@lhl](https://github.com/lhl) got implemented the [first public vLLM build recipe](https://github.com/lhl/strix-halo-testing/tree/main/vllm) and shortly after Discord member @ssweens created Arch-based dockerfiles. [@kyuz0](https://github.com/kyuz0) adapted these into a [amd-strix-halo-vllm-toolboxes](https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes) and that is probably the easiest way currently (2025-09-13) to bring up vLLM on Strix Halo.
 
 ## Current Status
 

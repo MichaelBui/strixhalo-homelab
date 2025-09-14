@@ -19,6 +19,13 @@ Here are the most important flags you should be aware of:
 - `-r` - if you are doing tests on ultra-long context, these can sometimes take an hour or even longer to run a single pass - for these tests setting repetition to 1 is advised: `-r 1` - if you want something more statistically valid or test under load, you could of course go the other way and set `-r 10` or higher
 - `-p`, `-n`, `-pg`, `-d` - These control the various tests. `-p` (default 512) measures `pp` "prompt processing" speed or prefill - this is how many tokens are in your prior context/conversation and is typically compute limited. `-n` (default 128) tests your `tg` token generation - this is the speed at which new tokens generate after you've processed your prompt and is typically memory limited. `-pg` let's you measure a pp+tg together, and `-d` lets you specify a "depth" or number of tokens before you test - eg, if you specify `-p 0 -n 128 -d 10000` it will measure the speed that tokens generate after there is 10000 tokens of context - the longer the context length, the slower this will be.
 
+## Performance Testing
+Some community members have run llama-bench in a way that can give you a good idea of performance across various model sizes/architectures
+
+- https://github.com/lhl/strix-halo-testing/tree/main/llm-bench - context sweeps of various models and backends
+- https://kyuz0.github.io/amd-strix-halo-toolboxes/ - interactive pp512/128 chart of various models and backends
+- https://community.frame.work/t/will-the-ai-max-395-128gb-be-able-to-run-gpt-oss-120b/73280/26 - comparing performance differences of different quants of gpt-oss
+
 ## Long Context Length Testing
 
 Most tests use the default llama-bench numbers (pp512/tg128) and these are good for broad comparisons, however as you can see [even from 1-4096 sweeps](https://github.com/lhl/strix-halo-testing/tree/main/llm-bench/llama-2-7b.Q4_0), different backends and settings have different performance characteristics as context extends.

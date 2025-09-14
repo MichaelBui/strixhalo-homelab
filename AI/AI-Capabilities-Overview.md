@@ -158,6 +158,7 @@ For more on how to test llama.cpp performance:
  - Deep dive into LLM usage on Strix Halo: https://llm-tracker.info/_TOORG/Strix-Halo
  - Newbie Linux inference guide: https://github.com/renaudrenaud/local_inference
  - Ready to use Docker containers: https://github.com/kyuz0/amd-strix-halo-toolboxes
+ - A nice writeup on using Lemonade on Ubuntu 25.04: https://netstatz.com/strix_halo_lemonade/
 
 ## Image/Video Generation
 For Windows you can give AMUSE a try. It's probably the easiest way to get started quickly: https://www.amuse-ai.com/

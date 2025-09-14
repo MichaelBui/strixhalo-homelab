@@ -163,6 +163,8 @@ For more on how to test llama.cpp performance:
 ## Image/Video Generation
 For Windows you can give AMUSE a try. It's probably the easiest way to get started quickly: https://www.amuse-ai.com/
 
+On Linux, using kyuz0's [AMD Strix Halo — Image & Video Toolbox](https://github.com/kyuz0/amd-strix-halo-image-video-toolboxes) is probably the easiest way to get up and running.
+
 Here are some instructions for getting ComfyUI up and running on Windows: https://www.reddit.com/r/StableDiffusion/comments/1lmt44b/running_rocmaccelerated_comfyui_on_strix_halo_rx/
 
-Note, while TheRock has [PyTorch nightlies](https://github.com/ROCm/TheRock/blob/main/RELEASES.md#installing-pytorch-python-packages) available for Strix Halo gfx1151, they *do not* currently have AOTriton or FA and may not run very well.
+You can install sdui/sdnext using the TheRock [PyTorch nightlies](https://github.com/ROCm/TheRock/blob/main/RELEASES.md#installing-pytorch-python-packages). Currently they do not have FA, but if you want to build your own w/ aotriton FA, there are [build scripts in this repo](https://github.com/lhl/strix-halo-testing/tree/main/torch-therock).

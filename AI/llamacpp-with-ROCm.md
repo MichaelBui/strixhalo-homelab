@@ -5,7 +5,7 @@
 
 While Vulkan can sometimes have faster `tg` speeds, it can run into "GGGG" issues in many situations, and if you want the fastest `pp` speeds, you probably will want to try the ROCm backend.
 
-As of August 2005, the generally fastest/most stable llama.cpp ROCm combination:
+As of August 2025, the generally fastest/most stable llama.cpp ROCm combination:
 - build llama.cpp with rocWMMA: `-DGGML_HIP_ROCWMMA_FATTN=ON`
 - run llama.cpp with env to use hipBLASlt: `ROCBLAS_USE_HIPBLASLT=1`
 

@@ -4,7 +4,7 @@
 This guide seems to work for Strix Halo:  
 https://github.com/isc30/ryzen-gpu-passthrough-proxmox
 
-This is mostly tied to Proxmox, but should still be applicable to regular systems with QEMU installed.
+This is mostly tied to Proxmox (version 8 or higher), but should still be applicable to other distros with QEMU installed.
 
 ### Configuration
 ```bash
@@ -43,15 +43,20 @@ hostpci1: 0000:c6:00.1,pcie=1,romfile=AMDGopDriver.rom
 Proxmox VM:  
 ![8060s GPU Passthrough in Proxmox](./proxmox-8060s-passthrough.png)
 
-### Notes
+### Windows VMs
  - hardware IDs are `1002:1586` (iGPU) and `1002:1640` (audio)
- - Windows works fine, but I haven't managed to do it with a Linux VM, amdgpu driver crashes
- - the 'reset bug' is here, I found no way to avoid it, so **you can passthrough the iGPU only once per boot of the host**
+ - the 'reset bug' is here, I found no way to avoid it, so **you can passthrough the iGPU to a Windows guest only once per boot of the host**
  - don't bother with `vendor-reset` module and/or `RadeonResetBugFix` service, they are severely outdated and don't do anything in our case
  - if your VM crashes during GPU driver install, switch the CPU type to something generic (`x86-64-v4` for example seems to work fine), install the driver, then return it back to `host`
  - if you see unknown PCI device (`1af4:1057`) in your Device Manager, install `viomem` driver manually from virtio drivers ISO
  - set the fixed VRAM amount in the BIOS and never change it on the OS level, otherwise expect major slowdowns and crashes
  - [this issue](https://github.com/isc30/ryzen-gpu-passthrough-proxmox/issues/112) might be worth looking into
+
+### Linux VMs
+ - the guide and configuration are valid for Linux too
+ - Proxmox 9 seems to be a must to avoid the reset bug
+ - use recent kernels (6.15+), if you see amdgpu driver errors during boot most likely your kernel is too old
+ - just like with Windows, dynamic VRAM allocation seems to be very unstable, set the fixed amount in the BIOS
 
 ### Files
 (taken from [[EVO-X2|Devices/GMKtec-EVO-X2]], BIOS version 1.04)

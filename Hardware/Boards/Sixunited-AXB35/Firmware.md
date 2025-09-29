@@ -12,7 +12,7 @@ If you happen to have BIOS or EC firmware versions not presented on this page an
 
 All devices sent after the middle of May seem to have BIOS version of at least 1.04. The only officially supported upgrade way is using Windows, follow the included instructions. Something like [Hiren's BootCD](https://www.hirensbootcd.org) could be used as a more convenient option. You're supposed to update EC firware first and BIOS the last.
 
-All AXB35 firmwares should be compatible across AXB35-based devices, allowing you to flash any OEM BIOS regardless of the original manufacturer. However, **proceed at your own risk** as this practice is not officially supported. Currently, we have one confirmed successful case of flashing GMK BIOS onto a FEVM FA-EX9 device without any issues.
+All AXB35 firmwares should be compatible across AXB35-based devices, allowing you to flash any OEM BIOS regardless of the original manufacturer. However, **proceed at your own risk** as this practice is not officially supported. Technically it shouldn't even be possible to flash incompatible firmware because it should have a different ROM ID. Currently, we have one confirmed successful case of flashing GMK BIOS onto a FEVM FA-EX9 PC without any issues.
 
 > [!CAUTION]
 > After initiating the BIOS upgrade, your PC will reboot and the process will continue in a special interface.  
@@ -23,7 +23,7 @@ All AXB35 firmwares should be compatible across AXB35-based devices, allowing yo
 
 ### GMKtec EVO-X2
 
-BIOS and EC firmware are available [on the GMKtec website](https://www.gmktec.com/pages/drivers-and-software), but since they update it rarely and put them on Google Drive, you can download them here as well.
+BIOS and EC firmware are no longer available [on the GMKtec website](https://www.gmktec.com/pages/drivers-and-software), but you can download previously saved copies here.
 
 **BIOS**
 

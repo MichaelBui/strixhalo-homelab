@@ -6,4 +6,9 @@ Something interesting with unique(?) board, cooling, 2x10G ethernet, integrated 
 
 https://www.bee-link.com/products/beelink-gtr9-pro-amd-ryzen-ai-max-395
 
-Availability: September 2025 (pre-orders available).
+Availability: available since September 2025.
+
+
+> [!WARNING]
+> There seem to be **MAJOR** problems with stability of the system with no solution at the time of writing, read more here:  
+> https://craigwilson.blog/post/2025/2025-09-25-beelink395bsod/

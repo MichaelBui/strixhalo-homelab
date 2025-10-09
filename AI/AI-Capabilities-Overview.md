@@ -110,7 +110,7 @@ You can increase the limits as high as you want, but you'll want to make sure yo
 If you are setting `page_pool_size` lower than the `pages_limit` you may want to try increasing, eg `amdgpu.vm_fragment_size=8` (4=64K default, 9=2M) to allocate in bigger chunks.
 
 ### ROCm
-The latest release version of ROCm (6.4.3 as of this writing) has both rocBLAS and hipBLASlt support for Strix Halo gfx1151. For the most up-to-date builds, you can also install the latest gfx1151 [TheRock/ROCm "nightly" release](https://github.com/ROCm/TheRock/blob/main/RELEASES.md). These can be found at [https://therock-nightly-tarball.s3.amazonaws.com/](https://therock-nightly-tarball.s3.amazonaws.com/) (find the filename) or you can use the helper scripts described in the [Releases page]((https://github.com/ROCm/TheRock/blob/main/RELEASES.md)).
+The latest release version of ROCm (6.4.3 as of this writing) has both rocBLAS and hipBLASlt support for Strix Halo gfx1151. For the most up-to-date builds, you can also install the latest gfx1151 [TheRock/ROCm "nightly" release](https://github.com/ROCm/TheRock/blob/main/RELEASES.md). These can be found at [https://therock-nightly-tarball.s3.amazonaws.com/](https://therock-nightly-tarball.s3.amazonaws.com/) (find the filename) or you can use the helper scripts described in the [Releases page](https://github.com/ROCm/TheRock/blob/main/RELEASES.md).
 
 ### Performance Tips
 - If you are not using VFIO or any type of GPU passthrough, you should set `amd_iommu=off` in your kernel options for ~6% faster memory reads (actuall impact on llama.cpp tg performance tends to be smaller, about <2%. Note that when tested, `iommu=pt` does not give any speed benefit.

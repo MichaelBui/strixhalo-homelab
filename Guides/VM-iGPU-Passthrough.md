@@ -4,7 +4,10 @@
 This guide seems to work for Strix Halo:  
 https://github.com/isc30/ryzen-gpu-passthrough-proxmox
 
-This is mostly tied to Proxmox (version 8 or higher), but should still be applicable to other distros with QEMU installed.
+There's also a guide from a Framework Desktop owner available here:  
+https://community.frame.work/t/anyone-using-proxmox-ve/74863/6?u=beralt
+
+These are mostly tied to Proxmox (version 8 or higher), but should still be applicable to other distros with QEMU installed.
 
 ### Configuration
 ```bash

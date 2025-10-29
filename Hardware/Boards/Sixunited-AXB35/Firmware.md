@@ -40,7 +40,7 @@ There is no BIOS available for download (yet) at the Bosgame PC [support website
 
 | Version  | Official Changelog | Notes | Download |
 | -------- | ------------------ | ----- | -------- |
-| **1.07 20250912** | N/A | This BIOS was dumped from a unit bought in October. | [afuwin107.rom](./afuwin107.rom) |
+| **1.07 20250912** | N/A | This BIOS was dumped from a unit bought in October. | [AXB35-02_BOSGAME_SW1.07_20250912.rom](./AXB35-02_BOSGAME_SW1.07_20250912.rom) |
 
 **EC Firmware**
 

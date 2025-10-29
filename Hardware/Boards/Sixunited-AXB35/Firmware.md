@@ -34,6 +34,14 @@ BIOS and EC firmware are no longer available [on the GMKtec website](https://www
 | **1.05 20250606** | N/A | According to Sixunited this one contains many changes from upstream and the rest is confidential. I personally noticed more conservative voltages and slightly improved temperature because of that. | [AXB35-02_GMK_SW1.05_20250606.zip](./AXB35-02_GMK_SW1.05_20250606.zip) |
 | **1.04** | 1. Add virtualization<br>2. The first startup item is displayed as USB<br>3. The Core Performance Boost function is hidden<br>4. Add GFX Configuration in the BIOS to adjust the video memory<br>5. The BIOS adds a fan adjustment menu<br>6. Configure the BIOS at 64G/128G for automatic compatibility recognition | - | [AXB35-02_GMK_SW1.04_20250514.zip](./AXB35-02_GMK_SW1.04_20250514.zip) |
 
+### Bosgame M5
+
+There is no BIOS available for download (yet) at the Bosgame PC [support website](https://www.bosgamepc.com/pages/support).
+
+| Version  | Official Changelog | Notes | Download |
+| -------- | ------------------ | ----- | -------- |
+| **1.07 20250912** | N/A | This BIOS was dumped from a unit bought in October. | [Download](https://cloud.ping.de/s/HBfcptrZbtb2rKf) |
+
 **EC Firmware**
 
 | Version  | Official Changelog | Notes | Download |

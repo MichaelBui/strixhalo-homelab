@@ -36,9 +36,9 @@ There are not that many options for those looking for 96GB+ of VRAM, annd among 
 
 | Spec                      | AMD Ryzen AI Max Plus 395     | Apple Mac Studio M4 Max         | NVIDIA DGX Spark                           | NVIDIA RTX PRO 6000 |
 |---------------------------|------------------------------|----------------------------------|---------------------------------------------|---------------------|
-| **Release Date**          | Spring 2025                   | March 12, 2025                   | Fall 2025                                 | May 2025           |
-| **Price**                 | $2,000                        | $3,499                           | $3,000+                                     | $8,200              |
-| **Power (Max W)**         | 120                           | 300+                             | ??                                          | 600                 |
+| **Release Date**          | Spring 2025                   | March 12, 2025                   | October 2025                                 | May 2025           |
+| **Price**                 | $2,000                        | $3,499                           | $4,000                                     | $8,200              |
+| **Power (Max W)**         | 120                           | 300+                             | 240                                          | 600                 |
 | **CPU**                   | 16x Zen5 5.1 GHz           | 16x M4 4.5 GHz                 | 10x Arm Cortex-X925, 10x Arm Cortex-A725  |                     |
 | **GPU**                   | RDNA 3.5                      | M4                               | Blackwell                                   | Blackwell           |
 | **GPU Cores**             | 40                            | 40                               | 192                                         | 752                 |

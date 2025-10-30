@@ -44,4 +44,11 @@ You'll need ROCm installed first before you can build. For best performance you'
 To build, you may need to make sure your environment variables are properly set. If so, take a look at [https://github.com/lhl/strix-halo-testing/blob/main/rocm-therock-env.sh](https://github.com/lhl/strix-halo-testing/blob/main/rocm-therock-env.sh) for an example of what this might look like. Change `ROCM_PATH` to whatever your ROCm path is.
 
 ## rocWMMA
+
+> As of ROCm 7.0.2+ the ROCWMMA flag/path *SHOULD NOT BE USED* for Strix Halo with llama.cpp upstream - it's slower than the regular ROCm/HIP path as context depth increases and is not receiving any updates until a rewrite happens
+
 Your ROCm probably has the rocWMMA libraries installed already. If not, you'll want them in your rocm folder. This is relatively straightforward (we only need the library installed, but you can refer to [https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh](https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh) for building this.
+
+## 2025-10-31 rocWMMA
+If you are building your own ROCm rocWMMA build, be sure to take a look at [llama-cpp-fix-wmma](https://github.com/lhl/strix-halo-testing/tree/main/llama-cpp-fix-wmma) - there is a [rocm-wmma-tune branch](https://github.com/lhl/llama.cpp/tree/rocm-wmma-tune) that performs significantly better at longer context depths.
+- Fullest writeup with all relevant links is here: https://www.reddit.com/r/LocalLLaMA/comments/1ok7hd4/faster_llamacpp_rocm_performance_for_amd_rdna3/

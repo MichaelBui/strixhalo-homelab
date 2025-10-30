@@ -10,7 +10,7 @@ Availability: July 2025.
 
 Comes with Windows 11 Pro preinstalled on the 2TB SSD.
 
-As of October 2025, EU orders are shipped from Germany.
+As of October 2025, EU orders are shipped from Germany and US orders are shipped from the US. All other orders are shipped from China.
 
 ### Reviews
 

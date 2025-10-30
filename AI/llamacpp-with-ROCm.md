@@ -45,6 +45,7 @@ To build, you may need to make sure your environment variables are properly set.
 
 ## rocWMMA
 
+> [!WARNING]
 > As of ROCm 7.0.2+ the ROCWMMA flag/path *SHOULD NOT BE USED* for Strix Halo with llama.cpp upstream - it's slower than the regular ROCm/HIP path as context depth increases and is not receiving any updates until a rewrite happens
 
 Your ROCm probably has the rocWMMA libraries installed already. If not, you'll want them in your rocm folder. This is relatively straightforward (we only need the library installed, but you can refer to [https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh](https://github.com/lhl/strix-halo-testing/blob/main/arch-torch/02-build-rocwwma.sh) for building this.

@@ -12,7 +12,9 @@ If you happen to have BIOS or EC firmware versions not presented on this page an
 
 All devices sent after the middle of May seem to have BIOS version of at least 1.04. The only officially supported upgrade way is using Windows, follow the included instructions. Something like [Hiren's BootCD](https://www.hirensbootcd.org) could be used as a more convenient option. **You're supposed to update EC firmware first and BIOS the last.**
 
-All AXB35 firmwares should be compatible across AXB35-based devices, allowing you to flash any OEM BIOS regardless of the original manufacturer. However, **proceed at your own risk** as this practice is not officially supported. Technically it shouldn't even be possible to flash incompatible firmware because it should have a different ROM ID. Currently, we have several confirmed successful cases of flashing GMK BIOS onto a FEVM and Bosgame PCs without any issues.
+All AXB35 firmwares should be compatible across AXB35-based devices, allowing you to flash any OEM BIOS regardless of the original manufacturer. However, **proceed at your own risk** as this practice is not officially supported. Technically it shouldn't even be possible to flash incompatible firmware because it should have a different ROM ID. Currently, **we have several confirmed successful cases of flashing GMK BIOS onto a FEVM and Bosgame PCs without any issues**.
+
+A debug mode can be toggled by pressing **ALT+F5**, saving changes and resetting. Enabling the mode adds a second "Advanced" tab that contains a lot of additional options, however some of them are glitchy or don't work at all. In some cases changing these can even lead to your system not booting unless you erase your settings by removing the battery. All in all, it's not recommended to mess with the debug mode without a particular reason.
 
 > [!CAUTION]
 > After initiating the BIOS upgrade, your PC will reboot and the process will continue in a special interface.  

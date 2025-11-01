@@ -79,3 +79,16 @@ Built w/ rocWMMA (`-DGGML_HIP_ROCWMMA_FATTN=ON`)
 |---------------|---------------|---------------|
 | ROCm | 40.58 | 4.98 |
 | ROCm hipBLASlt  | 40.35 | 4.97 |
+
+
+## Bonus Tuned ROCm numbers
+These are generated with [lhl's rocm-wmma-tune](https://github.com/lhl/llama.cpp/tree/rocm-wmma-tune)
+
+| Backend        | ctx depth | pp512 (t/s) | tg128 (t/s) |
+|----------------|-----------|-------------|-------------|
+| ROCm           | 0         | 659.07      | 67.66       |
+| ROCm hipBLASlt | 0         | 649.48      | 67.62       |
+| ROCm           | 130560    | 51.12       | 13.32       |
+| ROCm hipBLASlt | 130560    | 51.05       | 13.33       |
+
+These are the best long-context results of any of the tested backends. You can [read more about this branch here](https://www.reddit.com/r/LocalLLaMA/comments/1ok7hd4/faster_llamacpp_rocm_performance_for_amd_rdna3/).

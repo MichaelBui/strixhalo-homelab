@@ -14,7 +14,7 @@ All devices sent after the middle of May seem to have BIOS version of at least 1
 
 All AXB35 firmwares should be compatible across AXB35-based devices, allowing you to flash any OEM BIOS regardless of the original manufacturer. However, **proceed at your own risk** as this practice is not officially supported. Technically it shouldn't even be possible to flash incompatible firmware because it should have a different ROM ID. Currently, **we have several confirmed successful cases of flashing GMK BIOS onto a FEVM and Bosgame PCs without any issues**.
 
-A debug mode can be toggled by pressing **ALT+F5**, saving changes and resetting. Enabling the mode adds a second "Advanced" tab that contains a lot of additional options, however some of them are glitchy or don't work at all. In some cases changing these can even lead to your system not booting unless you erase your settings by removing the battery. All in all, it's not recommended to mess with the debug mode without a particular reason.
+A debug mode can be toggled by pressing **ALT+F5**. Enabling the mode adds a second "Advanced" tab that contains a lot of additional options, as well as some additional settings in the existing tabs. However, some of them are glitchy or don't work at all. In some cases changing these can even lead to your system not booting unless you erase your settings by removing the battery. All in all, it's not recommended to mess with the debug mode without a particular reason.
 
 > [!CAUTION]
 > After initiating the BIOS upgrade, your PC will reboot and the process will continue in a special interface.  
@@ -31,7 +31,7 @@ BIOS and EC firmware are no longer available [on the GMKtec website](https://www
 
 | Version  | Official Changelog | Notes    | Download |
 | -------- | ------------------ | -------- | -------- |
-| **1.11 20251017** | N/A | Suddenly appeared on the GMK's Google Drive. | [AXB35-02_GMK_SW1.11_20251017.zip](./AXB35-02_GMK_SW1.11_20251017.zip) |
+| **1.11 20251017** | N/A | Suddenly appeared on the GMK's Google Drive. The only "change" that was found so far is the inability to use O key in the BIOS and boot level. | [AXB35-02_GMK_SW1.11_20251017.zip](./AXB35-02_GMK_SW1.11_20251017.zip) |
 | **1.05 20250729** | N/A | Suddenly appeared on the GMK's Google Drive. GMK's support said this is a final version of the previous **20250716** fix. | [AXB35-02_GMK_SW1.05_20250729.zip](./AXB35-02_GMK_SW1.05_20250729.zip) |
 | **1.05 20250716** | Solve the problem of SD card reverse locking | Suddenly appeared on the GMK's Google Drive. | [AXB35-02_GMK_SW1.05_20250716.zip](./AXB35-02_GMK_SW1.05_20250716.zip) |
 | **1.05 20250606** | N/A | According to Sixunited this one contains many changes from upstream and the rest is confidential. I personally noticed more conservative voltages and slightly improved temperature because of that. | [AXB35-02_GMK_SW1.05_20250606.zip](./AXB35-02_GMK_SW1.05_20250606.zip) |

@@ -31,7 +31,7 @@ BIOS and EC firmware are no longer available [on the GMKtec website](https://www
 
 | Version  | Official Changelog | Notes    | Download |
 | -------- | ------------------ | -------- | -------- |
-| **1.11 20251017** | N/A | Suddenly appeared on the GMK's Google Drive. The only "change" that was found so far is <span style="color:red">the inability to use the `O` key in the BIOS and boot level</span>. Yes, you read it right. | [AXB35-02_GMK_SW1.11_20251017.zip](./AXB35-02_GMK_SW1.11_20251017.zip) |
+| **1.11 20251017** | N/A | Suddenly appeared on the GMK's Google Drive. Community found changes:<br>1. <span style="color:red">It's no longer possible to use the `O` key in the BIOS and on the boot level</span> (yes, you read that right).<br>2. Minimum VRAM allocation is now 1GB, not 512MB. | [AXB35-02_GMK_SW1.11_20251017.zip](./AXB35-02_GMK_SW1.11_20251017.zip) |
 | **1.05 20250729** | N/A | Suddenly appeared on the GMK's Google Drive. GMK's support said this is a final version of the previous **20250716** fix. | [AXB35-02_GMK_SW1.05_20250729.zip](./AXB35-02_GMK_SW1.05_20250729.zip) |
 | **1.05 20250716** | Solve the problem of SD card reverse locking | Suddenly appeared on the GMK's Google Drive. | [AXB35-02_GMK_SW1.05_20250716.zip](./AXB35-02_GMK_SW1.05_20250716.zip) |
 | **1.05 20250606** | N/A | According to Sixunited this one contains many changes from upstream and the rest is confidential. I personally noticed more conservative voltages and slightly improved temperature because of that. | [AXB35-02_GMK_SW1.05_20250606.zip](./AXB35-02_GMK_SW1.05_20250606.zip) |

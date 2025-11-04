@@ -2,9 +2,9 @@
 
 ![GMKtec EVO-X2](./gmktec-evo-x2.jpg)
 
-The first mini PC with Strix Halo, available in 64G and 128G versions. It's based on [[the Sixunited's AXB35-02 board|Hardware/Boards/Sixunited-AXB35]] with stock cooling.
+[[OFFICIAL PRODUCT PAGE](https://www.gmktec.com/products/amd-ryzen™-ai-max-395-evo-x2-ai-mini-pc)]
 
-https://www.gmktec.com/products/amd-ryzen™-ai-max-395-evo-x2-ai-mini-pc
+The first mini PC with Strix Halo, available in 64G and 128G versions. It's based on [[the Sixunited's AXB35-02 board|Hardware/Boards/Sixunited-AXB35]] with stock cooling.
 
 ### Reviews
  - [Retro Game Corps](https://m.youtube.com/watch?v=uYLwDkGZOJk)

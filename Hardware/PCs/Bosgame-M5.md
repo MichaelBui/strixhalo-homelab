@@ -2,9 +2,9 @@
 
 ![Bosgame M5](./bosgame-m5.jpg)
 
-Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited-AXB35]].
+[[OFFICIAL PRODUCT PAGE](https://www.bosgamepc.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395)]
 
-Product page: https://www.bosgamepc.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395
+Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited-AXB35]].
 
 Availability: July 2025.
 

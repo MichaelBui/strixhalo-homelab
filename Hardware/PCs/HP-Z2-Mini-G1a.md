@@ -2,7 +2,7 @@
 
 ![HP Z2 Mini G1a](./hp-z2-mini-g1a.jpg)
 
-https://www.hp.com/us-en/workstations/z2-mini-a.html
+[[OFFICIAL PRODUCT PAGE](https://www.hp.com/us-en/workstations/z2-mini-a.html)]
 
 ### Thoughts
  - is available already, the pricing varies dramatically: resellers in UK and Germany sell the 128G version for under 3600 USD

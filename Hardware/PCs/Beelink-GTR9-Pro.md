@@ -2,9 +2,9 @@
 
 ![Beelink GTR9 Pro](./beelink_gtr9.jpg)
 
-Something interesting with unique(?) board, cooling, 2x10G ethernet, integrated PSU and case in Mac Studio style.
+[[OFFICIAL PRODUCT PAGE](https://www.bee-link.com/products/beelink-gtr9-pro-amd-ryzen-ai-max-395)]
 
-https://www.bee-link.com/products/beelink-gtr9-pro-amd-ryzen-ai-max-395
+Something interesting with unique(?) board, cooling, 2x10G ethernet, integrated PSU and case in Mac Studio style.
 
 Availability: available since September 2025.
 

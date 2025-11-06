@@ -4,7 +4,7 @@ One of the first Strix Halo boards, used in many Chinese PCs along with a coolin
 **Known PCs:**
  - [[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]] (V21 & V22)
  - [[Bosgame M5|Hardware/PCs/Bosgame-M5]]
- - [[FEVM FA-EX9|Hardware/PCs/FEVM-FA-EX9]] (V22)
+ - [[FEVM FA-EX9|Hardware/PCs/FEVM-FA-EX9]] (V22 & V30)
  - [[Peladn YO1|Hardware/PCs/Peladn-YO1]]
  - [[NIMO AI MiniPC|Hardware/PCs/NIMO-AI-MiniPC]]
 
@@ -38,9 +38,10 @@ See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 
 | Photo | Description |
 | -------- | -------- |
-| [![SU_AXB35-02](./axb35-02.jpeg?thumbnail)](./axb35-02.jpeg) | AXB35-02 V21 from GMKtec EVO-X2 |
-| [![SU_AXB35-02](./axb35-02-v22.jpeg?thumbnail)](./axb35-02-v22.jpeg) [![SU_AXB35-02](./axb35-02-v22-back.jpeg?thumbnail)](./axb35-02-v22-back.jpeg) | AXB35-02 V22 from more recent GMKtec EVO-X2 |
-| [![SU_AXB35-02](./fa-ex9-board-mark.jpg?thumbnail)](./fa-ex9-board-mark.jpg) | AXB35-02 V22 in FEVM FA-EX9 |
+| [![SU_AXB35-02-v21](./axb35-02.jpeg?thumbnail)](./axb35-02.jpeg) | AXB35-02 V21 from GMKtec EVO-X2 |
+| [![SU_AXB35-02-v22](./axb35-02-v22.jpeg?thumbnail)](./axb35-02-v22.jpeg) [![SU_AXB35-02](./axb35-02-v22-back.jpeg?thumbnail)](./axb35-02-v22-back.jpeg) | AXB35-02 V22 from more recent GMKtec EVO-X2 |
+| [![SU_AXB35-02-v22](./fa-ex9-board-mark.jpg?thumbnail)](./fa-ex9-board-mark.jpg) | AXB35-02 V22 in FEVM FA-EX9 |
+| [![SU_AXB35-02-v30](./axb35-02-v30.jpeg?thumbnail)](./axb35-02-v30.jpeg.jpg) | AXB35-02 V30 in FEVM FA-EX9 |
 | [![SU_AXB35](./axb35_board_with_cooling.jpg?thumbnail)](./axb35_board_with_cooling.jpg) | Earlier revision of the board with the cooling system |
 
 ### Relevant Pages

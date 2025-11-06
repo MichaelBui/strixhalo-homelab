@@ -34,6 +34,15 @@ A debug mode can be toggled by pressing **ALT+F5**. Enabling the mode adds a sec
 >|| **1.07 20250912** | N/A | This BIOS was dumped from a unit bought in October. | [AXB35-02_BOSGAME_SW1.07_20250912.rom](./AXB35-02_BOSGAME_SW1.07_20250912.rom) |
 
 
+### FEVM FA-EX9
+
+>|# BIOS
+>|
+>|| Version  | Official Changelog | Notes | Download |
+>|| -------- | ------------------ | ----- | -------- |
+>|| **3.03** | N/A | This BIOS was dumped from a unit. | [AXB35-02_FEVM_SW3.03.rom](./AXB35-02_FEVM_SW3.03.rom) |
+
+
 ### GMKtec EVO-X2
 
 BIOS and EC firmware are no longer available [on the GMKtec website](https://www.gmktec.com/pages/drivers-and-software), but you can download previously saved copies here.
@@ -52,15 +61,6 @@ BIOS and EC firmware are no longer available [on the GMKtec website](https://www
 >|| -------- | ------------------ | ----- | -------- |
 >|| **1.06** | N/A | Seems to have slightly quieter fan curves. | [EC-AXB35-02-1.06.zip](./EC-AXB35-02-1.06.zip) |
 >|| **1.04** | N/A | First version that supports manual fan control. | [EC-AXB35-02-1.04.zip](./EC-AXB35-02-1.04.zip) |
-
-
-### FEVM FA-EX9
-
->|# BIOS
->|
->|| Version  | Official Changelog | Notes | Download |
->|| -------- | ------------------ | ----- | -------- |
->|| **3.03** | N/A | This BIOS was dumped from a unit. | [AXB35-02_FEVM_SW3.03.rom](./AXB35-02_FEVM_SW3.03.rom) |
 
 
 ### Sixunited Generic (AIFUT, NIMO, etc)

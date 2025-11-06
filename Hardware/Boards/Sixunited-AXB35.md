@@ -41,7 +41,7 @@ See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 | [![SU_AXB35-02-v21](./axb35-02.jpeg?thumbnail)](./axb35-02.jpeg) | AXB35-02 V21 from GMKtec EVO-X2 |
 | [![SU_AXB35-02-v22](./axb35-02-v22.jpeg?thumbnail)](./axb35-02-v22.jpeg) [![SU_AXB35-02](./axb35-02-v22-back.jpeg?thumbnail)](./axb35-02-v22-back.jpeg) | AXB35-02 V22 from more recent GMKtec EVO-X2 |
 | [![SU_AXB35-02-v22](./fa-ex9-board-mark.jpg?thumbnail)](./fa-ex9-board-mark.jpg) | AXB35-02 V22 in FEVM FA-EX9 |
-| [![SU_AXB35-02-v30](./axb35-02-v30.jpeg?thumbnail)](./axb35-02-v30.jpeg.jpg) | AXB35-02 V30 in FEVM FA-EX9 |
+| [![SU_AXB35-02-v30](./axb35-02-v30.jpeg?thumbnail)](./axb35-02-v30.jpeg) | AXB35-02 V30 in FEVM FA-EX9 |
 | [![SU_AXB35](./axb35_board_with_cooling.jpg?thumbnail)](./axb35_board_with_cooling.jpg) | Earlier revision of the board with the cooling system |
 
 ### Relevant Pages

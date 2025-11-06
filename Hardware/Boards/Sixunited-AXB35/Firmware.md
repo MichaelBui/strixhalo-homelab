@@ -34,6 +34,10 @@ A debug mode can be toggled by pressing **ALT+F5**. Enabling the mode adds a sec
 >|| **1.07 20250912** | N/A | This BIOS was dumped from a unit bought in October. | [AXB35-02_BOSGAME_SW1.07_20250912.rom](./AXB35-02_BOSGAME_SW1.07_20250912.rom) |
 
 
+### Corsair AI Workstation 300
+
+The latest BIOS is available [on the product page in the Downloads section](https://www.corsair.com/us/en/p/gaming-computers/cs-9080002-na/corsair-ai-workstation-300-amd-ryzen-ai-max-395-processor-amd-radeon-8060s-igpu-up-to-96gb-vram-128gb-lpddr5x-memory-1tb-m2-ssd-win11-home-cs-9080002-na#tab-downloads).
+
 ### FEVM FA-EX9
 
 >|# BIOS

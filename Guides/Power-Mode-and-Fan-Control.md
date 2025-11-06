@@ -72,7 +72,7 @@ This creates a buffer at each level that prevents the fan from rapidly switching
 Curves are being applied only when `curve` mode is set on a specific fan, each fan has their own curves.
 
 ### Fine-tuning Power Limits
-If you want more gradual control over power modes, there's a [RyzenAdj](https://github.com/FlyGoat/RyzenAdj) utility.
+If you want more gradual control over power modes, there's a [RyzenAdj](https://github.com/FlyGoat/RyzenAdj) utility (or [UXTU](https://amdaputuningutility.com) on Windows).
 
 Main 3 parameters we are interested in are:
  - `STAPM LIMIT` (sustained power draw)

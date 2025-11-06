@@ -36,7 +36,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 #### Heatsink Removal
 6. Remove the 2 small screws securing the sides of the heatsink.  
    ![](./evox2-disassembly-step6.jpg)  
-7. **IMPORTANT**: Gradually loosen the 4 spring-loaded screws holding the heatsink in a cross pattern (diagonal sequence), turning each screw only 1-2 rotations at a time:  
+7. **IMPORTANT**: Gradually loosen the 4 spring-loaded screws holding the heatsink in a cross pattern (diagonal sequence), turning each screw only 0.5-1 rotations at a time:  
    ![](./evox2-disassembly-step7.jpg)  
 8. Once all screws are loose, **gently** rock the heatsink side to side to break the thermal paste seal.
 9. Carefully lift the heatsink up and away from the APU. Note the small tape on the side if you didn't remove it.
@@ -55,7 +55,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 
 #### Reassembly
 15. Carefully align and place the heatsink back onto the APU.
-16. Secure the heatsink by tightening the 4 spring-loaded screws in a diagonal pattern, doing only 1-2 rotations per screw. Don't worry about overtightening them, they have a mechanical stop, you'll feel it.
+16. Secure the heatsink by tightening the 4 spring-loaded screws in a diagonal pattern, doing only 0.5-1 rotations per screw. Don't worry about overtightening them, they have a mechanical stop, you'll feel it.
 17. Reattach the 2 small screws on the sides of the heatsink.
 18. Return the blowers to their original positions and secure with their 6 screws.
 19. Replace the sealing tape between the heatsink and blowers (if it's too damaged, electrical tape is fine).
@@ -63,7 +63,7 @@ https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https://www.reddit.com/r/G
 21. Replace the rubber feet.
 
 ### Testing
-After reassembly, boot the device and monitor temperatures to ensure proper cooling performance.
+After reassembly, boot the device and monitor temperatures to ensure proper cooling performance. Note that in case of PTM7950 the temperature could improve over the course of several days and multiple burn-ins on max temp are recommended.
 
 ### Relevant Pages
  - [[Hardware/PCs/GMKtec-EVO-X2]]

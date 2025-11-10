@@ -23,3 +23,5 @@ As of October 2025, EU orders are shipped from Germany and US orders are shipped
 
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
+ - [[Guides/Sixunited-AXB35]]

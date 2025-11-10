@@ -12,7 +12,7 @@ One of the first Strix Halo boards, used in many Chinese PCs along with a coolin
 The board supports 3 different power limits - 55W (100W burst), 85W (120W burst), and 120W (140W burst):
 ![AXB35 Power Modes](./axb35-power-modes.png)
 
-See [[the guide on power and performance|Guides/Power-Modes-and-Performance]] for more info on power modes.
+See [[the guide on power and performance|Guides/Sixunited-AXB35/Power-Modes-and-Performance]] for more info on power modes.
 
 Idle power draw from the wall should be around 12W with two SSDs installed.
 
@@ -22,7 +22,9 @@ The cooling system is decent enough for this form factor, but could suffer from 
 Here's what you could expect from a correctly working system with PTM7950 (ambient temp +25°C, bios version 1.05):  
 ![](./axb35-ptm7950-cooling.png)
 
-A guide for applying it on EVO-X2 is available [[here|Guides/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]].
+A guide for applying it on EVO-X2 is available [[here|Guides/Sixunited-AXB35/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]].
+
+For fan and power mode control on Windows and Linux check out [[this guide|Guides/Sixunited-AXB35/Power-Mode-and-Fan-Control]].
 
 ### Facts
  - RAM modules: [MT62F4G32D8DV-023](https://www.micron.com/products/memory/dram-components/lpddr5x/part-catalog/part-detail/mt62f4g32d8dv-023-wt-c)
@@ -46,5 +48,4 @@ See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
- - [[Guides/Power-Modes-and-Performance]]
- - [[Guides/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]]
+ - [[Guides/Sixunited-AXB35]]

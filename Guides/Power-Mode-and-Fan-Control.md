@@ -3,7 +3,7 @@
 ### Problem
 No fan and power mode control is available in Linux.
 
-### Solution
+### Solution for Linux
 There is a [ec-su_axb35-linux kernel module](https://github.com/cmetz/ec-su_axb35-linux) written by Christoph Metz.
 
 It allows you to:
@@ -14,11 +14,6 @@ It allows you to:
  - read current power mode
  - change current power mode
  - read current APU temperature
-
-:::warning
-# Warning
-The module is a work in progress, use it at your own risk. It was tested on EC firmware version 1.06 and should theoretically only work on versions 1.04 and above. Please report any possible problems to the module's GitHub repo or in our Discord server.
-:::
 
 #### Generic Installation
 1. Install module building dependencies (depends on your distro, on debian/ubuntu install `build-essential` and `linux-headers-$(uname -r)` packages).
@@ -71,8 +66,13 @@ This creates a buffer at each level that prevents the fan from rapidly switching
 
 Curves are being applied only when `curve` mode is set on a specific fan, each fan has their own curves.
 
+
+### Solution for Windows
+Based on the research made for the Linux module [a Windows implementation has been written as well](https://github.com/deseven/ec-su_axb35-win). The only major limitation is the need to disable Secure Boot, everything else should be pretty simple, just follow the readme in the repo.
+
+
 ### Fine-tuning Power Limits
-If you want more gradual control over power modes, there's a [RyzenAdj](https://github.com/FlyGoat/RyzenAdj) utility (or [UXTU](https://amdaputuningutility.com) on Windows).
+If you want more gradual control over power modes, there's a [RyzenAdj](https://github.com/FlyGoat/RyzenAdj) utility (or [UXTU](https://amdaputuningutility.com) for Windows).
 
 Main 3 parameters we are interested in are:
  - `STAPM LIMIT` (sustained power draw)

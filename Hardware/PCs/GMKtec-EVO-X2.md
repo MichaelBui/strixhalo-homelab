@@ -35,4 +35,4 @@ Disassembly video: https://www.youtube.com/watch?v=HMTy3jQc39A ([mirror](https:/
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]
  - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
- - [[Guides/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]]
+ - [[Guides/Sixunited-AXB35]]

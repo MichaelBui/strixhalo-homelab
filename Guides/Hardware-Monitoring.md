@@ -12,6 +12,3 @@ If you need to access some individual values to be used elsewhere, `corefreq-cli
 ```bash
 corefreq-cli -j | jq -c "{cputemp: ([.Cpu[].FlipFlop[].Thermal.Temp] | add/length | round ), cpupower: (.Proc.State.Power[0] | round)}"
 ```
-
-### Relevant Pages
- - [[Guides/Power-Mode-and-Fan-Control]]

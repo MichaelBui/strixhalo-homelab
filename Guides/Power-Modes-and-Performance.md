@@ -128,7 +128,3 @@ Just recently it came to my attention that a 120W limit might be a bit too much 
 | --- | --- | ---- | ---- | ---- |
 | 105 | 135 <sup style="color: #1fea00; font-size: 0.8em;">+25.0%</sup> | 146 <sup style="color: #1fea00; font-size: 0.8em;">+32.7%</sup> | 134 <sup style="color: #1fea00; font-size: 0.8em;">+24.3%</sup> | 104 <sup style="color: #ea1f00; font-size: 0.8em;">-1.0%</sup> |
 \* **all percentage values are relative to the base 55W result**
-
-### Relevant Pages
- - [[Hardware/Boards/Sixunited-AXB35]]
- - [[Guides/Power-Mode-and-Fan-Control]]

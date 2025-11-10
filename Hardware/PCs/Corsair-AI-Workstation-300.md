@@ -10,3 +10,5 @@ Availability: September 2025.
 
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
+ - [[Guides/Sixunited-AXB35]]

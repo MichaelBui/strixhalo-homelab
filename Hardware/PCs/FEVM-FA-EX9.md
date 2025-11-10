@@ -10,3 +10,5 @@ Availability: July 2025, look for Alibaba/Aliexpress listings.
 
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
+ - [[Guides/Sixunited-AXB35]]

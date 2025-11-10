@@ -1,7 +1,7 @@
 # Power Mode and Fan Control
 
 ### Problem
-No fan and power mode control is available is available for Linux or Windows.
+No fan and power mode control is available is available for Linux or Windows on Sixunited's AXB35 board.
 
 ### Solution for Linux
 There is a [ec-su_axb35-linux kernel module](https://github.com/cmetz/ec-su_axb35-linux) written by Christoph Metz.

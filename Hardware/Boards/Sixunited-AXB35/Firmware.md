@@ -63,6 +63,7 @@ BIOS and EC firmware are no longer available [on the GMKtec website](https://www
 >|# EC Firmware
 >|| Version  | Official Changelog | Notes | Download |
 >|| -------- | ------------------ | ----- | -------- |
+>|| **1.08** | N/A | No noticeable changes. | [EC-AXB35-02-1.08.zip](./EC-AXB35-02-1.08.zip)
 >|| **1.06** | N/A | Seems to have slightly quieter fan curves. | [EC-AXB35-02-1.06.zip](./EC-AXB35-02-1.06.zip) |
 >|| **1.04** | N/A | First version that supports manual fan control. | [EC-AXB35-02-1.04.zip](./EC-AXB35-02-1.04.zip) |
 

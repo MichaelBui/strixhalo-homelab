@@ -1,22 +1,25 @@
-## Strix Halo HomeLab
-
 ![Strix Halo APU](./strix-halo.jpg)
 
-**Welcome to the Strix Halo HomeLab wiki!**
+#### Welcome to the Strix Halo HomeLab wiki!
 
-The purpose of this website is to gather all important information related to systems with AMD Ryzen AI MAX and MAX+ in home lab applications, so most of the [[guides|Guides]] are very Linux-centric, but there is also some information on [[Strix Halo PCs|Hardware/PCs]] and [[boards|Hardware/Boards]].
+The purpose of this website it to gather important information and practical guides for systems powered by AMD Ryzen AI MAX and MAX+ processors. Our [[guides|Guides]] cover various topics and of course there is a separate section for [[the AI ones|AI]]. You can also find detailed information on [[Strix Halo PCs|Hardware/PCs]] and [[boards|Hardware/Boards]].
 
-My personal use case is the following:
- - AI MAX+ 395 with 128G of RAM
- - VRAM allocation is 64G
- - Proxmox as the host system
- - Windows VM with iGPU passed through, for gaming and LLMs
- - Linux VMs for NAS and other services
+**Common use cases include:**
+- LLM development and inference systems
+- High-performance workstations
+- Virtualization hosts running multiple VMs
+- Gaming systems
+- Home servers and NAS solutions
 
-If you have something to say, discuss or want to participate, feel free to [contact me](https://d7.wtf/contact) directly or [join the Discord server](https://discord.gg/pnPRyucNrG).
+Whether you're researching systems to purchase, setting up your first Strix Halo PC or troubleshooting issues, this wiki aims to provide the information you need.
 
-[Creating an issue on GitHub mirror](https://github.com/deseven/strixhalo-homelab/issues/new) is also an option.
+Hope it helps :)
 
 \- deseven
-  
+
+#### Get involved
+- [Join our Discord server](https://discord.gg/pnPRyucNrG) for real-time discussions
+- [Contact me](https://d7.wtf/contact) directly
+- [Report issues or suggest improvements](https://github.com/deseven/strixhalo-homelab/issues/new) on GitHub
+
 [![Join Strix Halo HomeLab Discord server](./join-us-discord.png)](https://discord.gg/pnPRyucNrG)

@@ -1,6 +1,6 @@
 ![Strix Halo APU](./strix-halo.jpg)
 
-#### Welcome to the Strix Halo HomeLab wiki!
+#### Welcome to the Strix Halo Wiki!
 
 The purpose of this website it to gather important information and practical guides for systems powered by AMD Ryzen AI MAX and MAX+ processors. Our [[guides|Guides]] cover various topics and of course there is a separate section for [[the AI ones|AI]]. You can also find detailed information on [[Strix Halo PCs|Hardware/PCs]] and [[boards|Hardware/Boards]].
 

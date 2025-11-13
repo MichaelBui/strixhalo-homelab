@@ -61,6 +61,10 @@ Proxmox VM:
  - use recent kernels (6.15+), if you see amdgpu driver errors during boot most likely your kernel is too old
  - just like with Windows, dynamic VRAM allocation seems to be very unstable, set the fixed amount in the BIOS
 
+### Additional Info (Discord)
+ - [my personal experience and why I gave up on the idea of the iGPU passthrough](https://discord.com/channels/1384139280020148365/1384139280632250492/1430532693208334368)
+ - [a discussion thread with additional links for LXC passthrough](https://discord.com/channels/1384139280020148365/1425880739638939770)
+
 ### Files
 (taken from [[EVO-X2|Devices/GMKtec-EVO-X2]], BIOS version 1.04)
  - [vbios_8060s.bin](./vbios_8060s.bin)

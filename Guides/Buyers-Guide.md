@@ -1,8 +1,5 @@
 # Strix Halo Buyer's Guide
 
-
-## Intro
-
 This guide is written based on my own experience and experiences of other people, as well as [the data from the owner's questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSdckAFgHfRF7pt8-HXf9xCFCqkbg8uo9ZHBhGg78lDmcVtj-A/viewanalytics). It's in no way complete and is a subject of further improvements.
 
 
@@ -35,8 +32,8 @@ With that said, my personal opinion about the best use case is basically a kind 
 
 There are four main types of Strix Halo-based devices: mini PCs, AIOs, laptops, and handhelds. Laptops and handhelds are typically power and cooling limited, so their performance is lacking as well. However, the difference between 55W and 120W power limits isn't that massive ([[5-35% depending on the task|Guides/Power-Modes-and-Performance]]). This guide is mostly centered on mini PCs since this seems to be the most popular option anyway.
 
-There are several different models of Strix Halo APUs available:
-
+There are several different models of Strix Halo APUs available:  
+![Strix Halo APU Specs](./strix-halo-specs.png)
 
 Each APU comes with 32, 64, 96, or 128GB of onboard RAM that can be shared with the iGPU statically or dynamically. I'd personally recommend sticking to the best available option, which is the AI Max+ 395, but of course it's up to you and your preferred use case. Note that some manufacturers don't even provide options with lower-tier APUs.
 
@@ -59,8 +56,12 @@ Based on the survey data, **[[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]]** and *
 
 [[Framework-Desktop|Hardware/PCs/Framework-Desktop]] is the crown jewel of them all - pretty good in all possible measurements, except for size. It can be recommended as a guaranteed plug-and-play device with decent support and a huge community. However, it's also a bit pricey and availability sucks. Some users experienced longer wait times (over a month), and there were occasional PSU fan noise issues.
 
+You can also check out [the spreadsheet that aims to compare all possible options](https://discord.com/channels/@me/1427396731070320732/1427401860322562231) (could be a bit outdated).
 
 ## Size and Noise
+
+To evaluate the case sizes, there is [a great infographic created by RexYuan](https://gist.github.com/RexYuan/3fc27edcd12475e496eb20946f8c8485):  
+![Strix Halo PC Sizes](./strix-halo-pc-sizes.png)
 
 Most mini PCs are considered noisy in general. The typical cooling solution for almost every PC except for the Framework's consists of two high-RPM blowers that create enough pressure to push sufficient air through the heatsink. On the full 120W power limit, it's almost guaranteed to be noisy no matter what you do. If you have a chance to put the PC in a distant location and only work with it remotely (SSH, RDP, streaming), this might be ideal.
 

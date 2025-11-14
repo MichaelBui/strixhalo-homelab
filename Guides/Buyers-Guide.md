@@ -45,28 +45,30 @@ The amount of RAM is another consideration. If you don't care about AI stuff, 32
 
 ## What Mini PC to Buy
 
-**Chinese OEMs (GMKtec, Bosgame, FEVM, Corsair, NIMO, etc.)**: About 90% of Chinese PCs are built on the same [[platform made by Sixunited|Hardware/Boards/Sixunited-AXB35]]. It's nothing to write home about, but performance-wise (which I think is the most important thing) it will be roughly the same as anything else, so it's a valid option if you want to go the cheapest route. Things to look out for: import taxes, warranty, support (or the lack thereof).
+About 90% of Chinese PCs (GMKtec, Bosgame, FEVM, Corsair, NIMO, etc.) are built on the same [[platform made by Sixunited|Hardware/Boards/Sixunited-AXB35]]. It's nothing to write home about, but performance-wise (which I think is the most important thing) it will be roughly the same as anything else, so it's a valid option if you want to go the cheapest route. Things to look out for: import taxes, warranty, support (or the lack thereof). Also note that the BIOS on these systems is extremely limited and getting updates is an adventure in itself.
+
+**When sourcing from Chinese manufacturers, consider purchasing through established marketplaces** like Amazon or AliExpress, as these platforms typically offer stronger buyer protection policies, streamlined return processes, and dispute resolution mechanisms in case of defective products or shipping issues, which are not that uncommon in that case.
 
 Based on the survey data, **[[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]]** and **[[Bosgame M5|Hardware/PCs/Bosgame-M5]]** seem to be the most popular Chinese options, with most buyers being satisfied with their purchases. GMKtec appears slightly more reliable, while some Bosgame units had minor issues like stuck power buttons.
 
-**[[Corsair AI Workstation 300|Hardware/PCs/Corsair-AI-Workstation-300]]** is also a decent option. It's a stock Sixunited's PC, but brand reputation likely force them to have a better quality control and support. 
+**[[Corsair AI Workstation 300|Hardware/PCs/Corsair-AI-Workstation-300]]** is also a decent one. It's a stock Sixunited's PC, but brand reputation likely force them to have a better quality control and support. 
 
-**[[Beelink GTR9Pro|Hardware/PCs/Beelink-GTR9-Pro]]** is a very interesting system in Mac Mini style which is unfortunately plagued by major stability problems which no one was able to solve for over 3 months already. Avoid unless something changes on that front.
+**[[Beelink GTR9Pro|Hardware/PCs/Beelink-GTR9-Pro]]** is a very interesting system in Mac Mini style which is unfortunately plagued by major stability problems which no one was able to solve for over 3 months already. **Avoid unless something changes on that front.**
 
 **[[Minisforum MS-S1 MAX|Hardware/PCs/Minisforum-MS-S1-MAX]]** seems decent and also has a PCIe slot for expandability, along with two 10G Ethernets. Early feedback suggests good build quality and premium feel.
 
-**[[HP Z2 Mini G1a|Hardware/PCs/HP-Z2-Mini-G1a]]** is still the only option from big manufacturers. They claim there's an ECC memory option, but I've never seen anyone with actual ECC modules (only ECC-link). It boosts up to 160W (although going beyond 120W leads to very questionable gains) and is noisier than Sixunited's cooling, which is hard to imagine. Pricing is all over the place, if someone could find it for an adequate price (sub $2500), then it could be recommended because with HP you at least get some level of support. Also features the PRO version of the APU, with the only real difference being DASH support.
+**[[HP Z2 Mini G1a|Hardware/PCs/HP-Z2-Mini-G1a]]** is still the only option from big Western manufacturers. They claim there's an ECC memory option, but I've never seen anyone with actual ECC modules (only ECC-link). It boosts up to 160W (although going beyond 120W leads to very questionable gains) and is noisier than Sixunited's cooling, which is hard to imagine. Pricing is all over the place, if someone could find it for an adequate price (sub $2500), then it could be recommended because with HP you at least get some level of support. Also features the PRO version of the APU, with the only real difference being DASH support.
 
 **[[Framework Desktop|Hardware/PCs/Framework-Desktop]]** is the crown jewel of them all - pretty good in all possible measurements, except for size. It can be recommended as a guaranteed plug-and-play device with decent support and a huge community. However, it's also a bit pricey and availability sucks. Some users experienced longer wait times (over a month), and there were occasional PSU fan noise issues.
 
-You can also check out [the spreadsheet that aims to compare all possible options](https://discord.com/channels/@me/1427396731070320732/1427401860322562231) (could be a bit outdated).
+You can also check out [the spreadsheet that aims to compare all possible options](https://docs.google.com/spreadsheets/d/1QOvILBE7BZHICVWJ1ylmlO3jIMig1HYW6gIeZ1jhQXE/edit?gid=0#gid=0) (could be a bit outdated).
 
 ## Size and Noise
 
 To evaluate the case sizes, there is [a great infographic created by RexYuan](https://gist.github.com/RexYuan/3fc27edcd12475e496eb20946f8c8485):  
 ![Strix Halo PC Sizes](./strix-halo-pc-sizes.png)
 
-Most mini PCs are considered noisy in general. The typical cooling solution for almost every PC except for the Framework's consists of two high-RPM blowers that create enough pressure to push sufficient air through the heatsink. On the full 120W power limit, it's almost guaranteed to be noisy no matter what you do. If you have a chance to put the PC in a distant location and only work with it remotely (SSH, RDP, streaming), this might be ideal.
+Most Strix Halo mini PCs are considered noisy in general. The typical cooling solution for almost every PC except for the Framework's consists of two high-RPM blowers that create enough pressure to push sufficient air through the heatsink. On the full 120W power limit, it's almost guaranteed to be noisy no matter what you do. If you have a chance to put the PC in a separate room and only work with it remotely (SSH, RDP, streaming, etc), this might be ideal.
 
 
 ## DIY Way
@@ -82,7 +84,7 @@ It is possible to buy just the board and build your own PC with it, but you'll b
 
 **Canada**: Pricing tends to be slightly higher due to exchange rates and taxes.
 
-**Asia-Pacific**: Pricing varies significantly by country. In Japan, domestic online shopping sites often offer better deals than direct manufacturer purchases. South Korea has notably high pricing (over $2200 equivalent) due to import duties and local retailer markups, also for some bizarre reason PCs could lack WI-Fi modules. 
+**Asia-Pacific**: Pricing varies significantly by country. In Japan, domestic online shopping sites often offer better deals than direct manufacturer purchases. South Korea has notably high pricing due to import duties and local retailer markups, also for some bizarre reason PCs could lack WI-Fi modules. 
 
 **China**: Obviously the cheapest option if you're local, no import taxes, no delays.
 
@@ -96,7 +98,7 @@ For gaming and general tasks, you should be able to build a more performant syst
 
 ## Conclusions
 
-Think before you buy! Consider available options, read reviews, check out benchmarks, and ask current owners about their experiences. Figuring it all out might be overwhelming, but there's really no way around it.
+This might sound obvious, but really, **think before you buy!** Consider available options, read reviews, check out benchmarks, and ask current owners about their experiences. Figuring it all out might be a bit overwhelming, but there's really no way around it if you want to be happy about your purchase. 
 
 The questionnaire data shows that most buyers (about 85%) are satisfied with their purchases, but satisfaction varies significantly by use case and expectations. Those focused purely on AI workloads tend to be less satisfied due to software ecosystem limitations, while those using these systems as general-purpose machines tend to be happier.
 

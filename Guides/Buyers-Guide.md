@@ -9,11 +9,14 @@ This guide is written based on my own experience and experiences of other people
 
 Strix Halo APUs are mainly considered to be a cheap way to run big LLMs and they indeed can do it fairly well, but not without some caveats. Most limitations come from memory bandwidth constraints. MoE (Mixture of Experts) models work much faster than dense ones, and while there are more and more MoE models coming out, you might still end up needing to use a dense model with severely lacking performance. 
 
-The same goes for context size - prompt processing and text generation speeds take a major hit as context grows. Depending on model size and architecture, going over 64k, 32k, and in some cases even 16k of context becomes painful. Big context sizes could still work fairly well if the context grows gradually (like when you're using the model in chat mode), but don't expect miracles with massive document processing.
+The same goes for context size - **prompt processing and text generation speeds take a major hit as context grows**. Depending on model size and architecture, going over 64k, 32k, and in some cases even 16k of context becomes painful. Big context sizes could still work fairly well if the context grows gradually (like when you're using the model in chat mode), but don't expect miracles with massive document processing.
 
-**Here's the key point**: Look at benchmarks with the specific model and context size you're interested in. If you can't find them, ask in [our Discord](https://discord.gg/pnPRyucNrG) for someone to test it for you. This is important - don't give in to hype only to be disappointed later.
+As an example, here are some charts illustrating the drop of speed with the growth of context size:  
+![](./strix-halo-pp-tg-ctx.png)
 
-More on the AI topic - image and video generation is just slow. Again, depending on your use cases this might or might not be a problem, but be aware that the typical experience would probably be "set some tasks in the evening, come back to check results in the morning".
+**General rule: look at benchmarks with the specific model and context size you're interested in.** If you can't find them, ask in [our Discord](https://discord.gg/pnPRyucNrG) for someone to test it for you. This is important - don't give in to hype only to be disappointed later.
+
+More on the AI topic - **image and video generation is just slow**. Again, depending on your use cases this might or might not be a problem, but be aware that the typical experience would probably be "set some tasks in the evening, come back to check results in the morning".
 
 But the real elephant in the room is that AMD software support is lacking as always. It's been nearly a year since the platform was introduced, yet there are still problems with stability (especially on ROCm) and performance. The NPUs are still mostly unused, the SDKs are filled with bugs, and AMD's level of involvement is mediocre at best. The situation has been improving slightly over the last several months, but the whole ecosystem is mostly driven by community effort. The overall experience is indeed worse than what you could theoretically get with NVIDIA products.
 
@@ -23,7 +26,7 @@ What about other, non-AI related tasks? Well, it's great! If we're talking about
 
 All of that, along with a huge amount of RAM, also makes the platform very interesting for running VMs and acting as a home server. However, note that [[GPU passthrough|Guides/VM-iGPU-Passthrough]] on consumer AMD cards is very lacking and plagued with problems.
 
-#### In General
+#### All at Once
 
 With that said, my personal opinion about the best use case is basically a kind of "jack of all trades" system. You get full x86 compatibility and something that can do anything and everything, albeit not at the highest possible levels and while being kinda pricey (especially with prices rising since November 2025).
 

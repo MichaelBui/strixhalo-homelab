@@ -22,7 +22,7 @@ This last point is more generally true as well. Despite having launched in early
 
 #### Non-AI Stuff
 
-What about other, non-AI related tasks? Well, it's great! If we're talking about the top-of-the-line AI Max+ 395, in terms of raw CPU performance it could even be compared to the 9950X3D (being roughly just 10-20% slower), which is really impressive. The iGPU is also the best one available on the market so far. Depending on the power limit, the 8060S performance lies somewhere between desktop versions of RTX 3060 and 4060, leaning closer to the latter and in some cases even beating it.
+What about other, non-AI related tasks? Well, it's great! If we're talking about the top-of-the-line AI Max+ 395, in terms of raw CPU performance it could even be compared to the Ryzen 9 9950X (being roughly just 5% slower), which is really impressive. The iGPU is also the best one available on the market so far. Depending on the power limit, the 8060S performance lies somewhere between desktop versions of RTX 3060 and 4060, leaning closer to the latter and in some cases even beating it.
 
 All of that, along with a huge amount of RAM, also makes the platform very interesting for running VMs and acting as a home server. However, note that [[GPU passthrough|Guides/VM-iGPU-Passthrough]] on consumer AMD cards is very lacking and plagued with problems.
 

@@ -54,7 +54,7 @@ Based on the survey data, **[[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]]** and *
 
 **[[Beelink GTR9Pro|Hardware/PCs/Beelink-GTR9-Pro]]** is a very interesting system in Mac Mini style which is unfortunately plagued by major stability problems which no one was able to solve for over 3 months already. **Avoid unless something changes on that front.**
 
-**[[Minisforum MS-S1 MAX|Hardware/PCs/Minisforum-MS-S1-MAX]]** seems decent and also has a PCIe slot for expandability, along with two 10G Ethernets. Early feedback suggests good build quality and premium feel.
+**[[Minisforum MS-S1 MAX|Hardware/PCs/Minisforum-MS-S1-MAX]]** seems decent and also has a PCIe slot for expandability, along with two 10G Ethernets. Early feedback suggests good build quality and premium feel, however [some people report problems with the network interfaces on Linux](https://www.reddit.com/r/MINISFORUM/comments/1ovcph0/mss1_max_arrived_both_realtek_nics_missing_from/) and sub-optimal fan curves, both problems could likely be fixed in software later.
 
 **[[HP Z2 Mini G1a|Hardware/PCs/HP-Z2-Mini-G1a]]** is still the only option from big Western manufacturers. They claim there's an ECC memory option, but I've never seen anyone with actual ECC modules (only ECC-link). It boosts up to 160W (although going beyond 120W leads to very questionable gains) and is noisier than Sixunited's cooling, which is hard to imagine. Pricing is all over the place, if someone could find it for an adequate price (sub $2500), then it could be recommended because with HP you at least get some level of support. Also features the PRO version of the APU, with the only real difference being DASH support.
 

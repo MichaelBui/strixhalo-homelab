@@ -78,3 +78,8 @@ You have two options to re-lock the ROM:
 ### Alternative Method: Desoldering
 
 Alternatively, If you have soldering experience and equipment, you can desolder the ROM chip and flash it externally without needing a probe. Of course there are risks of damaging the motherboard, so only attempt if you know what you're doing.
+
+
+### Relevant Pages
+ - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Hardware/PCs/GMKtec-EVO-X2]]

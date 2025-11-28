@@ -20,10 +20,10 @@ A debug mode can be toggled by pressing **ALT+F5**. Enabling the mode adds a sec
 
 > [!CAUTION]
 > After initiating the BIOS upgrade, your PC will reboot and the process will continue in a special interface.  
-> ‼️ **DO NOT turn off your computer or interrupt power**  
-> ‼️ **DO NOT press any keys during this process**  
-> ‼️ **BE PATIENT, the screen may remain blank for several minutes**  
-
+> - ‼️ **DO NOT turn off your computer or interrupt power**  
+> - ‼️ **DO NOT press any keys during this process**  
+> - ‼️ **BE PATIENT, the screen may remain blank for several minutes**  
+> In case you somehow managed to brick your system, the only way of restoring it yourself would be **direct ROM chip flashing using a programmer**, [[described in this guide|Guides/Sixunited-AXB35/Restoring-Corrupted-BIOS]].
 
 ### Bosgame M5
 
@@ -80,3 +80,4 @@ BIOS and EC firmware are no longer available [on the GMKtec website](https://www
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]
  - [[Hardware/PCs/GMKtec-EVO-X2]]
+ - [[Guides/Sixunited-AXB35/Restoring-Corrupted-BIOS]]

@@ -26,7 +26,7 @@ Some people successfully bricked their PC when updating the BIOS and apart from 
 
 ### Prerequisites
 
-Both ROM chips are located on the back side of the motherboard, so the PC needs to be disassembled first. Refer to this video for disassembly:  
+Both ROM chips are located on the back side of the motherboard, so the PC needs to be disassembled first. Refer to this video for disassembly and **don't forget to remove the CMOS battery just in case**:  
 https://youtu.be/1zUyVSKtczU
 
 [![AXB35 ROM Chip Locations](./axb35-roms-location.jpg?thumbnail=400)](./axb35-roms-location.jpg)

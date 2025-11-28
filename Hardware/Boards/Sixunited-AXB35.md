@@ -12,7 +12,7 @@ One of the first Strix Halo boards, used in many Chinese PCs along with a coolin
 The board supports 3 different power limits - 55W (100W burst), 85W (120W burst), and 120W (140W burst):
 ![AXB35 Power Modes](./axb35-power-modes.png)
 
-See [[the guide on power and performance|Guides/Sixunited-AXB35/Power-Modes-and-Performance]] for more info on power modes.
+See [[the guide on power and performance|Guides/Power-Modes-and-Performance]] for more info on power modes.
 
 Idle power draw from the wall should be around 12W with two SSDs installed.
 

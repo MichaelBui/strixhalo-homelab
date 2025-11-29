@@ -12,6 +12,8 @@ Comes with Windows 11 Pro preinstalled on the 2TB SSD.
 
 As of October 2025, EU orders are shipped from Germany and US orders are shipped from the US. All other orders are shipped from China.
 
+Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc).
+
 ### Reviews
 
 * 2025-07-25: YouTube [Paul Gallant](https://www.youtube.com/watch?v=IL4hSjfSlVM) 

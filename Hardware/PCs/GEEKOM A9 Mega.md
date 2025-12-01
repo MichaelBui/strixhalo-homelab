@@ -1,4 +1,4 @@
-# Geekom A9 Mega
+# GEEKOM A9 Mega
 
 ![Geekom A9 Mega](./geekom-a9-mega.png)
 

@@ -4,7 +4,7 @@
 
 [[OFFICIAL PRODUCT PAGE](https://www.bosgamepc.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395)]
 
-Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited-AXB35]].
+Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited-AXB35]]. Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc) and [X+ Rival](https://x-plus.store/products/xrival).
 
 Availability: July 2025.
 
@@ -12,7 +12,6 @@ Comes with Windows 11 Pro preinstalled on the 2TB SSD.
 
 As of October 2025, EU orders are shipped from Germany and US orders are shipped from the US. All other orders are shipped from China.
 
-Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc).
 
 ### Reviews
 
@@ -21,6 +20,7 @@ Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc).
 * 2025-08-20: [Guru3D](https://www.guru3d.com/review/review-bosgame-m5-ai-mini-desktop-ryzen-ai-395/) 
 * 2025-08-24: [TechRadar](https://www.techradar.com/computing/bosgame-m5-ai-mini-pc-review) 
 * 2025-08-24: [NHub](http://nhub.news/2025/08/i-tested-out-the-bosgame-m5-ai-and-it-takes-your-expectations-about-what-a-mini-pc-can-do-and-detonates-them-just-for-fun/) 
+* 2025-10-24: YouTube [TechCircuit](https://www.youtube.com/watch?v=rDyZsqDmQbQ)
 
 
 ### Relevant Pages

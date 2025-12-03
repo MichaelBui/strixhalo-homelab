@@ -28,6 +28,11 @@ As of October 2025, EU orders are shipped from Germany and US orders are shipped
 * 2025-10-24: YouTube [TechCircuit](https://www.youtube.com/watch?v=rDyZsqDmQbQ)
 
 
+### Hardware
+
+Disassembly video: https://www.youtube.com/watch?v=iJYixZ0G7YA
+
+
 ### Relevant Pages
  - [[Hardware/Boards/Sixunited-AXB35]]
  - [[Hardware/Boards/Sixunited-AXB35/Firmware]]

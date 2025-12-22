@@ -46,7 +46,7 @@ The amount of RAM is another consideration. If you don't care about AI stuff, 32
 
 About 90% of Chinese PCs (GMKtec, Bosgame, FEVM, Corsair, NIMO, etc.) are built on the same [[platform made by Sixunited|Hardware/Boards/Sixunited-AXB35]]. It's nothing to write home about, but performance-wise (which I think is the most important thing) it will be roughly the same as anything else, so it's a valid option if you want to go the cheapest route. Things to look out for: import taxes, warranty, support (or the lack thereof). Also note that the BIOS on these systems is extremely limited and getting updates is an adventure in itself.
 
-**When sourcing from Chinese manufacturers, consider purchasing through established marketplaces** like Amazon or AliExpress, as these platforms typically offer stronger buyer protection policies, streamlined return processes, and dispute resolution mechanisms in case of defective products or shipping issues, which are not that uncommon in that case.
+**When sourcing from Chinese manufacturers, consider purchasing through established marketplaces** like Amazon, AliExpress, Taobao, JD (depending on where you're located and what options are available) as these platforms typically offer stronger buyer protection policies, streamlined return processes, and dispute resolution mechanisms in case of defective products or shipping issues, which are not that uncommon in that case.
 
 Based on the survey data, **[[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]]** and **[[Bosgame M5|Hardware/PCs/Bosgame-M5]]** seem to be the most popular Chinese options, with most buyers being satisfied with their purchases. GMKtec appears slightly more reliable, while some Bosgame units had minor issues like stuck power buttons.
 

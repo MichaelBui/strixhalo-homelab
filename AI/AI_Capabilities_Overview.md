@@ -101,6 +101,8 @@ As long are your software supports using GTT, for AI purposes, you are probably 
 # options ttm page_pool_size=15728640
 ```
 
+If your GPU driver loads from initramfs, you should regenerate it after making the changes, otherwise they won't be applied. (A strong code LLM should have no problem helping you determine/do that for you specific distro/setup if you need help w/ this).
+
 `amdgpu.gttsize` is an [officially deprecated](https://www.mail-archive.com/amd-gfx@lists.freedesktop.org/msg117333.html) parameter that may be referenced by some software, so it's best to still set it to match, but GTT allocation in Linux is now actually handled by the Translation Table Maps (TTM) memory management subsystem.
 - `pages_limit` sets the maximum number or 4KiB pages that can be used for GPU memory.
 - `page_pool_size` pre-caches/allocates the memory for usage by the GPU. (This will not be available for your system). In theory you could set this to 0, but if you are looking for the maximum performance (minimizing fragmentation), then you can set it to match the `pages_limit` size.

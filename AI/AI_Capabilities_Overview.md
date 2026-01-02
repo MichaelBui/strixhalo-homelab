@@ -6,7 +6,7 @@
 ## Intro
 Strix Halo can be a capable local LLM inferencing platform. With up to 128GiB of shared system memory (LPDDR5x-8000 on a 256-bit bus) and a theoretical bandwidth limit of 256GiB/s (double most PC desktop and APU platforms) it is well suited for running quantized medium sized (~30B) dense models as well as large 100B+ parameter sparse Mixture-of-Experts (MoE) models.
 
-There have been some wild claims made on Strix Halo's AI capabilities, so it's important to put this in context. 256GiB/s of MBW is still much lower than most mid-range dGPUs. As a point of reference, a 3060 Ti has 448 GiB/s of MBW. Also, the Strix Halo GPU uses an RDNA3.5 architecture (gfx1151), which for AI is sub-optimal architecturally. For compute and memory bandwidth, you can think of the Strix Halo GPU like a [Radeon RX 7600 XT](https://www.techpowerup.com/gpu-specs/radeon-rx-7600-xt.c4190), but with up to 100GiB+ of VRAM.
+There have been some wild claims made on Strix Halo's AI capabilities, so it's important to put this in context. 256GiB/s of MBW is still much lower than most mid-range dGPUs. As a point of reference, a 3060 Ti has 448 GiB/s of MBW. Also, the Strix Halo GPU uses an RDNA3.5 architecture (gfx1151), which for AI is sub-optimal architecturally. For compute and memory bandwidth, you can think of the Strix Halo GPU like a [Radeon RX 7600 XT](https://www.techpowerup.com/gpu-specs/radeon-rx-7600-xt.c4190), but with up to 124GiB+ of VRAM.
 
 Vulkan works well for Strix Halo on Windows and Linux (both Mesa RADV and AMDVLK), but as of August 2025, its ROCm support is still immature and incomplete, and you may find running other AI/ML tasks (training, image/video generation) slow or impossible. 
 

@@ -6,7 +6,7 @@ The following shows the versions that are known to be working at the time of wri
 
 | Hardware | Host | Guest |
 | -------- | -------- | -------- |
-| Bosgame M5</br>AXB35-02 SixUnited</br>BIOS 1.07   |  [Proxmox 9.1](https://www.proxmox.com/en/downloads)</br>Kernel 6.17.4-1-pve  | [CachyOS](https://cachyos.org)</br>Kernel  Linux 6.18.2-3-cachyos</br>Mesa Mesa 25.3.2-arch1.2</br>Vulkan 1.4.335  |
+| Bosgame M5<br>AXB35-02 SixUnited<br>BIOS 1.07   |  [Proxmox 9.1](https://www.proxmox.com/en/downloads)<br>Kernel 6.17.4-1-pve  | [CachyOS](https://cachyos.org)<br>Kernel  Linux 6.18.2-3-cachyos<br>Mesa Mesa 25.3.2-arch1.2<br>Vulkan 1.4.335  |
 
 CachyOS is not necessarily needed, but it's a convenient way to get a rolling distro in a friendly way. Once you've got it working, it's much easier to know if it's a guest issue.
 

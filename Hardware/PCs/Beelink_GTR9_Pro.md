@@ -10,5 +10,5 @@ Availability: available since September 2025.
 
 
 > [!WARNING]
-> There seem to be **MAJOR** problems with stability of the system with no solution at the time of writing, read more here:  
-> https://craigwilson.blog/post/2025/2025-09-25-beelink395bsod/
+> There seem to be **MAJOR** problems with stability of the system with no solution at the time of writing, read more here: https://craigwilson.blog/post/2025/2025-09-25-beelink395bsod/  
+> For updates & discussion follow this thread: https://bbs.bee-link.com/d/7762-gtr-9-pro-ethernet-malfunction-under-load

@@ -23,7 +23,7 @@ Bonding is using multiple network interfaces to get higher throughput, kind of l
 
 The Llama.cpp RPC architecture is [explained in the documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/rpc/README.md). The version of Llama.cpp provided by **kyuz0**s toolboxes are compiled with this option enabled. 
 
-Run `rpc-server` (part of llama.cpp) on all but one PC. It will make available your iGPU to the main system. Use the `-c` option to make it cache the LLM data on the local disk (in the directory `~/.cache/llama.cpp/rpc/`). This will speed things up considerably on subsequent invocations of the same LLM.
+Run `rpc-server` (part of llama.cpp) on all but one PC. It will make available your iGPU to the master system. Use the `-c` option to make it cache the LLM data on the local disk (in the directory `~/.cache/llama.cpp/rpc/`). This will speed things up considerably on subsequent invocations of the same LLM.
 
 On the **master** PC, you start `llama-server` with the `--rpc` option and provide it with the addresses of the other PCs. If you use thunderbolt networking, make sure to give the addresses of the thunderbolt interfaces.
 

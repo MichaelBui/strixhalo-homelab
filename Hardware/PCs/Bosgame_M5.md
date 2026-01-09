@@ -2,7 +2,7 @@
 
 ![Bosgame M5](./bosgame-m5.jpg)
 
-[[OFFICIAL PRODUCT PAGE](https://www.bosgamepc.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395)]
+[[OFFICIAL PRODUCT PAGE](https://www.bosgame.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395-96gb-128gb-2tb)]
 
 Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited-AXB35]]. Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc) and [X+ Rival](https://x-plus.store/products/xrival).
 

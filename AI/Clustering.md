@@ -23,19 +23,19 @@ Bonding is using multiple network interfaces to get higher throughput, kind of l
 
 The Llama.cpp RPC architecture is [explained in the documentation](https://github.com/ggml-org/llama.cpp/blob/master/tools/rpc/README.md). The version of Llama.cpp provided by **kyuz0**s toolboxes are compiled with this option enabled. 
 
-Run `rpc-server` (part of llama.cpp) on all but one PC. It will make available your iGPU to the master system. Use the `-c` option to make it cache the LLM data on the local disk (in the directory `~/.cache/llama.cpp/rpc/`). This will speed things up considerably on subsequent invocations of the same LLM.
+Run `rpc-server` (part of llama.cpp) on all but one PC. It will make available your iGPU to the master PC. Use the `-c` option to make it cache the LLM data on the local disk (in the directory `~/.cache/llama.cpp/rpc/`). This will speed things up considerably on subsequent invocations of the same LLM.
 
 On the **master** PC, you start `llama-server` with the `--rpc` option and provide it with the addresses of the other PCs. If you use thunderbolt networking, make sure to give the addresses of the thunderbolt interfaces.
 
-### For example:
+### For example
 
-- Main PC with thunderbolt0 interface and IPv4 address 192.168.230.1
+- Master PC with thunderbolt0 interface and IPv4 address 192.168.230.1
 
 - Second PC with thunderbolt0 interface and IPv4 address 192.168.230.2
 
 This second PC is running "`rpc-server -c`"
 
-On the main PC start `llama-server` as usual, but add the parameter `--rpc 192.168.230.2:50052`. If you have three PCs, add the third PC with a comma as separator: `--rpc 192.168.230.2:50052,192.168.230.3:50052`. 
+On the master PC start `llama-server` as usual, but add the parameter `--rpc 192.168.230.2:50052`. If you have three PCs, add the third PC with a comma as separator: `--rpc 192.168.230.2:50052,192.168.230.3:50052`. 
 Voilà! 
 
 ## vLLM

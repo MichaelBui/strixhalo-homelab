@@ -17,7 +17,7 @@ Note that the [[Bosgame M5|Hardware/PCs/Bosgame_M5]] has one USB4 port on the fr
 
 ### Bonding
 
-Bonding is using multiple network interfaces to get higher throughput, kind of like RAID for harddisks. There is a pending kernel patch that will allow binding with thunderbolt-net. Until then it won't work.
+Bonding is using multiple network interfaces to get higher throughput, kind of like RAID for harddisks. There is a pending kernel patch that will allow bonding with thunderbolt-net. Until then it won't work.
 
 ## Llama.cpp with RPC
 

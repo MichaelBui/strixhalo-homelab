@@ -17,7 +17,7 @@ Note that the [[Bosgame M5|Hardware/PCs/Bosgame_M5]] has one USB4 port on the fr
 
 ### Bonding
 
-Bonding is using multiple network interfaces to get higher throughput, kind of like RAID for harddisks. There is a pending [[kernel patch|https://lore.kernel.org/netdev/20251215121109.4042218-1-mika.westerberg@linux.intel.com/T/#t]] that will allow bonding with thunderbolt-net. Until then it won't work.
+Bonding is using multiple network interfaces to get higher throughput, kind of like RAID for harddisks. There is a pending [kernel patch](https://lore.kernel.org/netdev/20251215121109.4042218-1-mika.westerberg@linux.intel.com/T/#t) that will allow bonding with thunderbolt-net. Until then it won't work.
 
 ## Llama.cpp with RPC
 
@@ -44,4 +44,4 @@ vLLM is also capable of utilizing GPUs across multiple PCs. You have to setup a 
 
 ## Community
 
-For further discussion join the [[#beyond128g|https://discord.com/channels/1384139280020148365/1455307501472976979]] discord channel.
+For further discussion join the [#beyond128g](https://discord.com/channels/1384139280020148365/1455307501472976979) discord channel.

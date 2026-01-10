@@ -4,14 +4,14 @@ The up to 128GB of memory provided by Strix Halo systems are a lot of memory, bu
 
 ## Networking
 
-All Strix Halo systems have two USB4 ports that are also Thunderbolt 3 compatible (40GBit/s).
+All Strix Halo systems have two USB4 v1 ports (40GBit/s) that are also Thunderbolt 3 compatible.
 If you connect Strix Halo systems using a Thunderbolt 3 cable, you should see a thunderbolt-net connection in NetworkManager rightaway. This will provide around 9 GBit/s of bandwidth.
 
-There doesn't seem to be routing with thunderbolt-net, so with two ports you can connect three Strix Halo systems using for now. You can of course try to use other means to cluster more systems, like the Ethernet ports.
+There doesn't seem to be routing with thunderbolt-net, so with two USB4 ports you can directly connect three Strix Halo systems for now. You can of course try to use other means to cluster more systems, like the Ethernet ports or connecting Infiniband Adapters via M.2 slots.
 
 ### Cabling
 
-You need a cable that can handle 40 GBit/s. The cheapest cables that are known to work are "_UGOURD Thunderbolt 40gbps_" that you can usually get for less than $5 each at 0.3m length from AliExpress. Good luck!
+You need cables that can handle 40 GBit/s. The cheapest cables that are known to work are "_UGOURD Thunderbolt 40gbps_" that you can usually get for less than $5 each at 0.3m length from AliExpress. Good luck!
 
 Note that the [[Bosgame M5|Hardware/PCs/Bosgame_M5]] has one USB4 port on the front and one on the back.
 

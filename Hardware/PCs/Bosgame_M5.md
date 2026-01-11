@@ -432,7 +432,7 @@ Here are some hopefully useful outputs created on Bosgame M5 with Linux kernel 6
 >|                    logical name: /dev/nvme0n1
 >|                    size: 1907GiB (2048GB)
 >|                    capabilities: gpt-1.00 partitioned partitioned:gpt
->|                    configuration: guid=7853602a-c877-46b7-8f57-0edc60060016 logicalsectorsize=512 sectorsize=512 wwid=eui.0026b73844bb6615
+>|                    configuration: guid=[REMOVED] logicalsectorsize=512 sectorsize=512 wwid=eui.0026b73844bb6615
 >|                  *-volume:0
 >|                       description: Windows FAT volume
 >|                       vendor: mkfs.fat

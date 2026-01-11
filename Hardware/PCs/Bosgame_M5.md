@@ -43,7 +43,7 @@ Disassembly video: https://www.youtube.com/watch?v=iJYixZ0G7YA
  - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
  - [[Guides/Sixunited-AXB35]]
 
-##Linux on the Bosgame M5
+## Linux on the Bosgame M5
 
 You can use the `ec-su_axb35` Linux kernel module that's linked at [[Power Mode and Fan Control|https://strixhalo.wiki/Guides/Sixunited_AXB35/Power_Mode_and_Fan_Control]].
 

@@ -50,7 +50,7 @@ You can use the `ec-su_axb35` Linux kernel module that's linked at [[Power Mode 
 Here are some hopefull useful outputs created on Bosgame M5 with Linux kernel 6.18.3:
 
 >| # lspci
->| ``` 00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Root Complex (rev 02)
+>| ```00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Root Complex (rev 02)
 >| 00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo IOMMU (rev 02)
 >| 00:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Dummy Host Bridge
 >| 00:01.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo PCIe USB4 Bridge (rev 02)
@@ -91,6 +91,43 @@ Here are some hopefull useful outputs created on Bosgame M5 with Linux kernel 6.
 >| c6:00.6 USB controller: Advanced Micro Devices, Inc. [AMD] Strix Halo USB4 Host Router
 >| ```
 
+>| # lspci -t
+>| ```-[0000:00]-+-00.0
+>|            +-00.2
+>|            +-01.0
+>|            +-01.1-[01-60]--
+>|            +-01.2-[61-c0]--
+>|            +-02.0
+>|            +-02.1-[c1]----00.0
+>|            +-02.2-[c2]----00.0
+>|            +-03.0
+>|            +-03.1-[c3]----00.0
+>|            +-08.0
+>|            +-08.1-[c4]--+-00.0
+>|            |            +-00.1
+>|            |            +-00.2
+>|            |            +-00.4
+>|            |            \-00.6
+>|            +-08.2-[c5]--+-00.0
+>|            |            \-00.1
+>|            +-08.3-[c6]--+-00.0
+>|            |            +-00.3
+>|            |            +-00.4
+>|            |            +-00.5
+>|            |            \-00.6
+>|            +-14.0
+>|            +-14.3
+>|            +-18.0
+>|            +-18.1
+>|            +-18.2
+>|            +-18.3
+>|            +-18.4
+>|            +-18.5
+>|            +-18.6
+>|            \-18.7
+>| ```
+
+
 >| # lsusb
 >| ```Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 >| Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
@@ -104,7 +141,7 @@ Here are some hopefull useful outputs created on Bosgame M5 with Linux kernel 6.
 >| ```
 
 >| # lshw -sanitize
->| ``` computer
+>| ```computer
 >|     description: Mini PC
 >|     product: BeyondMax Series (0005)
 >|     vendor: Bosgame

@@ -13,7 +13,7 @@ There doesn't seem to be routing with thunderbolt-net, so with two USB4 ports yo
 
 You need cables that can handle 40 GBit/s. The cheapest cables that are known to work are "_UGOURD Thunderbolt 40gbps_" that you can usually get for less than $5 each at 0.3m length from AliExpress. Good luck!
 
-Note that the [[Bosgame M5|Hardware/PCs/Bosgame_M5]] has one USB4 port on the front and one on the back.
+Note that the popular Sixunited AXB35 board has one USB4 port on the front and one on the back.
 
 ### Bonding
 

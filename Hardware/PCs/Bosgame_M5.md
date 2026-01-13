@@ -86,40 +86,41 @@ Here are some hopefully useful outputs created on Bosgame M5 with Linux kernel 6
 >| c6:00.6 USB controller: Advanced Micro Devices, Inc. [AMD] Strix Halo USB4 Host Router
 >| ```
 
->| # lspci -t
->| ```-[0000:00]-+-00.0
->|            +-00.2
->|            +-01.0
+
+>| # lspci -tv
+>| ```-[0000:00]-+-00.0  Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Root Complex
+>|            +-00.2  Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo IOMMU
+>|            +-01.0  Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Dummy Host Bridge
 >|            +-01.1-[01-60]--
 >|            +-01.2-[61-c0]--
->|            +-02.0
->|            +-02.1-[c1]----00.0
->|            +-02.2-[c2]----00.0
->|            +-03.0
->|            +-03.1-[c3]----00.0
->|            +-08.0
->|            +-08.1-[c4]--+-00.0
->|            |            +-00.1
->|            |            +-00.2
->|            |            +-00.4
->|            |            \-00.6
->|            +-08.2-[c5]--+-00.0
->|            |            \-00.1
->|            +-08.3-[c6]--+-00.0
->|            |            +-00.3
->|            |            +-00.4
->|            |            +-00.5
->|            |            \-00.6
->|            +-14.0
->|            +-14.3
->|            +-18.0
->|            +-18.1
->|            +-18.2
->|            +-18.3
->|            +-18.4
->|            +-18.5
->|            +-18.6
->|            \-18.7
+>|            +-02.0  Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Dummy Host Bridge
+>|            +-02.1-[c1]----00.0  Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller
+>|            +-02.2-[c2]----00.0  Genesys Logic, Inc GL9755 SD Host Controller
+>|            +-03.0  Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Dummy Host Bridge
+>|            +-03.1-[c3]----00.0  Kingston Technology Company, Inc. OM8TAP4 PCIe 4 NVMe SSD (QLC) (DRAM-less)
+>|            +-08.0  Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo Dummy Host Bridge
+>|            +-08.1-[c4]--+-00.0  Advanced Micro Devices, Inc. [AMD/ATI] Strix Halo [Radeon Graphics / Radeon 8050S Graphics / Radeon 8060S Graphics]
+>|            |            +-00.1  Advanced Micro Devices, Inc. [AMD/ATI] Radeon High Definition Audio Controller
+>|            |            +-00.2  Advanced Micro Devices, Inc. [AMD] Strix/Krackan/Strix Halo CCP/ASP
+>|            |            +-00.4  Advanced Micro Devices, Inc. [AMD] Strix Halo USB 3.1 xHCI
+>|            |            \-00.6  Advanced Micro Devices, Inc. [AMD] Ryzen HD Audio Controller
+>|            +-08.2-[c5]--+-00.0  Advanced Micro Devices, Inc. [AMD] Strix/Strix Halo PCIe Dummy Function
+>|            |            \-00.1  Advanced Micro Devices, Inc. [AMD] Strix/Krackan/Strix Halo Neural Processing Unit
+>|            +-08.3-[c6]--+-00.0  Advanced Micro Devices, Inc. [AMD] Strix Halo USB 3.1 xHCI
+>|            |            +-00.3  Advanced Micro Devices, Inc. [AMD] Strix Halo USB 3.1 xHCI
+>|            |            +-00.4  Advanced Micro Devices, Inc. [AMD] Strix Halo USB 3.1 xHCI
+>|            |            +-00.5  Advanced Micro Devices, Inc. [AMD] Strix Halo USB4 Host Router
+>|            |            \-00.6  Advanced Micro Devices, Inc. [AMD] Strix Halo USB4 Host Router
+>|            +-14.0  Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller
+>|            +-14.3  Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge
+>|            +-18.0  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 0
+>|            +-18.1  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 1
+>|            +-18.2  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 2
+>|            +-18.3  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 3
+>|            +-18.4  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 4
+>|            +-18.5  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 5
+>|            +-18.6  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 6
+>|            \-18.7  Advanced Micro Devices, Inc. [AMD] Strix Halo Data Fabric; Function 7
 >| ```
 
 

@@ -40,7 +40,7 @@ Disassembly video: https://www.youtube.com/watch?v=iJYixZ0G7YA
 
 ## Linux on the Bosgame M5
 
-You can use the `ec-su_axb35` Linux kernel module that's linked at [[Power Mode and Fan Control|/Sixunited_AXB35/Power_Mode_and_Fan_Control]].
+You can use the `ec-su_axb35` Linux kernel module that's linked at [[Power Mode and Fan Control|/Guides/Sixunited_AXB35/Power_Mode_and_Fan_Control]].
 
 Here are some hopefully useful outputs created on Bosgame M5 with Linux kernel 6.18.3:
 

@@ -36,16 +36,11 @@ Disassembly video: https://www.youtube.com/watch?v=iJYixZ0G7YA
 
 **RAM**: A unit bought in October 2025 had Samsung K3KLALA0EM-MGCV RAM. Another unit bought in December 2025 had Micron MT62F4G32D8DV-023 WT memory (8533Mhz). Note that the APU is limited to 8000Mhz at the moment so there shouldn't be any noticable difference.
 
-**SSD**: It's a KINGSTON OM8TAP42048K1-A00 M.2 2TB NVMe PCIe 4.0 x4 SSD with 640 TBW ([[Datasheet|https://www.mouser.com/catalog/specsheets/Kingston_03-04-2025_OM8TAP4xxxxK1-A00_%20Product%20Specification_version_v1.0_10252024.pdf]])
-
-### Relevant Pages
- - [[Hardware/Boards/Sixunited-AXB35]]
- - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
- - [[Guides/Sixunited-AXB35]]
+**SSD**: It's a KINGSTON OM8TAP42048K1-A00 M.2 2TB NVMe PCIe 4.0 x4 SSD with 640 TBW ([Datasheet](https://www.mouser.com/catalog/specsheets/Kingston_03-04-2025_OM8TAP4xxxxK1-A00_%20Product%20Specification_version_v1.0_10252024.pdf))
 
 ## Linux on the Bosgame M5
 
-You can use the `ec-su_axb35` Linux kernel module that's linked at [[Power Mode and Fan Control|https://strixhalo.wiki/Guides/Sixunited_AXB35/Power_Mode_and_Fan_Control]].
+You can use the `ec-su_axb35` Linux kernel module that's linked at [[Power Mode and Fan Control|/Sixunited_AXB35/Power_Mode_and_Fan_Control]].
 
 Here are some hopefully useful outputs created on Bosgame M5 with Linux kernel 6.18.3:
 
@@ -976,3 +971,8 @@ Here are some hopefully useful outputs created on Bosgame M5 with Linux kernel 6
 >|        capabilities: ethernet physical
 >|        configuration: broadcast=yes driver=thunderbolt-net driverversion=6.18.3-200.fc43.x86_64 ip=[REMOVED] multicast=yes
 >| ```
+
+### Relevant Pages
+ - [[Hardware/Boards/Sixunited-AXB35]]
+ - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
+ - [[Guides/Sixunited-AXB35]]

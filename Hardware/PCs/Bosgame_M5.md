@@ -2,7 +2,7 @@
 
 ![Bosgame M5](./bosgame-m5.jpg)
 
-[[OFFICIAL PRODUCT PAGE](https://www.bosgame.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395-96gb-128gb-2tb)]
+[[OFFICIAL PRODUCT PAGE](https://www.bosgame.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395-96gb-128gb-2tb)]  - [Official trailer video](https://www.youtube.com/watch?v=mS-xdB4Vb4U)
 
 Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited-AXB35]] available with 128GB or 96GB RAM. Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc) and [X+ Rival](https://x-plus.store/products/xrival).
 
@@ -22,12 +22,11 @@ As of October 2025, EU orders are shipped from Germany and US orders are shipped
 
 ### Reviews
 
-* 2025-07-25: YouTube [Paul Gallant](https://www.youtube.com/watch?v=IL4hSjfSlVM) 
 * 2025-08-16: [Notebookcheck](https://www.notebookcheck.net/Best-mini-PC-of-the-year-AMD-Strix-Halo-128-GB-RAM-Radeon-RX-8060S-reviewed-in-the-Bosgame-M5.1087793.0.html) 
 * 2025-08-20: [Guru3D](https://www.guru3d.com/review/review-bosgame-m5-ai-mini-desktop-ryzen-ai-395/) 
 * 2025-08-24: [TechRadar](https://www.techradar.com/computing/bosgame-m5-ai-mini-pc-review) 
 * 2025-08-24: [NHub](http://nhub.news/2025/08/i-tested-out-the-bosgame-m5-ai-and-it-takes-your-expectations-about-what-a-mini-pc-can-do-and-detonates-them-just-for-fun/) 
-* 2025-10-24: YouTube [TechCircuit](https://www.youtube.com/watch?v=rDyZsqDmQbQ)
+* Video reviews on YouTube: 2025-07-25 by [Paul Gallant](https://www.youtube.com/watch?v=IL4hSjfSlVM), 2025-10-10 by [Tek Syndicate](https://www.youtube.com/watch?v=rVbOWbgTar0), 2025-10-24 by [TechCircuit](https://www.youtube.com/watch?v=rDyZsqDmQbQ), 2025-12-23 by [The Phawx](https://www.youtube.com/watch?v=r--8jx6gvGM)
 
 
 ### Hardware

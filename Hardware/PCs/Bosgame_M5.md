@@ -16,8 +16,9 @@ As of October 2025, EU orders are shipped from Germany and US orders are shipped
 
 > [!WARNING]
 > Multiple users reported the following problems:  
-> - Loose screw(s) inside the case; shake your PC before first use, remove the screw if you hear any rattling
-> - Rear fan may produce clicking noises; replacement is difficult due to custom design
+> - Loose screw(s) inside the case - shake your PC before first use, remove the screw(s) if you hear any rattling
+> - Incorrectly seated power button - try wiggling it around or disassembling the PC and re-seating it
+> - Rear fan may produce clicking noises - replacement is difficult due to custom design, some people managed to fix the issue by straightening and strengthening the fan frame
 
 
 ### Reviews

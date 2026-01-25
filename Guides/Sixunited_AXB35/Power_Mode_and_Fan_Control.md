@@ -15,7 +15,7 @@ It allows you to:
  - change current power mode
  - read current APU temperature
 
-#### Generic Installation
+#### Generic Installation (no secure boot)
 1. Install module building dependencies (depends on your distro, on debian/ubuntu install `build-essential` and `linux-headers-$(uname -r)` packages).
 2. Clone the repo with `git clone https://github.com/cmetz/ec-su_axb35-linux.git`.
 3. Build and install the module with `cd ec-su_axb35-linux && sudo make install`.
@@ -23,6 +23,45 @@ It allows you to:
 5. Run `scripts/info.sh` and check that all information is there.
 6. Run `scripts/test_fan_mode_fixed.sh`, it should test your fans on all 6 fixed levels.
 7. If everything is good, you can make the module automatically load on system boot with `sudo echo ec_su_axb35 >> /etc/modules`. If it says "permission denied", drop into root console with `su` or `sudo su -` and try again.
+
+#### Installation with secure boot on Fedora
+Check that secure boot is enabled:
+```
+$ mokutil --sb-state
+SecureBoot enabled
+```
+Generate a new self-signed certificate for MOK and request it to be added to your UEFI keys: 
+```
+sudo dnf install dkms openssl sbsigntools
+sudo dkms generate_mok
+MOK_PASSWD=test1
+sudo mokutil -i /var/lib/dkms/mok.pub << EOI
+${MOK_PASSWD}
+${MOK_PASSWD}
+EOI
+sudo systemctl reboot
+```
+During reboot the blue Shim UEFI key management screen appears. Press a key.
+Select “Enroll MOK”, choose “Continue”, select “Yes”, enter the password "test1" from above. Note that the password must be no more than 5 characters long. Your keyboard will probably be in a US keyboard layout at this point.
+
+Build the ec_su_axb35 kernel module:
+```
+git clone https://github.com/cmetz/ec-su_axb35-linux.git
+cd ec-su_axb35-linux
+make
+sudo make install
+```
+Sign the kernel module file you just compiled and then load it:
+```
+/usr/src/kernels/$(uname -r)/scripts/sign-file sha256 /var/lib/dkms/mok.key /var/lib/dkms/mok.pub /lib/modules/$(uname -r)/updates/ec_su_axb35.ko
+modprobe ec_su_axb35
+dmesg|tail
+```
+Hopefully you will see this:
+```
+[  123.02] ec_su_axb35: loading out-of-tree module taints kernel.
+[  123.03] ec_su_axb35: Sixunited AXB35-02 EC driver loaded
+```
 
 #### Usage
 Reading and writing all of the parameters happens through sysfs with `/sys/class/ec_su_axb35` path. You can find detailed information in [the repo's readme file](https://github.com/cmetz/ec-su_axb35-linux/blob/main/README.md).

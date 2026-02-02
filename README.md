@@ -11,7 +11,7 @@ The purpose of this website it to gather important information and practical gui
 - Gaming systems
 - Home servers and NAS solutions
 
-Whether you're researching systems to purchase (by the way, we have [[a guide|Guides/Buyers-Guide]] for that too!), setting up your first Strix Halo PC or troubleshooting issues, this wiki aims to provide the information you need.
+Whether you're researching systems to purchase (by the way, we have [[a guide|Guides/Buyer's_Guide]] for that too!), setting up your first Strix Halo PC or troubleshooting issues, this wiki aims to provide the information you need.
 
 Hope it helps :)
 

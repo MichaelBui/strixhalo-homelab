@@ -118,13 +118,3 @@ In summary:
  - 85W for mixed workloads and everything else
 
 There is also a way to control power limits more gradually, [[read more here|Guides/Sixunited_AXB35/Power_Mode_and_Fan_Control#fine-tuning-power-limits]].
-
-### Additional Thoughts on the 120W Limit
-Just recently it came to my attention that a 120W limit might be a bit too much for the iGPU. After a sustained high load, with the temperature reaching around 80 degrees, the core and memory speeds drop, which leads to significant performance loses. In these cases 100 or 110W limit might be preferred instead. This doesn't happen immediately and might not happen at all for most games (although I guess might happen often with LLM inference), so **your mileage may vary**, I suggest doing tests on your specific system, apps and ambient temp.
-
-**FurMark 2.10.2, average FPS after 5 min full load:**
-
-| 55W | 85W | 100W | 110W | 120W |
-| --- | --- | ---- | ---- | ---- |
-| 105 | 135 <sup style="color: #1fea00; font-size: 0.8em;">+25.0%</sup> | 146 <sup style="color: #1fea00; font-size: 0.8em;">+32.7%</sup> | 134 <sup style="color: #1fea00; font-size: 0.8em;">+24.3%</sup> | 104 <sup style="color: #ea1f00; font-size: 0.8em;">-1.0%</sup> |
-\* **all percentage values are relative to the base 55W result**

@@ -132,5 +132,5 @@ Example on setting the power limit to static 100W with no boost:
 **Note that changing the power mode via the EC controller (using `ec-su_axb35-linux` or otherwise) resets these values to their defaults.**
 
 ### Relevant Pages
- - [[Guides/Hardware-Monitoring]]
- - [[Guides/Power-Modes-and-Performance]]
+ - [[Guides/Hardware_Monitoring]]
+ - [[Guides/Power_Modes_and_Performance]]

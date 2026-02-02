@@ -4,7 +4,7 @@
 
 [[OFFICIAL PRODUCT PAGE](https://www.bosgame.com/products/bosgame-m5-ai-mini-desktop-ryzen-ai-max-395-96gb-128gb-2tb)]  - [Official trailer video](https://www.youtube.com/watch?v=mS-xdB4Vb4U)
 
-Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited-AXB35]] available with 128GB or 96GB RAM. Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc) and [X+ Rival](https://x-plus.store/products/xrival).
+Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixunited_AXB35]] available with 128GB or 96GB RAM. Also known as [Peladn YO1](https://peladn.com/products/yo1-395-mini-pc) and [X+ Rival](https://x-plus.store/products/xrival).
 
 Availability: since July 2025.
 
@@ -974,6 +974,6 @@ Here are some hopefully useful outputs created on Bosgame M5 with Linux kernel 6
 >| ```
 
 ### Relevant Pages
- - [[Hardware/Boards/Sixunited-AXB35]]
- - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
- - [[Guides/Sixunited-AXB35]]
+ - [[Hardware/Boards/Sixunited_AXB35]]
+ - [[Hardware/Boards/Sixunited_AXB35/Firmware]]
+ - [[Guides/Sixunited_AXB35]]

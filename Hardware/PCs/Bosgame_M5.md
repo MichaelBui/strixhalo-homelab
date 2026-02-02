@@ -8,7 +8,7 @@ Yet another mini PC based on the [[Sixunited's AXB35 board|Hardware/Boards/Sixun
 
 Availability: since July 2025.
 
-Price: $1999 / 1706€ for the 128GB version, $1589 / 1360€ for the 96GB RAM version. In the EU, VAT is included in the price. This makes the Bosgame M5 the cheapest Strix Halo PC with 96GB or more RAM in the EU since 2025-10. Note that you do not get a proper invoice with VAT...
+Price: $1999 / 1700€ for the 128GB version, $1589 / 1350€ for the 96GB RAM version. In the EU, VAT is included in the price. This makes the Bosgame M5 the cheapest Strix Halo PC with 96GB or more RAM in the EU since 2025-10. Note that you do not get a proper invoice with VAT...
 
 Comes with Windows 11 Pro preinstalled on the 2TB SSD.
 

@@ -34,9 +34,11 @@ As of October 2025, EU orders are shipped from Germany and US orders are shipped
 
 Disassembly video: https://www.youtube.com/watch?v=iJYixZ0G7YA
 
-**RAM**: A unit bought in October 2025 had Samsung K3KLALA0EM-MGCV RAM. Another unit bought in December 2025 had Micron MT62F4G32D8DV-023 WT memory (8533Mhz). Note that the APU is limited to 8000Mhz at the moment so there shouldn't be any noticable difference.
+**RAM**: A unit bought in October 2025 had Samsung K3KLALA0EM-MGCV RAM (9600Mhz). Another unit bought in December 2025 had Micron MT62F4G32D8DV-023 WT memory (8533Mhz). Note that the APU is limited to 8000Mhz at the moment so there shouldn't be any noticable difference.
 
 **SSD**: It's a KINGSTON OM8TAP42048K1-A00 M.2 2TB NVMe PCIe 4.0 x4 SSD with 640 TBW ([Datasheet](https://www.mouser.com/catalog/specsheets/Kingston_03-04-2025_OM8TAP4xxxxK1-A00_%20Product%20Specification_version_v1.0_10252024.pdf))
+
+**Wifi/Bluetooth**: It uses the MediaTek MT7925 combo wireless module - like many other Strix Halo systems - to provide Wi-Fi 7 and Bluetooth 5.4.
 
 ## Linux on the Bosgame M5
 

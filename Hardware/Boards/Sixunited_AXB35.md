@@ -2,17 +2,16 @@
 One of the first Strix Halo boards, used in many Chinese PCs along with a cooling system. First revisions go back to at least October of 2024 (marked `SU_AXB35_FB11`).
 
 **Known PCs:**
- - [[GMKtec EVO-X2|Hardware/PCs/GMKtec-EVO-X2]] (V21 & V22)
- - [[Bosgame M5|Hardware/PCs/Bosgame-M5]]
- - [[FEVM FA-EX9|Hardware/PCs/FEVM-FA-EX9]] (V22 & V30)
- - [[Peladn YO1|Hardware/PCs/Peladn-YO1]]
- - [[NIMO AI MiniPC|Hardware/PCs/NIMO-AI-MiniPC]]
+ - [[GMKtec EVO-X2|Hardware/PCs/GMKtec_EVO-X2]] (V21 & V22)
+ - [[Bosgame M5|Hardware/PCs/Bosgame_M5]]
+ - [[FEVM FA-EX9|Hardware/PCs/FEVM_FA-EX9]] (V22 & V30)
+ - [[NIMO AI MiniPC|Hardware/PCs/NIMO_AI_MiniPC]]
 
 ### Power
 The board supports 3 different power limits - 55W (100W burst), 85W (120W burst), and 120W (140W burst):
 ![AXB35 Power Modes](./axb35-power-modes.png)
 
-See [[the guide on power and performance|Guides/Power-Modes-and-Performance]] for more info on power modes.
+See [[the guide on power and performance|Guides/Power_Modes_and_Performance]] for more info on power modes.
 
 Idle power draw from the wall should be around 12W with two SSDs installed.
 
@@ -22,9 +21,9 @@ The cooling system is decent enough for this form factor, but could suffer from 
 Here's what you could expect from a correctly working system with PTM7950 (ambient temp +25°C, bios version 1.05):  
 ![](./axb35-ptm7950-cooling.png)
 
-A guide for applying it on EVO-X2 is available [[here|Guides/Sixunited-AXB35/Replacing-Thermal-Interfaces-On-GMKtec-EVO-X2]].
+A guide for applying it on EVO-X2 is available [[here|Guides/Sixunited_AXB35/Replacing_Thermal_Interfaces_On_GMKtec_EVO-X2]].
 
-For fan and power mode control on Windows and Linux check out [[this guide|Guides/Sixunited-AXB35/Power-Mode-and-Fan-Control]].
+For fan and power mode control on Windows and Linux check out [[this guide|Guides/Sixunited_AXB35/Power_Mode_and_Fan_Control]].
 
 ### Facts
  - RAM modules: [MT62F4G32D8DV-023](https://www.micron.com/products/memory/dram-components/lpddr5x/part-catalog/part-detail/mt62f4g32d8dv-023-wt-c)
@@ -34,7 +33,7 @@ For fan and power mode control on Windows and Linux check out [[this guide|Guide
  - Power input: 19.5V, 5.5x2.5mm barrel jack, center positive
 
 ### Firmware
-See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
+See [[Firmware|Hardware/Boards/Sixunited_AXB35/Firmware]] page.
 
 ### Photos
 
@@ -47,5 +46,5 @@ See [[Firmware|Hardware/Boards/Sixunited-AXB35/Firmware]] page.
 | [![SU_AXB35](./axb35_board_with_cooling.jpg?thumbnail)](./axb35_board_with_cooling.jpg) | Earlier revision of the board with the cooling system |
 
 ### Relevant Pages
- - [[Hardware/Boards/Sixunited-AXB35/Firmware]]
- - [[Guides/Sixunited-AXB35]]
+ - [[Hardware/Boards/Sixunited_AXB35/Firmware]]
+ - [[Guides/Sixunited_AXB35]]

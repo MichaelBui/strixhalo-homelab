@@ -51,7 +51,7 @@ cd ec-su_axb35-linux
 make
 sudo make install
 ```
-Sign the kernel module file you just compiled and then load it:
+Sign the kernel module file you just compiled and then load it (as root):
 ```
 /usr/src/kernels/$(uname -r)/scripts/sign-file sha256 /var/lib/dkms/mok.key /var/lib/dkms/mok.pub /lib/modules/$(uname -r)/updates/ec_su_axb35.ko
 modprobe ec_su_axb35

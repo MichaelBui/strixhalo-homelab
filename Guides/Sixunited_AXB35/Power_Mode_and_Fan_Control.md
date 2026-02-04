@@ -63,6 +63,8 @@ Hopefully you will see this:
 [  123.03] ec_su_axb35: Sixunited AXB35-02 EC driver loaded
 ```
 
+… and you're done! Note that you will have to redo the steps (compiling and signing) for every new Linux kernel version.
+
 #### Usage
 Reading and writing all of the parameters happens through sysfs with `/sys/class/ec_su_axb35` path. You can find detailed information in [the repo's readme file](https://github.com/cmetz/ec-su_axb35-linux/blob/main/README.md).
 
